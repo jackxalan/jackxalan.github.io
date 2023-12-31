@@ -1,5 +1,6 @@
 body {
 background: linear-gradient(0deg, #52B4E9 0%, #000000 100%);
+background-repeat: no-repeat;
 font-family: Helvetica;
 text-align: left;
 padding: 25;
