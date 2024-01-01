@@ -59,9 +59,9 @@ width: 95%
 
 p {
 color: black;
-font-size: 1em;
+font-size: 1.5em;
  line-height: 1.5em;
- max-width: 90%;
+  padding-top: 20px;
 margin-left: auto;
 margin-right: auto;
 }
