@@ -6,8 +6,7 @@ background-repeat: no-repeat;
   background-attachment: fixed;
 font-family: Futura;
 font-size: 2em;
-padding: 2em;
-display:table-cell; 
+display: table-cell; 
 vertical align: middle;
 color: white;
 }
