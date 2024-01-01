@@ -1,14 +1,15 @@
 body {
-background: #3C3845;
+background-size:cover;
+background: linear-gradient(#08005e 0%, #38005e 40%, #5e0055 80%);
+background-repeat: no-repeat;
+  background-attachment: fixed;
 font-family: Futura;
 font-size: 2em;
 padding: 2em;
 display:table-cell; 
 vertical align: middle;
 color: white;
- margin-bottom: 3em;
 }
-
 h1 {
  font-size: 5vw;
  font-family: Shantell Sans, ExtraBold;
