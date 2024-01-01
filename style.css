@@ -92,6 +92,7 @@ width: 45%;
 .yt-embd {
  display: block;
 width: 65%;
+ min-height: 315px;
  margin-left: auto;
  margin-right: auto;
 }
