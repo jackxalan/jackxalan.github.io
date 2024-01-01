@@ -1,69 +1,52 @@
 body {
-font-family: Futura;
 background: #3C3845;
+font-family: Futura;
+font-size: 2em;
+padding: 2em;
+display:table-cell; 
+vertical align: middle;
 color: white;
-width: 75%;
-margin: auto;
+ margin-bottom: 3em;
 }
 
 h1 {
- font-size: 65px;
+ font-size: 5vw;
  font-family: Shantell Sans, ExtraBold;
 line-height: 0em;
 } 
 
 .blog-title {
-font-size: 3vw;
+font-size: 2em;
  font-family: Shantell Sans, ExtraBold;
-width: 60%;
- margin-left: auto;
- margin-right: auto;
  opacity: 1;
  line-height: 0em;
+ width:95%;
 }
 
 
-.blog-subtitle {
-font-size: 1vw;
+h2 {
+font-size: 1em;
  font-family: Futura;
-width: 60%;
- margin-left: auto;
- margin-right: auto;
  opacity: 75%;
 }
 
-h2 {
- font-family: Helvetica;
- font-weight: bolder;
- opacity: 0.7;
-} 
-
 p {
 color: white;
- font-size: 1.5vw;
- width: 60%;
- margin-left: auto;
- margin-right: auto;
+font-size: 1em;
+ line-height: 1.5em;
+ max-width: 90%;
+margin-left: auto;
+margin-right: auto;
 }
 
-img{
+img {
 display: block;
 margin: auto;
-    max-height:600px;
-    max-width: 65%;
-    height:auto;
-    width:auto;
-    border-radius: 20px;
-}
-
-button {
-padding: 10px 25px 10px 25px;
- background: white;
- border-radius: 10px;
- color: black;
-margin: 25px;
-font-size: 15px;
-font-weight: bold
+ max-width: 95%;
+margin-left: auto;
+margin-right: auto;
+    max-height:1000px;
+        border-radius: 20px;
 }
 
 /* unvisited link */
@@ -92,12 +75,9 @@ color: white;
 }
 
 .caption {
-font-size: medium;
+font-size: smaller;
 font-style: italic;
 text-align: center;
-width: 45%;
- margin-left: auto;
-  margin-right: auto;
 }
 
 .yt-embd {
