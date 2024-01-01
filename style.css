@@ -4,8 +4,8 @@ background-size:cover;
 background: linear-gradient(#FEFCE5, #9EBCC7);
 background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 95%;
 font-family: Futura;
-font-size: 2em;
 display: table-cell; 
 vertical align: middle;
 color: white;
@@ -16,7 +16,7 @@ h1 {
  font-family: Shantell Sans, ExtraBold;
 color: black;
 line-height: 0em;
-width: 90%;
+
 margin-left: auto;
 margin-right: auto;
 } 
@@ -26,7 +26,7 @@ font-size: 0.8em;
  font-family: Futura;
  color: black;
  opacity: 75%;
- width: 90%;
+
  margin-left: auto;
 margin-right: auto;
 }
@@ -34,7 +34,7 @@ margin-right: auto;
 h2 {
 font-family: Futura;
 color: black;
-opacity: 75%;
+
 }
 
 .blog-title {
@@ -42,7 +42,7 @@ font-size: 2em;
  font-family: Shantell Sans, ExtraBold;
  color: black;
  line-height: 0em;
- width:95%;
+
 }
 
 .blog-subtitle {
@@ -51,7 +51,7 @@ font-family: Futura;
 color: black;
 opacity: 75%;
 line-height: 0em;
-width: 95%
+
 }
 
 
@@ -70,6 +70,11 @@ margin-right: auto;
     max-height:1000px;
         border-radius: 20px;
         box-shadow: 0em 0.2em 0.2em 0em gray;
+}
+
+.yt-embd {
+width: 95%;
+  aspect-ratio: 16/9;
 }
 
 /* unvisited link */
