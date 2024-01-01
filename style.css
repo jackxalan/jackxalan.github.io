@@ -1,67 +1,56 @@
 
 body {
+
+font-family: Futura;
+font-size: 1.25em;
+padding: 2em;
+display:table-cell; 
+vertical align: middle;
+color: black;
+height: 100%
 background-size:cover;
 background: linear-gradient(#FEFCE5, #9EBCC7);
 background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-font-family: Futura;
-display: table-cell; 
-vertical align: middle;
-color: white;
 }
 
 h1 {
  font-size: 5vw;
  font-family: Shantell Sans, ExtraBold;
-color: black;
 line-height: 0em;
-
-margin-left: auto;
-margin-right: auto;
+margin: 0.5em 0 0.25em 0;
 } 
 
-h3 {
-font-size: 0.8em;
- font-family: Futura;
- color: black;
- opacity: 75%;
-
- margin-left: auto;
-margin-right: auto;
+h2 {
+opacity: 75%;
+margin: 0.5em 0;
 }
 
-h2 {
-font-family: Futura;
-color: black;
+h3 {
+ opacity: 75%;
+margin: 1em 0 0.5em 0;
+}
 
+h5 {
+ opacity: 75%;
 }
 
 .blog-title {
 font-size: 2em;
  font-family: Shantell Sans, ExtraBold;
- color: black;
  line-height: 0em;
-
+ width:95%;
 }
 
 .blog-subtitle {
 font-size: 0.8em;
-font-family: Futura;
-color: black;
 opacity: 75%;
 line-height: 0em;
-
+width: 95%
 }
 
-
-
 p {
-color: black;
-  padding-top: 20px;
+ line-height: 1.5em;
 }
 
 img {
@@ -73,14 +62,6 @@ margin-right: auto;
     max-height:1000px;
         border-radius: 20px;
         box-shadow: 0em 0.2em 0.2em 0em gray;
-}
-
-.yt-embd {
-  display: block;
-width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  aspect-ratio: 16/9;
 }
 
 /* unvisited link */
@@ -97,23 +78,16 @@ a:visited {
 a:hover {
   color: #52B4E9;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.p1 {
-color: black;
-}
-
-li {
-color: black;
-}
-
 .caption {
 font-size: smaller;
 font-style: italic;
 text-align: center;
+}
+
+.yt-embd {
+  display: block;
+width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 16/9;
 }
