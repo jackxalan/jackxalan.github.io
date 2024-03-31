@@ -34,7 +34,7 @@ background-repeat: no-repeat;
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	font-size: 300px;
+	font-size: 4em;
 	vertical-align: bottom;
 } 
 
@@ -116,7 +116,7 @@ width: 95%;
 	color: white;
 	width: 0.75em;
 	height: 0.75em;
-	margin: 0 0 0 0.25em;
+	margin: 0 0 0 0.5em;
 	display: inline-block;
 	vertical-align: middle;
 	transition: 0.25s;
