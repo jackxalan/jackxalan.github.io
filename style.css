@@ -104,4 +104,5 @@ width: 95%;
 	transition: 0.25s;
 	left: revert;
 	border-radius: revert;
+	box-shadow: none;
 }
