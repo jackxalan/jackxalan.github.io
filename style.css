@@ -15,10 +15,10 @@ padding: 2em 1em;
 	transition: font-size 1s;
 display:table-cell; 
 vertical align: middle;
-color: black;
+color: white;
 height: 100%
 background-size:cover;
-background: hsla(243, 20%, 20%, 1);
+background-color: hsla(243, 20%, 20%, 1);
 
 background: linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 
