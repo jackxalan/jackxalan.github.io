@@ -1,11 +1,4 @@
 html {
-	background:
-		linear-gradient(180deg, rgba(var(--shade), 1), rgba(var(--bg), 1) 96em),
-		rgba(var(--bg), 1);
-	background-size: 96em, 0;
-	background-position: center;
-	background-repeat: repeat-x;
-	font-synthesis: none;
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	margin: auto;
 	display: flex;
@@ -25,8 +18,15 @@ vertical align: middle;
 color: black;
 height: 100%
 background-size:cover;
-  background-color: #FEFCE5;
-background: linear-gradient(#FEFCE5, #9EBCC7);
+background: hsla(243, 20%, 20%, 1);
+
+background: linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
 background-repeat: no-repeat;
   background-attachment: fixed;
 }
