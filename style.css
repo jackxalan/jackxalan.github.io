@@ -94,3 +94,16 @@ width: 95%;
   margin-right: auto;
   aspect-ratio: 16/9;
 }
+
+.avatar {
+	width: 1.375em;
+	height: 1.375em;
+	margin: -0.125em 0.25em 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	transition: 0.25s;
+	left: revert;
+	border-radius: revert;
+	-webkit-mask-image: url('/files/svg/app-icon.svg');
+	mask-image: url('/files/svg/app-icon.svg');
+}
