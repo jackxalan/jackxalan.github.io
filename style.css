@@ -15,7 +15,11 @@ html {
 body {
 font-family: Helvetica;
 font-size: 1.25em;
-padding: 2em;
+padding: 2em 1em;
+	min-width: 0;
+	max-width: 32em;
+	margin: auto;
+	transition: font-size 1s;
 display:table-cell; 
 vertical align: middle;
 color: black;
@@ -26,6 +30,7 @@ background: linear-gradient(#FEFCE5, #9EBCC7);
 background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 
 h1 {
  font-size: 5vw;
