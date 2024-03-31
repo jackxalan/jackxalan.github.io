@@ -104,6 +104,4 @@ width: 95%;
 	transition: 0.25s;
 	left: revert;
 	border-radius: revert;
-	-webkit-mask-image: url('/files/svg/app-icon.svg');
-	mask-image: url('/files/svg/app-icon.svg');
 }
