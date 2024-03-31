@@ -1,3 +1,17 @@
+html {
+	background:
+		linear-gradient(180deg, rgba(var(--shade), 1), rgba(var(--bg), 1) 96em),
+		rgba(var(--bg), 1);
+	background-size: 96em, 0;
+	background-position: center;
+	background-repeat: repeat-x;
+	font-synthesis: none;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	margin: auto;
+	display: flex;
+	min-height: 100vh;
+}
+
 body {
 font-family: Helvetica;
 font-size: 1.25em;
