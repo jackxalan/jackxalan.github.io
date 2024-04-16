@@ -4,7 +4,7 @@ html {
 	display: flex;
 	min-height: 100vh;
 		min-width: 0;
-		max-width: 32em;
+		max-width: 90vw;
 }
 
 body {
@@ -33,7 +33,7 @@ background-repeat: no-repeat;
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	font-size: 4em;
+	font-size: 75vw;
 	vertical-align: bottom;
 } 
 
