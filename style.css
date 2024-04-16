@@ -3,15 +3,14 @@ html {
 	margin: auto;
 	display: flex;
 	min-height: 100vh;
+		min-width: 0;
+		max-width: 32em;
 }
 
 body {
 font-family: Helvetica;
 font-size: 1.25em;
 padding: 2em 1em;
-	min-width: 0;
-	max-width: 32em;
-	margin: auto;
 	transition: font-size 1s;
 display:table-cell; 
 vertical align: middle;
