@@ -20,11 +20,11 @@ height: 100%;
 background-size:cover;
 background-color: hsla(243, 20%, 20%, 1);
 
-background: linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+background: linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 
-background: -moz-linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 
-background: -webkit-linear-gradient(0deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
 background-repeat: no-repeat;
