@@ -9,7 +9,7 @@ html {
 body {
 font-family: Helvetica;
 font-size: 1.25em;
-padding: 2em 1em;
+padding: 2em 0em;
 	transition: font-size 1s;
 display:table-cell; 
 vertical align: middle;
