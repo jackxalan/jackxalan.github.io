@@ -34,9 +34,9 @@ background-repeat: no-repeat;
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	font-size: 10vw;
-	max-width: 10vw;
-	line-height: 13vw;
+	font-size: 12vw;
+	max-width: 12vw;
+	line-height: 15vw;
 	margin: 0;
 	padding: 0;
 } 
@@ -52,7 +52,9 @@ margin: 1em 0 0.5em 0;
 
 h5 {
  opacity: 75%;
-  margin: 1.5em 0 0 0;
+ line-height: 0vw;
+ margin: 0;
+ padding: 0;
 }
 
 .blog-title {
