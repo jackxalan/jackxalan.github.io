@@ -4,6 +4,14 @@ html {
 	display: flex;
 	min-height: 100vh;
 	scroll-behavior: smooth;
+
+	background-color: hsla(243, 20%, 20%, 1);
+	background: linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 body {
@@ -17,14 +25,6 @@ body {
 	min-width: 0;
 	max-width: 75vw;
 	margin: auto;
-			
-	background-color: hsla(243, 20%, 20%, 1);
-	background: linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 body.wide {
