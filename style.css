@@ -117,3 +117,7 @@ a:hover {
 	border-radius: revert;
 	box-shadow: none;
 }
+
+.contactlinks {
+	text-decoration: none;
+}
