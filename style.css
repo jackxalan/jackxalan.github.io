@@ -113,13 +113,11 @@ width: 95%;
 }
 
 .avatar {
-	fill: white;
 	width: 0.75em;
 	height: 0.75em;
-	margin: 0 0 0 0.5em;
+	margin: 0 0 0 0.25em;
 	display: inline-block;
 	vertical-align: middle;
-	transition: 0.25s;
 	left: revert;
 	border-radius: revert;
 	box-shadow: none;
