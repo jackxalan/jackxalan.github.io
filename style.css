@@ -3,6 +3,7 @@ html {
 	margin: auto;
 	display: flex;
 	min-height: 100vh;
+	min-width: 40vw;
 	scroll-behavior: smooth;
 
 	background-color: hsla(243, 20%, 20%, 1);
@@ -23,13 +24,12 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	min-width: 0;
-	max-width: 75vw;
+	max-width: 60vw;
 	margin: auto;
+	line-height: 1.5em;
 }
 
-body.wide {
-	max-width: 48em;
-}
+
 
 
 h1 {
@@ -53,24 +53,6 @@ h5 {
 	padding: 0;
 }
 
-.blog-title {
-	font-size: 2em;
-	font-family: Shantell Sans, ExtraBold;
-	line-height: 0em;
-	width:95%;
-}
-
-.blog-subtitle {
-	font-size: 0.8em;
-	opacity: 75%;
-	line-height: 0em;
-	width: 95%
-}
-
-p {
- 	line-height: 1.5em;
-}
-
 hr {
 	color: white;
 	box-shadow: none;
@@ -87,9 +69,6 @@ img {
 	box-shadow: 0em 0.2em 0.2em 0em black;
 }
 
-#logo-image img {
-  
-}
 /* unvisited link */
 a:link {
   color: white;
@@ -104,6 +83,7 @@ a:visited {
 a:hover {
  	 color: #52B4E9;
 }
+
 .caption {
 	font-size: smaller;
 	font-style: italic;
