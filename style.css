@@ -3,7 +3,7 @@ html {
 	margin: auto;
 	display: flex;
 	min-height: 100vh;
-	max-width: 95vw;
+	max-width: 90vw;
 }
 
 body {
@@ -39,6 +39,7 @@ h1 {
 	line-height: 15vw;
 	margin: 0;
 	padding: 0;
+	white-space: nowrap;
 } 
 
 h2 {
