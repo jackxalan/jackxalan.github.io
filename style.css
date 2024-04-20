@@ -70,6 +70,11 @@ p {
  line-height: 1.5em;
 }
 
+hr {
+	color: white;
+	box-shadow: none;
+}
+
 img {
 display: block;
 margin: auto;
