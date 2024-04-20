@@ -34,11 +34,7 @@ body.wide {
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	font-size: 12vw;
-	line-height: 15vw;
-	max-width: 75vw;
-	margin: auto;
-	white-space: nowrap;
+	
 } 
 
 h2 {
