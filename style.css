@@ -35,6 +35,7 @@ background-repeat: no-repeat;
 h1 {
  font-family: "Rubik Scribble", system-ui;
 	font-size: 10vw;
+	max-width: 95vw;
 } 
 
 h2 {
