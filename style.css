@@ -15,6 +15,10 @@ html {
 	background-attachment: fixed;
 }
 
+# @media  and (-webkit-min-device-pixel-ratio:0) {
+	#safari {background-color: #CCC}
+}
+
 body {
 	font-family: Helvetica;
 	color: white;
