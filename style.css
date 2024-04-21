@@ -5,7 +5,7 @@ html {
 	min-height: 100vh;
 	min-width: 40vw;
 	scroll-behavior: smooth;
-
+	background-color: #2a293d;
 	background-color: hsla(243, 20%, 20%, 1);
 	background: linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 	background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
@@ -48,7 +48,7 @@ body {
 h1 {
  font-family: "Rubik Scribble", system-ui;
 	font-size: 2.5em;
-	line-height: 0.3em;
+	line-height: 2.5em;
 } 
 
 h2 {
@@ -62,7 +62,6 @@ h3 {
 
 h5 {
 	opacity: 75%;
-	line-height: 0vw;
 	margin: 0;
 	padding: 0;
 }
