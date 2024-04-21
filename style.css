@@ -118,9 +118,22 @@ a:hover {
 	box-shadow: none;
 }
 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .column {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	margin-top: 0.7em;
+  }
+
 .contactlinks {
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 2em;
 	color: black;
 	line-height: 1.5em;
 }
