@@ -43,7 +43,8 @@ body {
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	line-height: 1.3em;
+	font-size: 2.5em;
+	line-height: 0.3em;
 } 
 
 h2 {
@@ -80,17 +81,31 @@ img {
 
 /* unvisited link */
 a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: #52B4E9;
+  color: rgba(125, 167, 127, 1);
+  text-decoration-color: rgba(125, 167, 127, 0.5);
 }
 
 /* mouse over link */
 a:hover {
- 	 color: #52B4E9;
+	color: rgba(169, 197, 171, 1);
+	text-decoration-color: rgba(169, 197, 171, 0.5);
+}
+
+/* click on link */
+a:active {
+	color: rgba(167, 125, 165, 1);
+	text-decoration-color: rgba(167, 125, 165, 0.5);
+}
+
+/* visited link */
+a:visited {
+	color: #7da77f;
+	text-decoration-color: #A77DA5;
+}
+
+a:visited:hover {
+	color: rgba(193, 163, 192, 1);
+	text-decoration-color: rgba(193, 163, 192, 0.5);
 }
 
 .caption {
@@ -136,4 +151,8 @@ a:hover {
 	font-size: 2em;
 	color: black;
 	line-height: 1.5em;
+}
+
+.logolink {
+	text-decoration: none;
 }
