@@ -90,6 +90,7 @@ a:link {
 button {
 	background-color: rgba(125, 167, 127, 0.5);
 	border: 1px solid rgba(125, 167, 127, 1);
+	border-radius: 15px;
 }
 
 /* mouse over link */
