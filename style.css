@@ -87,6 +87,11 @@ a:link {
   text-decoration-color: rgba(125, 167, 127, 0.5);
 }
 
+button {
+	background-color: rgba(125, 167, 127, 0.5);
+	border: 1px solid rgba(125, 167, 127, 1);
+}
+
 /* mouse over link */
 a:hover {
 	color: rgba(169, 197, 171, 1);
