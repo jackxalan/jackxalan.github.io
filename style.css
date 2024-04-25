@@ -93,6 +93,10 @@ button {
 	border-radius: 15px;
 }
 
+button:hover {
+	background-color: rgba(125, 167, 127, 0.75);
+}
+
 /* mouse over link */
 a:hover {
 	color: rgba(169, 197, 171, 1);
