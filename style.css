@@ -6,8 +6,7 @@ html {
 	min-height: -webkit-fill-available;
 	min-width: 40vw;
 	scroll-behavior: smooth;
-	background-color: #2a293d;
-	background: linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
+	background: linear-gradient(90deg, #2a293d 0%, #28273b 100%);
 	background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 	background: -webkit-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
@@ -21,8 +20,8 @@ html {
 
 body {
 	font-family: Helvetica;
-	background-color: #2a293d;
 	color: white;
+	background-color: linear-gradient(90deg, #2a293d 0%, #28273b 100%);
 	font-size: 1.25em;
 	display:table-cell; 
 	vertical-align: middle;
