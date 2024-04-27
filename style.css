@@ -7,9 +7,9 @@ html {
 	min-width: 40vw;
 	scroll-behavior: smooth;
 	background: linear-gradient(90deg, #2a293d 0%, #28273b 100%);
-	background: -moz-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(243, 20%, 20%, 1) 0%, hsla(228, 24%, 28%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#363D58", GradientType=1 );
+	background: -moz-linear-gradient(90deg, #2a293d 0%, #28273b 100%);
+	background: -webkit-linear-gradient(90deg, #2a293d 0%, #28273b 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#28273b", GradientType=1 );
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -82,7 +82,7 @@ img {
 	margin-right: auto;
 	max-height:1000px;
 	border-radius: 15px;
-	box-shadow: 0em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5);
+	box-shadow: 0em 0.2em 0.2em 0em black, 0.5);
 }
 
 /* unvisited link */
