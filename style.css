@@ -68,7 +68,7 @@ h5 {
 }
 
 hr {
-	color: white;
+	border: 1px solid white, 0.2;
 	box-shadow: none;
 }
 
@@ -184,6 +184,6 @@ a:visited:hover {
 }
 
 hr.fourohfour {
-	color: black;
+	border: 1px solid black 0.2;
 	box-shadow: none;
 }
