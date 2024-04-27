@@ -48,9 +48,12 @@ body {
 
 h1 {
  font-family: "Rubik Scribble", system-ui;
-	line-height: 1.3em;
 	text-transform: uppercase;
 } 
+
+.blogtitle {
+	margin: 0.2em;
+}
 
 h2 {
 	opacity: 75%;
@@ -63,13 +66,13 @@ h3 {
 
 h5 {
 	opacity: 75%;
-	margin: 0;
 	padding: 0;
 }
 
 hr {
 	border: 1px solid white, 0.2;
 	box-shadow: none;
+	margin: 15px 0 15px 0;
 }
 
 img {
