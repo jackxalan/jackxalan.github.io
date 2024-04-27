@@ -49,6 +49,7 @@ body {
 h1 {
  font-family: "Rubik Scribble", system-ui;
 	line-height: 1.3em;
+	text-transform: uppercase;
 } 
 
 h2 {
