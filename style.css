@@ -170,3 +170,15 @@ a:visited:hover {
 .logolink {
 	text-decoration: none;
 }
+
+.fourohfour {
+	background-color: #ffe243;
+	background-image: url(images/404-giraffe.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 30%;
+	background-attachment: fixed;
+
+	color: black;
+	border-color: black;
+}
