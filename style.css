@@ -3,6 +3,7 @@ html {
 	margin: auto;
 	display: flex;
 	min-height: 100vh;
+	min-height: -webkit-fill-available;
 	min-width: 40vw;
 	scroll-behavior: smooth;
 	background-color: #2a293d;
