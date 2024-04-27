@@ -182,3 +182,8 @@ a:visited:hover {
 	color: black;
 	border-color: black;
 }
+
+hr.fourohfour {
+	color: black;
+	box-shadow: none;
+}
