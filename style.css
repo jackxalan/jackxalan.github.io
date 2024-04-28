@@ -24,7 +24,7 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-	margin: 1.5em auto 0 auto;
+	margin: 1.5em auto 1.5em auto;
 }
 
 /* For mobile phones: */
@@ -185,4 +185,10 @@ a:visited:hover {
 
 	color:black;
 	border-color: black;
+}
+
+blockquote {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 1em;
+	border-radius: 15px;
 }
