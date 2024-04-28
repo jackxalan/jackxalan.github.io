@@ -7,10 +7,6 @@ html {
 	min-width: 40vw;
 	scroll-behavior: smooth;
 	background-color: #25243a;
-	background: linear-gradient(90deg, #2a293d 0%, #25243a 100%);
-	background: -moz-linear-gradient(90deg, #2a293d 0%, #28273b 100%);
-	background: -webkit-linear-gradient(90deg, #2a293d 0%, #28273b 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A293D", endColorstr="#28273b", GradientType=1 );
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
