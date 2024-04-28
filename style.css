@@ -83,7 +83,7 @@ img {
 	margin-right: auto;
 	max-height:1000px;
 	border-radius: 15px;
-	box-shadow: 0em 0.2em 0.2em 0em black, 0.5;
+	box-shadow: 0em 0em 0.2em 0em black, 0.5;
 }
 
 button {
@@ -129,6 +129,9 @@ a:visited:hover {
 	font-size: smaller;
 	font-style: italic;
 	text-align: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .yt-embd {
@@ -137,17 +140,6 @@ a:visited:hover {
 	margin-left: auto;
 	margin-right: auto;
 	aspect-ratio: 16/9;
-}
-
-.avatar {
-	width: 0.75em;
-	height: 0.75em;
-	margin: 0 0 0 0.25em;
-	display: inline-block;
-	vertical-align: middle;
-	left: revert;
-	border-radius: revert;
-	box-shadow: none;
 }
 
 .row:after {
