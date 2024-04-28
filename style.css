@@ -15,6 +15,7 @@ html {
 	#safari {background-color: #CCC}
 }
  */
+ 
 body {
 	font-family: Helvetica;
 	color: white;
@@ -45,7 +46,7 @@ h1 {
  font-family: "Rubik Scribble", system-ui;
 } 
 
-.blogtitle {
+.pagetitle {
 	margin: 0.2em;
 }
 
