@@ -189,13 +189,3 @@ a:visited:hover {
 	color:black;
 	border-color: black;
 }
-
-.fourohfour a:link, a:active, a:visited {
-	color: rgba(116, 35, 131, 1);
-	text-decoration-color: rgba(116, 35, 131, 0.5);
-}
-
-.fourohfour a:hover {
-	color: rgba(116, 35, 131, 0.75);
-	text-decoration-color: rgba(116, 35, 131, 0.5);
-}
