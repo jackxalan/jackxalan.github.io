@@ -15,10 +15,10 @@ html {
 	background-attachment: fixed;
 }
 
-# @media  and (-webkit-min-device-pixel-ratio:0) {
+/* # @media  and (-webkit-min-device-pixel-ratio:0) {
 	#safari {background-color: #CCC}
 }
-
+ */
 body {
 	font-family: Helvetica;
 	color: white;
@@ -27,7 +27,7 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-	margin: 0 auto 0 auto;
+	margin: 1.5em auto 0 auto;
 }
 
 .fourohfour {
@@ -98,7 +98,7 @@ img {
 	margin-right: auto;
 	max-height:1000px;
 	border-radius: 15px;
-	box-shadow: 0em 0.2em 0.2em 0em black, 0.5);
+	box-shadow: 0em 0.2em 0.2em 0em black, 0.5;
 }
 
 /* unvisited link */
