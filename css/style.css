@@ -130,16 +130,10 @@ button:hover {
 	border-radius: 15px;
 }
 
-.active, .collapsible:hover {
-	background-color: #ccc;
-  }
-
   .content {
 	padding: 0 18px;
 	display: none;
 	overflow: hidden;
-	background-color: #b7e6fc;
-	color: #25243a;
   }
   
 
