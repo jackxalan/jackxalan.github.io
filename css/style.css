@@ -42,6 +42,7 @@ body {
 
   
 h1 {
+	color: #EB7F3D;
  font-family: "Rubik Scribble", system-ui;
 } 
 
@@ -69,18 +70,16 @@ h2 {
 }
 
  h3 {
-		color:  #ACB2BC;
-	opacity: 75%;
+		color:  #b7e6fc;
 	margin: 1em 0 0.5em 0;
 }
 
 h4 {
-			color:  #ACB2BC;
-
+			color:  #b7e6fc;
 }
 
 h5 {
-	color:  #ACB2BC;
+	color:  #b7e6fc;
 	opacity: 75%;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
