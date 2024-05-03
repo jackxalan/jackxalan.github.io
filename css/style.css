@@ -69,11 +69,18 @@ h2 {
 }
 
  h3 {
+		color:  #b7e6fc75;
 	opacity: 75%;
 	margin: 1em 0 0.5em 0;
 }
 
+h4 {
+			color:  #b7e6fc75;
+
+}
+
 h5 {
+	color:  #b7e6fc75;
 	opacity: 75%;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
