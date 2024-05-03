@@ -123,8 +123,12 @@ button:hover {
 	background-color: #9FD67975;
 }
 
+button:hover.collapsible {
+	background-color: #b7e6fc75;
+}
+
 .collapsible {
-	background-color: #b7e6fc50;
+	background-color: ##b7e6fc50;
 	border-color: #b7e6fc;
 	color: #b7e6fc;
 	border-radius: 15px;
