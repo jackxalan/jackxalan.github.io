@@ -16,6 +16,7 @@ html {
 }
  */
  
+ 
 body {
 	font-family: Helvetica;
 	color: white;
@@ -45,6 +46,21 @@ body {
 h1 {
  font-family: "Rubik Scribble", system-ui;
 } 
+
+@font-face { 
+    font-family: "Urayasu"; 
+    src: 
+        url("https://jackcummings.me/fonts/Urayasu.otf")  
+        format('opentype'); 
+    font-weight: bold; 
+    font-style: normal; 
+} 
+
+
+h2, h3, h4, h5 {
+	font-family: "Urayasu", sans-serif;
+	letter-spacing: 0.04em
+}
 
 .pagetitle {
 	margin: 0.2em;
