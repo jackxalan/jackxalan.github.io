@@ -132,6 +132,7 @@ button:hover.collapsible {
 	border-color: #b7e6fc;
 	color: #b7e6fc;
 	border-radius: 15px;
+	white-space: normal;
 }
 
   .content {
