@@ -119,6 +119,7 @@ button:hover {
   ::selection {
 	color: black;
 	background: #dadbc5;
+	box-shadow: rgba(0, 0, 0, 0.2);
   }
 
 /* unvisited link */
