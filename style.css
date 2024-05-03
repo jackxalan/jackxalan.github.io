@@ -2,8 +2,7 @@ html {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	margin: auto;
 	display: flex;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
+	min-height: -webkit-fill-available 100vh;
 	min-width: 40vw;
 	scroll-behavior: smooth;
 	background-color: #25243a;
@@ -27,7 +26,6 @@ body {
 	line-height: 1.5em;
 	margin: 1em auto 1em auto;
 }
-
 /* For mobile phones: */
 body {
 	width: 90vw;
@@ -63,7 +61,7 @@ h2, h3, h4, h5 {
 }
 
 .pagetitle {
-	margin: 0.2em;
+	margin: 0 0.2em 0 0;
 }
 
 h2 {
@@ -112,6 +110,16 @@ button {
 button:hover {
 	background-color: rgba(122, 186, 154, 0.75);
 }
+
+::-moz-selection { /* Code for Firefox */
+	color: black;
+	background: #dadbc5;
+  }
+  
+  ::selection {
+	color: black;
+	background: #dadbc5;
+  }
 
 /* unvisited link */
 a:link {
@@ -213,6 +221,10 @@ h2.onelasttour, h3.onelasttour {
 
 h2.onelasttour {
 	text-align: center;
+}
+
+a:link.onelasttour {
+	color: marooon;
 }
 
 blockquote.onelasttour {
