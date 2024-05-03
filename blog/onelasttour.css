@@ -1,0 +1,85 @@
+html {
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	margin: auto;
+	display: flex;
+	min-height: -webkit-fill-available 100vh;
+	min-width: 40vw;
+	scroll-behavior: smooth;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	color:black;
+}
+
+body {
+	font-family: Helvetica;
+	color: black;
+	font-size: 1.25em;
+	display:table-cell; 
+	vertical-align: middle;
+	height: 100%;
+	line-height: 1.5em;
+	margin: 1em auto 1em auto;
+}
+/* For mobile phones: */
+body {
+	width: 90vw;
+  }
+  
+  @media only screen and (min-width: 600px) {
+	/* For desktop: */
+	body {
+		padding: 2em 0em;
+		min-width: 540px;
+		max-width: 65vw;
+	}
+  }
+
+
+h2, h3 {
+	color: maroon;
+	font-family: Georgia;
+}
+
+h2 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:link {
+	color: maroon;
+}
+
+.endcredits {
+	font-family: sans-serif;
+	font-size: 0.7em;
+	font-weight: lighter;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	}
+
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background: #maroon;
+}
+
+::selection {
+	color: white;
+	background: maroon;
+}
+
+.addressee {
+	font-size: 0.8em;
+	opacity: 75%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-weight: bolder;
+}
