@@ -205,35 +205,6 @@ a:visited:hover {
 	border-color: black;
 }
 
-.onelasttour {
-	background-color: white;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-	color:black;
-}
-
-
-h2.onelasttour, h3.onelasttour {
-	color: maroon;
-	font-family: Georgia;
-}
-
-h2.onelasttour {
-	text-align: center;
-}
-
-a:link.onelasttour {
-	color: marooon;
-}
-
-blockquote.onelasttour {
-	
-	border-left: solid 2px black;
-	background: rgba(0, 0, 0, 0.15);
-	border-radius: 0;
-}
-
 blockquote {
 	background-color: rgba(255, 255, 255, 0.2);
 	padding: 1em;
