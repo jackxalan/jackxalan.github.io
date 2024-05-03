@@ -102,13 +102,13 @@ img {
 }
 
 button {
-	background-color: rgba(122, 186, 154, 0.5);
-	border: 1px solid rgba(122, 186, 154, 1);
+	background-color: #9FD67950;
+	border: 1px solid #9FD679;
 	border-radius: 15px;
 }
 
 button:hover {
-	background-color: rgba(122, 186, 154, 0.75);
+	background-color: #9FD67975;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -124,31 +124,31 @@ button:hover {
 
 /* unvisited link */
 a:link {
-  color: rgba(122, 186, 154, 1);
-  text-decoration-color: rgba(122, 186, 154, 0.5);
+  color: #9FD679;
+  text-decoration-color: #9FD67950;
 }
 
 /* mouse over link */
 a:hover {
-	color: rgba(169, 197, 171, 1);
-	text-decoration-color: rgba(169, 197, 171, 0.5);
+	color: #b7e6fc;
+	text-decoration-color: #b7e6fc50;
 }
 
 /* click on link */
 a:active {
-	color: rgba(197, 170, 196, 1);
-	text-decoration-color: rgba(197, 170, 196, 0.5);
+	color:#EB7F3D;
+	text-decoration-color: #EB7F3D50;
 }
 
 /* visited link */
 a:visited {
-	color:  rgba(122, 186, 154, 1);
-	text-decoration-color: rgba(197, 170, 196, 0.5);
+	color:  #9FD679;
+	text-decoration-color: #EB7F3D50;
 }
 
 a:visited:hover {
-	color: rgba(197, 170, 196, 1);
-	text-decoration-color: rgba(197, 170, 196, 0.5);
+	color: #EB7F3D;
+	text-decoration-color: #EB7F3D50;
 }
 
 .caption {
