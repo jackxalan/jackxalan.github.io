@@ -119,6 +119,8 @@ button.collapsible {
 	color: #b7e6fc;
 	font-size: 0.75em;
 	cursor: pointer;
+	padding: 0;
+	line-height: 0;
 }
 
 button:hover.collapsible {
