@@ -118,7 +118,6 @@ button.collapsible {
 	border-color: #b7e6fc;
 	color: #b7e6fc;
 	border-radius: 15px;
-	font-size: 1em;
 	white-space: normal;
 	text-align: left;
 }
@@ -137,6 +136,7 @@ button {
 	background-color: #9FD67950;
 	border: 1px solid #9FD679;
 	border-radius: 15px;
+	font-size: 1.5em;
 }
 
 button:hover {
