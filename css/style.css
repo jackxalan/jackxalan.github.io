@@ -127,13 +127,14 @@ button:hover.collapsible {
 	background-color: #b7e6fc75;
 }
 
-.collapsible {
+button.collapsible {
 	background-color: ##b7e6fc50;
 	border-color: #b7e6fc;
 	color: #b7e6fc;
 	border-radius: 15px;
-	font-size: 2em;
+	font-size: 1em;
 	white-space: normal;
+	text-align: left;
 }
 
   .content {
