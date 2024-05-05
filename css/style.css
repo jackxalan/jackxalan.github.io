@@ -104,7 +104,6 @@ hr.fourohfour {
 
 img {
 	display: block;
-	margin: auto;
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
@@ -114,16 +113,24 @@ img {
 }
 
 button.collapsible {
-	background-color: #b7e6fc75;
+	width: 100%;
+	text-align: left;
+	padding: 0.4em 0.4em 0.4em 1em;
+	margin: auto auto 0.3em auto;
+	background-color: #b7e6fc25;
 	border-color: #b7e6fc;
 	color: #b7e6fc;
-	font-size: 0.75em;
-	cursor: pointer;
-	line-height: 1.5em;
+	font-size: 1em;
+}
+
+.active {
+	margin: auto auto auto auto;
 }
 
 button:hover.collapsible {
-	background-color: #b7e6fc90;
+	background-color: #b7e6fc75;
+	cursor: pointer;
+	pointer-events: auto;
 }
 
 .content {
@@ -144,12 +151,13 @@ button:hover {
 
 ::-moz-selection { /* Code for Firefox */
 	color: #25243a;
-	background: #EB7F3D;
+	background: #DADBC5;
   }
   
   ::selection {
 	color: #25243a;
-	background: #EB7F3D;
+	background: #DADBC5
+	;
   }
 
 /* unvisited link */
