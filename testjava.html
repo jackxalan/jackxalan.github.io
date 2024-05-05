@@ -1,0 +1,19 @@
+<script>
+// Function to insert a dynamic URL
+function insertDynamicURL(customCharacters) {
+    var baseURL = "http://i.annihil.us/u/prod/marvel/i/mg/";
+    var dynamicURL = baseURL + customCharacters;
+    // You can now use dynamicURL wherever you need it
+    return dynamicURL;
+}
+
+// Function to generate a custom set of characters
+function generateCustomCharacters(customChars) {
+    return customChars;
+}
+
+// Example usage:
+var customChars = "your_custom_characters_here"; // Define your custom characters here
+var dynamicURL = insertDynamicURL(generateCustomCharacters(customChars)); // Insert the custom characters into the URL
+console.log(dynamicURL); // Output the dynamic URL
+</script>
