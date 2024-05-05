@@ -6,40 +6,66 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <link rel="stylesheet"
    href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
  </head>
-<body style ="
-  .mediagrid {
-  
-  }
-  
-  .mediaitem {
-  
-  }
-  ">
+<body>
 	<p>
 		<h1>MEDIA DIET</h1>
-		I am a child and student of pop culture. When I'm at work, I'm 						often discussing my favorite (traditional) art; when I'm at home, I'm generally listening to music, reading comics, or watching my stories on 			TV.<br><br> Here are some of my current favorites:
+		I am a child and student of pop culture. When I'm at work, I'm often discussing my favorite (traditional) art; when I'm at home, I'm generally listening to music, reading comics, or watching my stories on 			TV.<br><br> Here are some of my current favorites:
 		<hr>
 		<h2>Music</h2>
-		<button><a href="https://music.apple.com/profile/indianajack">Follow me on Apple Music</a></button>
+		<button><a class="contactlinks" href="https://music.apple.com/profile/indianajack">Follow me on Apple Music</a></button>
     <div class="mediagrid">
-      <div class="mediaitem"></div>
+      <div class="mediaitem"><img alt="Liberation 2" src="images/media/liberation2.jpg"></div>
+      <div class="mediaitem"><img alt="Cowboy Carter" src="images/media/cowboycarter.png"></div>
+      <div class="mediaitem"><img alt="Hyperdrama" src="images/media/hyperdrama.png"></div>
     </div>
 		<hr>
 		<h2>Comics</h2>
     <div class="mediagrid">
-       <div class="mediaitem"></div>
+       <div class="mediaitem"><img id="comic-cover-call" src="#"></div>
     </div>
 		<hr>
 		<h2>Movies</h2>
-    <a href="https://boxd.it/21YEL">Follow me on Letterboxd</a>
+    <button><a class="contactlinks" href="https://boxd.it/21YEL">Follow me on Letterboxd</a></button>
     <div class="mediagrid">
        <div class="mediaitem"></div>
     </div>
 		<hr>
 		<h2>Television</h2>
-	</p>
+    <hr />
+    <h5 class="endcredits">website by <a href="../index.html">jackxalan</a></h5>
+    <br>
+  </p>
+
+  <script> 
+    // Get the HTML element by its ID 
+    var linkElement = document.getElementById("comic-cover-call"); 
+     
+    // Generate the dynamic URL based on your logic or data 
+    var dynamicURL = "http://i.annihil.us/u/prod/marvel/i/mg/" + generateDynamicValue(); 
+     
+    // Set the href attribute of the link element to the dynamic URL 
+    linkElement.href = dynamicURL; 
+
+    // Function to insert a dynamic URL
+function insertDynamicURL(customCharacters) {
+    var baseURL = "http://i.annihil.us/u/prod/marvel/i/mg/";
+    var dynamicURL = baseURL + customCharacters;
+    // You can now use dynamicURL wherever you need it
+    return dynamicURL;
+}
+
+  // Function to generate a custom set of characters
+  function generateCustomCharacters(customChars) {
+      return customChars;
+  }
+
+  // Example usage:
+  var customChars = "your_custom_characters_here"; // Define your custom characters here
+  var dynamicURL = insertDynamicURL(generateCustomCharacters(customChars)); // Insert the custom characters into the URL
+  console.log(dynamicURL); // Output the dynamic URL
+  </script> 
 </body>
 </html>

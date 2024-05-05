@@ -252,9 +252,20 @@ blockquote {
 }
 
 .endcredits {
-font-family: sans-serif;
-font-size: 0.7em;
-font-weight: lighter;
-margin: 0px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
+	font-family: sans-serif;
+	font-size: 0.7em;
+	font-weight: lighter;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.mediagrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 10px 0 10px 0;
+}
+	
+.mediaitem {
+	border-radius: 15px;
+	margin: 10px;
 }
