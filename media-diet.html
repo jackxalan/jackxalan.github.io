@@ -40,16 +40,7 @@
   </p>
 
   <script> 
-    // Get the HTML element by its ID 
-    var linkElement = document.getElementById("comic-cover-call"); 
-     
-    // Generate the dynamic URL based on your logic or data 
-    var dynamicURL = "http://i.annihil.us/u/prod/marvel/i/mg/" + generateDynamicValue(); 
-     
-    // Set the href attribute of the link element to the dynamic URL 
-    linkElement.href = dynamicURL; 
-
-    // Function to insert a dynamic URL
+   // Function to insert a dynamic URL
 function insertDynamicURL(customCharacters) {
     var baseURL = "http://i.annihil.us/u/prod/marvel/i/mg/";
     var dynamicURL = baseURL + customCharacters;
@@ -57,15 +48,19 @@ function insertDynamicURL(customCharacters) {
     return dynamicURL;
 }
 
-  // Function to generate a custom set of characters
-  function generateCustomCharacters(customChars) {
-      return customChars;
-  }
+// Function to generate a custom set of characters
+function generateCustomCharacters(customCharsArray) {
+    var customChars = "";
+    customCharsArray.forEach(function(chars) {
+        customChars += chars;
+    });
+    return customChars;
+}
 
-  // Example usage:
-  var customChars = "your_custom_characters_here"; // Define your custom characters here
-  var dynamicURL = insertDynamicURL(generateCustomCharacters(customChars)); // Insert the custom characters into the URL
-  console.log(dynamicURL); // Output the dynamic URL
+// Example usage:
+var customCharsArray = ["set1_custom_characters", "set2_custom_characters", "set3_custom_characters"]; // Define your custom characters sets here
+var dynamicURL = insertDynamicURL(generateCustomCharacters(customCharsArray)); // Insert the custom characters into the URL
+console.log(dynamicURL); // Output the dynamic URL
   </script> 
 </body>
 </html>
