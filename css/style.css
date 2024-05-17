@@ -24,14 +24,10 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-	margin: 1em auto 1em auto;
+width: 100vw;
 }
-/* For mobile phones: */
-body {
-	width: 100vw;
-  }
 		
-		p {
+	p {
 			width: 90vw;
 			}
   
