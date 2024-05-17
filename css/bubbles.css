@@ -22,19 +22,29 @@
       clear: both;
     }
 
-    .avatar {
-      min-width: 30px;
-      width: 30px;
-      height: 30px;
+    .largeavatar {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
       background-color: #EB7F3D;
-      margin-bottom: 3px;
+      margin: auto auto 20px auto;
     }
 
+    .avatar {
+        min-width: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        background-color: #EB7F3D;
+        margin-bottom: 3px;
+      }
+
     .avimage {
-        height: 23px; 
+        height: 75%; 
         width: auto; 
         position: absolute; 
         top: 50%; 

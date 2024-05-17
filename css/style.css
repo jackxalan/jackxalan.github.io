@@ -36,7 +36,7 @@ body {
 	body {
 		padding: 2em 0em;
 		min-width: 540px;
-		max-width: 65vw;
+		max-width: 50vw;
 	}
   }
 
@@ -44,14 +44,12 @@ body {
 h1 {	
  font-family: "Rubik Scribble", system-ui;
  margin: 0 0.2em 0 0;
-	vertical-align: middle;
 } 
 
-h1.withav {
-	line-height: 1.001em;
-	padding-left: 1.3em;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
+h1.homepage {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 @font-face { 
