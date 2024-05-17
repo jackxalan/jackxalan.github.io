@@ -93,7 +93,13 @@
         float: right;
       }
     
-    .conversation-wrapper {
+    .left-conversation-wrapper {
     display: flex;
     flex-direction: column;
+    }
+    
+    .right-conversation-wrapper {
+    display: flex;
+    flex-direction: column;
+    float: right;
     }
