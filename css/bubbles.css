@@ -95,9 +95,11 @@
     
     .left-conversation-wrapper {
     display: block;
+    width: 90vw;
     }
     
     .right-conversation-wrapper {
     display: block;
+    width: 90vw;
     float: right;
     }
