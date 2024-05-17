@@ -42,8 +42,12 @@ body {
 
   
 h1 {
-	color: #EB7F3D;
+	line-height: 1.001em;
+	color: white;
  font-family: "Rubik Scribble", system-ui;
+  padding-left: 1.3em;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 } 
 
 @font-face { 
@@ -63,6 +67,7 @@ h2, h3, h4, h5 {
 
 .pagetitle {
 	margin: 0 0.2em 0 0;
+	vertical-align: middle;
 }
 
 h2 {
@@ -95,11 +100,6 @@ hr {
 	opacity: 50%;
 	box-shadow: none;
 	margin: 15px 0 15px 0;
-}
-
-hr.fourohfour {
-	border: 1px solid black 0.2;
-	box-shadow: none;
 }
 
 img {
@@ -218,6 +218,7 @@ a:visited:hover {
 	width: 33.33%;
 	text-align: center;
 	margin-top: 0.5em;
+	margin-bottom: 5px;
   }
 
 .contactlinks {
@@ -233,17 +234,7 @@ a:visited:hover {
 	text-decoration: none;
 }
 
-.fourohfour {
-	background-color: #ffe243;
-	background-image: url(../images/404-giraffe.png);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 30%;
-	background-attachment: fixed;
 
-	color:black;
-	border-color: black;
-}
 
 blockquote {
 	background-color: rgba(255, 255, 255, 0.2);

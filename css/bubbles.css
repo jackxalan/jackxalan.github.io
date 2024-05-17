@@ -1,0 +1,55 @@
+
+    .bubble {
+      position: relative;
+      background-color: #3B4054;
+      padding: 10px 15px 10px 15px;
+      border-radius: 15px;
+      margin: 10px 10px 10px 10px;
+    }
+
+    .bubble.left::before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0px; /* Adjust the position of the arrow */
+      border: 10px solid transparent;
+      border-top-color: #3B4054;
+      border-left-color: #3B4054; /* Adjust the color of the arrow */
+      rotate: 30deg;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .avatar {
+      min-width: 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      background-color: #EB7F3D;
+      margin-bottom: 3px;
+    }
+
+    .avimage {
+        height: 23px; 
+        width: auto; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);  
+    }
+
+    /* Just for demonstration purpose */
+    .message-container {
+      display: flex;
+      flex-direction:row;
+      align-items: flex-start;
+    }
+
+    .bubble-wrapper {
+      display: flex;
+      align-items:end;
+    }

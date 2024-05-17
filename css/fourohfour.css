@@ -1,0 +1,21 @@
+.fourohfour {
+	background-color: #ffe243;
+	background-image: url(../images/404-giraffe.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 30%;
+	background-attachment: fixed;
+
+	color:black;
+	border-color: black;
+}
+
+hr.fourohfour {
+	border: 1px solid black 0.2;
+	box-shadow: none;
+}
+
+h1 {
+  padding-left: 0;
+  color: black;
+}

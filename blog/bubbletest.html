@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Bubbles</title>
+  <style>
+    .bubble-container {
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .bubble {
+      position: relative;
+      background-color: #e6e6e6;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 10px 10px 10px 10px;
+      color: black;
+    }
+
+    .bubble.left::before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0px; /* Adjust the position of the arrow */
+      border: 10px solid transparent;
+      border-top-color: #e6e6e6;
+      border-left-color: #e6e6e6; /* Adjust the color of the arrow */
+      rotate: 30deg;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .avatar {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-bottom: 3px;
+    }
+
+  
+
+    .bubble-wrapper {
+      display: flex;
+      align-items:end;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="bubble-container">
+        <div class="message-container">
+          <div class="bubble-wrapper">
+            <div class="avatar"></div>
+            <div class="bubble left">👋 Hi, I'm Jack.</div>
+          </div>
+          <div class="bubble-wrapper">
+            <div class="avatar"></div>
+            <div class="bubble left">👤 I’ve lived in three corners of the continental US;
+                I’ve accidentally collected a couple of the biggest names in entertainment
+                on my <a href="resume">résumé</a>; and I’m here to <a href="media-diet">devour pop culture</a>.</div>
+          </div>
+          <div class="bubble-wrapper">
+            <div class="avatar"></div>
+            <div class="bubble left">🌐 This site is home to my <a href="blog">blog</a> and some random <a href="projects">projects</a> I've done over the years.</div>
+          </div>
+          <div class="bubble-wrapper">
+            <div class="avatar" style="background-color: #007bff;"></div>
+            <div class="bubble right">What about you?</div>
+          </div>
+          <div class="bubble-wrapper">
+            <div class="avatar"></div>
+            <div class="bubble left">I'm great too!</div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+</body>
+</html>
