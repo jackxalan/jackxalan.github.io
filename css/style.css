@@ -24,11 +24,12 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-width: 100vw;
+width: 100%;
+margin: 0;
 }
 		
 	p {
-			width: 90vw;
+			width: 90%;
 			}
   
   @media only screen and (min-width: 600px) {
