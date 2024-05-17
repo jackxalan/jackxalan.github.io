@@ -28,13 +28,16 @@ body {
 }
 /* For mobile phones: */
 body {
-	width: 90vw;
+	width: 100vw;
   }
+		
+		p {
+			width: 90vw;
+			}
   
   @media only screen and (min-width: 600px) {
 	/* For desktop: */
-	body {
-		padding: 2em 0em;
+	p {
 		min-width: 540px;
 		max-width: 50vw;
 	}
