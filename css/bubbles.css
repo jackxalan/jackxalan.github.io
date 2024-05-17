@@ -2,9 +2,16 @@
     .bubble {
       position: relative;
       background-color: #3B4054;
-      padding: 10px 15px 10px 15px;
+      padding: 10px;
       border-radius: 15px;
-      margin: 10px 10px 10px 10px;
+      margin: 10px 0 10px 10px;
+    }
+
+    .bubble.right {
+        background-color: #EB7F3D25;
+        color: #EB7F3D;
+        border: 1px solid ;
+        margin: 10px 10px 10px 0;
     }
 
     .bubble.left::before {
@@ -18,18 +25,11 @@
       rotate: 30deg;
     }
 
-    .bubble.right::before {
-        content: '';
-        position: absolute;
-        bottom: -12px;
-        right: 0px; /* Adjust the position of the arrow */
-        border: 10px solid transparent;
-        border-top-color: #3B4054;
-        border-left-color: #3B4054; /* Adjust the color of the arrow */
-        rotate: -30deg;
-        transform: scaleX(-1);
-      }
+  .contact {
+    text-decoration: none;
+  }
 
+   
     .clear {
       clear: both;
     }
@@ -40,7 +40,6 @@
       border-radius: 50%;
       overflow: hidden;
       position: relative;
-      background-color: #EB7F3D;
       margin: auto auto 20px auto;
     }
 
@@ -51,7 +50,6 @@
         border-radius: 50%;
         overflow: hidden;
         position: relative;
-        background-color: #EB7F3D;
         margin-bottom: 3px;
       }
 
