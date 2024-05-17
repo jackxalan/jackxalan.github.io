@@ -28,7 +28,7 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-width: 100%;
+width: 100vw;
 width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     width: fill-available;
@@ -36,7 +36,7 @@ margin: 0;
 }
 		
 	p {
-			width: 90%;
+			width: 90vw;
 			margin: auto;
 			}
   
