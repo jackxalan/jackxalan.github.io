@@ -94,12 +94,10 @@
       }
     
     .left-conversation-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: block;
     }
     
     .right-conversation-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: block;
     float: right;
     }
