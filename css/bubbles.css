@@ -18,6 +18,18 @@
       rotate: 30deg;
     }
 
+    .bubble.right::before {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        right: 0px; /* Adjust the position of the arrow */
+        border: 10px solid transparent;
+        border-top-color: #3B4054;
+        border-left-color: #3B4054; /* Adjust the color of the arrow */
+        rotate: -30deg;
+        transform: scaleX(-1);
+      }
+
     .clear {
       clear: both;
     }
@@ -43,6 +55,19 @@
         margin-bottom: 3px;
       }
 
+      .useravatar {
+        min-width: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        background-color: #b7e6fc;
+        margin-bottom: 3px;
+        text-align: center;
+      }
+
+
     .avimage {
         height: 75%; 
         width: auto; 
@@ -63,3 +88,9 @@
       display: flex;
       align-items:end;
     }
+
+    .right-bubble-wrapper {
+        display: flex;
+        align-items:end;
+        float: right;
+      }
