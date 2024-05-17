@@ -41,14 +41,18 @@ body {
   }
 
   
-h1 {
-	line-height: 1.001em;
-	color: white;
+h1 {	
  font-family: "Rubik Scribble", system-ui;
-  padding-left: 1.3em;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+ margin: 0 0.2em 0 0;
+	vertical-align: middle;
 } 
+
+h1.withav {
+	line-height: 1.001em;
+	padding-left: 1.3em;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
 
 @font-face { 
     font-family: "Urayasu"; 
@@ -65,10 +69,6 @@ h2, h3, h4, h5 {
 	letter-spacing: 0.05em
 }
 
-.pagetitle {
-	margin: 0 0.2em 0 0;
-	vertical-align: middle;
-}
 
 h2 {
 	color:  #b7e6fc;
