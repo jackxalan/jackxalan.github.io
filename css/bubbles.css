@@ -96,11 +96,15 @@
       }
     
     .left-conversation-wrapper {
-    display: block;
+ display: flex;
+      flex-direction:row;
+      align-items: flex-start;
     }
     
     .right-conversation-wrapper {
-    display: block;
+ display: flex;
+      flex-direction:row;
+      align-items: flex-start;
     float: right;
     }
     
