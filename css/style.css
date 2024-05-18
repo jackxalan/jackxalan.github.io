@@ -168,13 +168,13 @@ button:hover.collapsible {
 }
 
 button {
-	background-color: #9FD67950;
-	border: 1px solid #9FD679;
+	background-color: #72EA8450;
+	border: 1px solid #72EA84;
 	border-radius: 15px;
 }
 
 button:hover {
-	background-color: #9FD67975;
+	background-color: #72EA8475;
 }
 
 ::-moz-selection {
@@ -190,8 +190,8 @@ button:hover {
 
 /* unvisited link */
 a:link {
-	color: #9FD679;
-	text-decoration-color: #9FD67950;
+	color: #72EA84;
+	text-decoration-color: #72EA8450;
 }
 
 /* mouse over link */
@@ -208,7 +208,7 @@ a:active {
 
 /* visited link */
 a:visited {
-	color: #9FD679;
+	color: #72EA84;
 	text-decoration-color: #EB7F3D50;
 }
 
