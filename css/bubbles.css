@@ -44,7 +44,6 @@
   border-left-color: #183F88;
   /* Adjust the color of the arrow */
   rotate: 30deg;
-  box-shadow: 0px 10px 15px #020a22;
   z-index: 9;
 }
 
