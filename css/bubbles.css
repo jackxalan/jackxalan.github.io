@@ -101,3 +101,15 @@
     display: block;
     float: right;
     }
+    
+    .homepage-header {
+    background-color: #EB7F3D50; 
+    border-bottom: 1px solid #EB7F3D; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    width: 100%
+    }
+    
+    .homepage-footer {
+        
+    }
