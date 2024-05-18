@@ -122,6 +122,31 @@
       });
     }
   </script>
+
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      document.getElementById("header").style.fontSize = "1.2em";
+      document.getElementById("largeavatar").style.width = "60px"
+      document.getElementById("largeavatar").style.height = "60px"
+      document.getElementById("header").style.margin = "0 auto";
+      document.getElementById("largeavatar").style.margin = "0 auto";
+      document.getElementById("page-header").style.padding = "10px"
+    } else {
+      document.getElementById("header").style.fontSize = "2em";
+      document.getElementById("largeavatar").style.width = "100px"
+      document.getElementById("largeavatar").style.height = "100px"
+      document.getElementById("header").style.margin = "0 auto";
+      document.getElementById("largeavatar").style.margin = "10px auto 15px auto";
+      document.getElementById("page-header").scale = "1";
+      document.getElementById("page-header").style.padding = "15px"
+    }
+  }
+  </script>
+  </body>
 </body>
 
 </html>
