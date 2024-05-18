@@ -76,8 +76,16 @@ body {
 	width: -webkit-fill-available;
 	width: fill-available;
 	max-width: 100%;
-	z-index: 9;
+	z-index: 10;
 	box-shadow: 0px 7px 15px #020a22;
+	align-items: center;
+
+	position: fixed;
+	transition-duration: 0.2s;
+	transition-property: height;
+display: flex;
+flex-direction: column;
+overflow: auto;
 }
 
 .page-footer {
@@ -102,12 +110,15 @@ body {
 	position: relative;
 	z-index: 10;
 	margin: 10px auto 15px auto;
-	box-shadow: 0px 5px 10px #071b41;
+	transition-property: width, height;
+	transition-duration: 0.2s;
+	box-shadow: none;
 }
 
 h1 {
 	font-family: "Rubik Scribble", system-ui;
 	margin: 0 0.2em 0 0;
+	transition: 0.2s;
 }
 
 .homepage {

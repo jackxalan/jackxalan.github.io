@@ -18,9 +18,9 @@
 
 <body>
 
-  <div class="page-header">
-    <img src="images/looneyavatar.png" class="largeavatar">
-    <h1 class="homepage">JACKxALAN</h1>
+  <div class="page-header" id="page-header">
+    <img src="images/looneyavatar.png" class="largeavatar" id="largeavatar">
+    <h1 class="homepage" id="header">JACKxALAN</h1>
   </div>
   <div class="homepagecontent">
     <p>
@@ -70,6 +70,30 @@
   <div class="page-footer">
     <h5 class="endcredits">website by <a href="../index.html">jackxalan</a></h5>
   </div>
-</body>
 
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "1.2em";
+    document.getElementById("largeavatar").style.width = "60px"
+    document.getElementById("largeavatar").style.height = "60px"
+    document.getElementById("header").style.margin = "0 auto";
+    document.getElementById("largeavatar").style.margin = "0 auto";
+  } else {
+    document.getElementById("header").style.fontSize = "2em";
+    document.getElementById("largeavatar").style.width = "100px"
+    document.getElementById("largeavatar").style.height = "100px"
+    document.getElementById("page-header").style.flexDirection = "column";
+    document.getElementById("header").style.margin = "0 auto";
+    document.getElementById("largeavatar").style.margin = "10px auto 15px auto";
+  }
+}
+
+</script>
+
+
+</body>
 </html>
