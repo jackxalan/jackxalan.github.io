@@ -79,13 +79,12 @@ body {
 	z-index: 10;
 	box-shadow: 0px 7px 15px #020a22;
 	align-items: center;
-
 	position: fixed;
 	transition-duration: 0.2s;
 	transition-property: height;
-display: flex;
-flex-direction: column;
-overflow: auto;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
 }
 
 .page-footer {
@@ -110,15 +109,14 @@ overflow: auto;
 	position: relative;
 	z-index: 10;
 	margin: 10px auto 15px auto;
-	transition-property: width, height;
-	transition-duration: 0.2s;
+	transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
 	box-shadow: none;
 }
 
 h1 {
 	font-family: "Rubik Scribble", system-ui;
 	margin: 0 0.2em 0 0;
-	transition: 0.2s;
+	transition: font-size 0.3s ease;
 }
 
 .homepage {
@@ -186,7 +184,7 @@ img {
 	border-radius: 15px;
 	z-index: 10;
 	box-shadow: 0px 10px 15px #04112e;
-	
+
 }
 
 button.collapsible {
