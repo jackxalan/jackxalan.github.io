@@ -12,6 +12,7 @@
         color: #EB7F3D;
         border: 1px solid ;
         margin: 10px 10px 10px 0;
+        float: right;
     }
 
     .bubble.left::before {
