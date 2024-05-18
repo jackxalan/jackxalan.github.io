@@ -107,7 +107,12 @@
     border-bottom: 1px solid #EB7F3D; 
     padding: 15px; 
     margin-bottom: 10px; 
-    width: 100%
+	width: 100vw;
+	
+	width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+				max-width: 100%;
     }
     
     .homepage-footer {
@@ -115,5 +120,10 @@
         border-top: 1px solid #EB7F3D; 
         padding: 10px; 
         margin-top: 10px; 
-        width: 100%;
+	width: 100vw;
+	
+	width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+				max-width: 100%;
     }
