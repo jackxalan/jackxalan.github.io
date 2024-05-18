@@ -66,6 +66,16 @@ body {
 	}
 }
 
+@media only screen and (min-width: 600px) and (min-height: 675px) {
+
+	.page-footer {
+		position: absolute;
+		bottom: 0;
+
+	}
+
+}
+
 .page-header {
 	background-color: #0f2c63;
 	border-bottom: 1px solid #C84824;
@@ -77,9 +87,9 @@ body {
 	max-width: 100%;
 	z-index: 9;
 	box-shadow: 0px 7px 15px #020a22;
-  }
-  
-  .page-footer {
+}
+
+.page-footer {
 	background-color: #0f2c63;
 	border-top: 1px solid #C84824;
 	padding: 10px 10px 10px 20px;
@@ -91,9 +101,9 @@ body {
 	max-width: 100%;
 	z-index: 9;
 	box-shadow: 0px -7px 15px #020a22;
-  }
+}
 
-  .largeavatar {
+.largeavatar {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -102,7 +112,7 @@ body {
 	z-index: 10;
 	margin: 10px auto 15px auto;
 	box-shadow: 0px 5px 10px #071b41;
-  }
+}
 
 h1 {
 	font-family: "Rubik Scribble", system-ui;
