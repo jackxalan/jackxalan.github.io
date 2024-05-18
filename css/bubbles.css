@@ -1,17 +1,37 @@
+.homepagecontent {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .homepagecontent {
+    min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+  }
+}
+
 .bubble {
   position: relative;
-  background-color: #3B4054;
+  background-color: #183F88;
   padding: 10px;
   border-radius: 15px;
-  margin: 5px 0 10px 5px;
+  margin: 5px 0 5px 5px;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 9;
 }
 
 .bubble.right {
-  background-color: #C8482425;
+  position: relative;
+  background-color: #C8482450;
   color: #C84824;
   border: 1px solid;
-  margin: 10px 10px 10px 0;
+  margin: 5px 5px 5px 0;
   float: right;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 9;
+  line-clamp: 1;
+  text-align: right;
 }
 
 .bubble.left::before {
@@ -21,10 +41,12 @@
   left: 0px;
   /* Adjust the position of the arrow */
   border: 10px solid transparent;
-  border-top-color: #3B4054;
-  border-left-color: #3B4054;
+  border-top-color: #183F88;
+  border-left-color: #183F88;
   /* Adjust the color of the arrow */
   rotate: 30deg;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 9;
 }
 
 .contact {
@@ -42,7 +64,9 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin: auto auto 10px auto;
+  z-index: 10;
+  margin: 10px auto 15px auto;
+  box-shadow: 0px 5px 10px #071b41;
 }
 
 .avatar {
@@ -53,6 +77,8 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 3px;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 8;
 }
 
 .useravatar {
@@ -62,10 +88,12 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background-color: #C84824;
+  background-color: #b7e6fc;
   margin-bottom: 3px;
   text-align: center;
   float: right;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 8;
 }
 
 
@@ -93,7 +121,6 @@
 .right-bubble-wrapper {
   display: flex;
   align-items: end;
-  float: right;
 }
 
 .left-conversation-wrapper {
@@ -112,31 +139,25 @@
   background-color: #0f2c63;
   border-bottom: 1px solid #C84824;
   padding: 15px;
-  margin-bottom: 10px;
   width: 100vw;
-
   width: -moz-available;
-  /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
   max-width: 100%;
+  z-index: 9;
+  box-shadow: 0px 10px 15px #020a22;
 }
 
 .homepage-footer {
-  height: 100%;
   background-color: #0f2c63;
   border-top: 1px solid #C84824;
   padding: 10px 10px 10px 20px;
   margin-top: 10px;
-
   width: 100vw;
-
   width: -moz-available;
-  /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
   max-width: 100%;
-
+  z-index: 9;
+  box-shadow: 0px -10px 15px #020a22;
 }
