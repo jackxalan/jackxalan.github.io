@@ -119,7 +119,7 @@ h1 {
 	margin: 0 0.2em 0 0;
 }
 
-h1.homepage {
+.homepage {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
