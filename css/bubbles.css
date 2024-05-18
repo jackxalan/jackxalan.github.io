@@ -33,6 +33,18 @@
   text-align: right;
 }
 
+.bubble.image {
+  position: relative;
+  left: 0;
+  width: 66%;
+  height: auto;
+  padding:0;
+  border-radius: 15px;
+  margin: 5px 0 5px 7px;
+  box-shadow: 0px 10px 15px #020a22;
+  z-index: 9;
+}
+
 .bubble.left::before {
   content: '';
   position: absolute;
