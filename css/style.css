@@ -1,63 +1,74 @@
 html {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	display: flex;
+	height: 100%;
 	min-height: -webkit-fill-available 100vh;
 	min-width: 40vw;
 	scroll-behavior: smooth;
-	background-color: #25243a;
+	background-color: #071b41;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100vw;
-	
-	width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
-				max-width: 100%;
-				margin: 0 auto;
+
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 /* # @media  and (-webkit-min-device-pixel-ratio:0) {
 	#safari {background-color: #CCC}
 }
  */
- 
- 
+
+
 body {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	color: white;
 	font-size: 1.25em;
-	display:table-cell; 
+	display: table-cell;
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-width: 100vw;
-max-width: 100%;
-width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
-margin: 0 auto;
+	width: 100vw;
+	max-width: 100%;
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	margin: 0 auto;
 }
-		
+
 .bodycontent {
-			width: 90vw;
-			margin: 0 auto;
-			background-color: #25243a50
-			}
-  
-  @media only screen and (min-width: 600px) {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+
 	/* For desktop: */
-.bodycontent {
+	.bodycontent {
 		min-width: 540px;
 		max-width: 50vw;
 		margin: 0 auto;
 	}
-  }
 
-  
-h1 {	
- font-family: "Rubik Scribble", system-ui;
- margin: 0 0.2em 0 0;
-} 
+	.endcredits {
+		min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+}
+
+
+h1 {
+	font-family: "Rubik Scribble", system-ui;
+	margin: 0 0.2em 0 0;
+}
 
 h1.homepage {
 	margin-left: auto;
@@ -65,33 +76,35 @@ h1.homepage {
 	text-align: center;
 }
 
-@font-face { 
-    font-family: "Urayasu"; 
-    src: 
-        url("https://jackcummings.me/fonts/Urayasu.otf")  
-        format('opentype'); 
-    font-weight: bold; 
-    font-style: normal; 
-} 
+@font-face {
+	font-family: "Urayasu";
+	src:
+		url("https://jackcummings.me/fonts/Urayasu.otf") format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
 
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
 	font-family: "Urayasu", sans-serif;
 	letter-spacing: 0.05em
 }
 
 
 h2 {
-	color:  #b7e6fc;
+	color: #b7e6fc;
 }
 
- h3 {
-		color:  #b7e6fc;
+h3 {
+	color: #b7e6fc;
 	margin: 1em 0 0.5em 0;
 }
 
 h4 {
-			color:  #b7e6fc;
+	color: #b7e6fc;
 }
 
 h4.resume {
@@ -100,14 +113,14 @@ h4.resume {
 }
 
 h5 {
-	color:  #b7e6fc;
+	color: #b7e6fc;
 	opacity: 75%;
-	margin: 0 0 0 0;
+	margin: 0;
 	padding: 0 0 0 0;
 }
 
 hr {
-	border: 1px solid #EB7F3D;
+	border: 1px solid #C84824;
 	opacity: 50%;
 	box-shadow: none;
 	margin: 15px 0 15px 0;
@@ -118,7 +131,7 @@ img {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	max-height:1000px;
+	max-height: 1000px;
 	border-radius: 15px;
 	box-shadow: 0em 0em 0.2em 0em black, 0.5;
 }
@@ -146,9 +159,9 @@ button:hover.collapsible {
 
 .content {
 	padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 button {
@@ -159,23 +172,23 @@ button {
 
 button:hover {
 	background-color: #9FD67975;
-} 
+}
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+	/* Code for Firefox */
 	color: #25243a;
 	background: #DADBC5;
-  }
-  
-  ::selection {
+}
+
+::selection {
 	color: #25243a;
-	background: #DADBC5
-	;
-  }
+	background: #DADBC5;
+}
 
 /* unvisited link */
 a:link {
-  color: #9FD679;
-  text-decoration-color: #9FD67950;
+	color: #9FD679;
+	text-decoration-color: #9FD67950;
 }
 
 /* mouse over link */
@@ -186,13 +199,13 @@ a:hover {
 
 /* click on link */
 a:active {
-	color:#EB7F3D;
+	color: #EB7F3D;
 	text-decoration-color: #EB7F3D50;
 }
 
 /* visited link */
 a:visited {
-	color:  #9FD679;
+	color: #9FD679;
 	text-decoration-color: #EB7F3D50;
 }
 
@@ -222,15 +235,15 @@ a:visited:hover {
 	content: "";
 	display: table;
 	clear: both;
-  }
+}
 
-  .column {
+.column {
 	float: left;
 	width: 33.33%;
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 5px;
-  }
+}
 
 .contactlinks {
 	text-decoration: none;
@@ -257,7 +270,8 @@ blockquote {
 	font-family: sans-serif;
 	font-size: 0.7em;
 	font-weight: lighter;
-	margin: 0px 0px 0px 0px;
+	width: 90vw;
+	margin: 0 auto;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -266,7 +280,7 @@ blockquote {
 	grid-template-columns: auto auto auto;
 	margin: 10px 0 10px 0;
 }
-	
+
 .mediaitem {
 	border-radius: 15px;
 	margin: 10px;

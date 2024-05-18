@@ -1,136 +1,142 @@
+.bubble {
+  position: relative;
+  background-color: #3B4054;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px 0 10px 5px;
+}
 
-    .bubble {
-      position: relative;
-      background-color: #3B4054;
-      padding: 10px;
-      border-radius: 15px;
-      margin: 5px 0 10px 5px;
-    }
+.bubble.right {
+  background-color: #C8482425;
+  color: #C84824;
+  border: 1px solid;
+  margin: 10px 10px 10px 0;
+  float: right;
+}
 
-    .bubble.right {
-        background-color: #EB7F3D25;
-        color: #EB7F3D;
-        border: 1px solid ;
-        margin: 10px 10px 10px 0;
-        float: right;
-    }
+.bubble.left::before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+  /* Adjust the position of the arrow */
+  border: 10px solid transparent;
+  border-top-color: #3B4054;
+  border-left-color: #3B4054;
+  /* Adjust the color of the arrow */
+  rotate: 30deg;
+}
 
-    .bubble.left::before {
-      content: '';
-      position: absolute;
-      bottom: -12px;
-      left: 0px; /* Adjust the position of the arrow */
-      border: 10px solid transparent;
-      border-top-color: #3B4054;
-      border-left-color: #3B4054; /* Adjust the color of the arrow */
-      rotate: 30deg;
-    }
-
-  .contact {
-    text-decoration: none;
-  }
-
-   
-    .clear {
-      clear: both;
-    }
-
-    .largeavatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      overflow: hidden;
-      position: relative;
-      margin: auto auto 10px auto;
-    }
-
-    .avatar {
-        min-width: 30px;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 3px;
-      }
-
-      .useravatar {
-        min-width: 30px;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-        background-color: #b7e6fc;
-        margin-bottom: 3px;
-        text-align: center;
-        float: right;
-      }
+.contact {
+  text-decoration: none;
+}
 
 
-    .avimage {
-        height: 75%; 
-        width: auto; 
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%);  
-    }
+.clear {
+  clear: both;
+}
 
-    /* Just for demonstration purpose */
-    .message-container {
-      display: flex;
-      flex-direction:row;
-      align-items: flex-start;
-    }
+.largeavatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: auto auto 10px auto;
+}
 
-    .bubble-wrapper {
-      display: flex;
-      align-items:end;
-    }
+.avatar {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3px;
+}
 
-    .right-bubble-wrapper {
-        display: flex;
-        align-items:end;
-        float: right;
-      }
-    
-    .left-conversation-wrapper {
- display: flex;
-      flex-direction:row;
-      align-items: flex-start;
-    }
-    
-    .right-conversation-wrapper {
- display: flex;
-      flex-direction:row;
-      align-items: flex-start;
-    float: right;
-    }
-    
-    .homepage-header {
-    background-color: #25243a; 
-    border-bottom: 1px solid #EB7F3D; 
-    padding: 15px; 
-    margin-bottom: 10px; 
-	width: 100vw;
-	
-	width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
-				max-width: 100%;
-    }
-    
-    .homepage-footer {
-        background-color: #25243a; 
-        border-top: 1px solid #EB7F3D; 
-        padding: 10px 10px 10px 20px; 
-        margin-top: 10px; 
-	width: 100vw;
-	
-	width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
-				max-width: 100%;
-                 
-    }
+.useravatar {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: #b7e6fc;
+  margin-bottom: 3px;
+  text-align: center;
+  float: right;
+}
+
+
+.avimage {
+  height: 75%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Just for demonstration purpose */
+.message-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.bubble-wrapper {
+  display: flex;
+  align-items: end;
+}
+
+.right-bubble-wrapper {
+  display: flex;
+  align-items: end;
+  float: right;
+}
+
+.left-conversation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-conversation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.homepage-header {
+  background-color: #0f2c63;
+  border-bottom: 1px solid #C84824;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 100vw;
+
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  max-width: 100%;
+}
+
+.homepage-footer {
+  height: 100%;
+  background-color: #0f2c63;
+  border-top: 1px solid #C84824;
+  padding: 10px 10px 10px 20px;
+  margin-top: 10px;
+
+  width: 100vw;
+
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  max-width: 100%;
+
+}
