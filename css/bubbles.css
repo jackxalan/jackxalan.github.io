@@ -111,5 +111,9 @@
     }
     
     .homepage-footer {
-        
+        background-color: #EB7F3D50; 
+        border-top: 1px solid #EB7F3D; 
+        padding: 10px; 
+        margin-top: 10px; 
+        width: 100%;
     }
