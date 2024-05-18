@@ -128,6 +128,5 @@
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     width: fill-available;
 				max-width: 100%;
-                   position: absolute;
-            bottom: 0px;
+                 
     }
