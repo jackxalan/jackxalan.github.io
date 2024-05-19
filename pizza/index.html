@@ -20,6 +20,8 @@
         <h5 class="endcredits"><a href="../index.html">jackxalan</a>/pizza</h5>
         <img class="pizza-logo" alt="The Slice Shop logo" src="../images/slice-shop-logo.PNG">
     </div>
+    <div class="awning-top"></div>
+    <div class="awning-bottom">THE SLICE SHOP</div>
     <div class="bodycontent">
         <p>
             Over time, I've become known amongst friends and colleagues for my deep, obsessive love of pizza; and across the country I've made an effort to attempt to find gems in the form of pizzerias in every city and state I've freqented.<br><br>
@@ -27,7 +29,16 @@
             <br><small>(And I'm only an <a href="mailto:hi@jackcummings.me">email</a> away for pizza advice!)</small>
         </p>
         <hr>
-        <h2>California</h2>
+        
+            <h5 class="endcredits">jump to state (by first letter)</h5>
+            
+    
+            <div class="statelinks">
+             <button><a class="state-link" href="#California">C</a></button> <span class="separator">|</span> <button><a class="state-link" href="F#lorida">F</a></button> <span class="separator">|</span> <button><a class="state-link" href="#Illinois">I</a></button> <span class="separator">|</span> <button><a class="state-link" href="#Missouri">M</a></button> <span class="separator">|</span> <button><a class="state-link" href="#NewJersey">N</a></button> <span class="separator">|</span> <button><a class="state-link" href="#Tennessee">T</a></button> <span class="separator">|</span> <button><a class="state-link" href="#Utah">U</a></button>
+            </div>
+       
+           
+        <a id="California"><h2>California</h2></a>
         <ul>
             <li>
                 <h3>Los Angeles</h3>
@@ -50,7 +61,7 @@
                 </ul>
             </li>
         </ul>
-        <h2>Connecticut</h2>
+        <a id="Connecticut"><h2>Connecticut</h2></a>
         <ul>
             <li><h3>New Haven</h3></li>
             <ul>
@@ -58,7 +69,7 @@
                 <li><a href="https://sallysapizza.com/">Sally's Apizza</a></li>
             </ul>
         </ul>
-        <h2>Florida</h2>
+        <a id="Florida"><h2>Florida</h2></a>
         <ul>
             <li>
                 <h3>Orlando</h3>
@@ -67,7 +78,7 @@
                 <li><a href="https://www.instagram.com/planetpizzaorl/">Planet Pizza</a></li>
             </ul>
         </ul>
-        <h2>Illinois</h2>
+        <a id="Illinois"><h2>Illinois</h2></a>
         <ul>
             <li>
                 <h3>Chicago</h3>
@@ -77,7 +88,7 @@
                 <li><a href="https://www.loumalnatis.com/">Lou Malnati's Pizzeria</a></li>
             </ul>
         </ul>
-        <h2>Indiana</h2>
+        <a id="Indiana"><h2>Indiana</h2></a>
         <ul>
             <li>
                 <h3>Bloomington</h3>
@@ -107,7 +118,7 @@
                 <li><a href="https://www.pizzaking.com/location/w-state-st-claras-pizza-king/">Clara's Pizza King</a></li>
             </ul>
         </ul>
-        <h2>Missouri</h2>
+        <a id="Missouri"><h2>Missouri</h2></a>
         <ul>
             <li>
                 <h3>St. Louis</h3>
@@ -116,14 +127,14 @@
                 <li><a href="https://www.imospizza.com/">Imo's Pizza</a></li>
             </ul>
         </ul>
-        <h2>New Jersey</h2>
+        <a id="NewJersey"><h2>New Jersey</h2></a>
         <ul>
             <li><h3>Atlantic City</h3></li>
             <ul>
                 <li><a href="https://www.tonyboloneys.com/">Tony Boloney's</a></li>
             </ul>
         </ul>
-        <h2>New York</h2>
+        <a id="NewYork"><h2>New York</h2></a>
         <ul>
             <li><h3>Brooklyn</h3></li>
             <ul>
@@ -139,7 +150,7 @@
                 <li><a href="https://princestreetpizza.com/">Prince Street Pizza</a></li>
             </ul>
         </ul>
-        <h2>Nevada</h2>
+        <a id="Nevada"><h2>Nevada</h2></a>
         <ul>
             <li><h3>Las Vegas</h3></li>
             <ul>
@@ -147,7 +158,7 @@
                 <li><a href="https://secretpizzalv.com/">Secret Pizza</a></li>
             </ul>
         </ul>
-        <h2>Tennessee</h2>
+        <a id="Tennessee"><h2>Tennessee</h2></a>
         <ul>
             <li>
                 <h3>Nashville</h3>
@@ -165,7 +176,7 @@
                 <li><a href="https://www.mellowmushroom.com/">Mellow Mushroom</a></li>
             </ul>
         </ul>
-        <h2>Utah</h2>
+        <a id="Utah"><h2>Utah</h2></a>
         <ul>
             <li>
                 <h3>Salt Lake City</h3>
@@ -185,7 +196,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 30 <span class="separator">|</span><span class="separator">|</span> document.documentElement.scrollTop > 30) {
     document.getElementById("header").style.fontSize = "1.2em";
     document.getElementById("largeavatar").style.width = "60px"
     document.getElementById("largeavatar").style.height = "60px"

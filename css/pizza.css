@@ -3,9 +3,21 @@ html {
 }
 
 .pizza-header {
-	background-color: #BE2827;
-	border-bottom: 1px solid white;
-	padding: 15px;
+
+	background-color: #8c1b1a;
+	border-bottom: 1px solid #00000010;
+	padding: 15px 0 15px 0;
+}
+
+.awning-top {
+	background: linear-gradient(#a52120, #a52120, #BE2827);
+	height: 45px;
+	border-top: 1px solid #00000050;
+}
+
+.awning-bottom {
+	background: linear-gradient(#BE2827, #BE2827, #BE2827, #a52120);
+	height: 2em;
 	width: 100vw;
 	width: -moz-available;
 	width: -webkit-fill-available;
@@ -14,7 +26,14 @@ html {
 	z-index: 10;
 	box-shadow: 0px 7px 15px #5e0f0e;
 	align-items: center;
-	margin-bottom: 25px;
+	border-top: 1px solid #00000010;
+	border-bottom: 1px solid white;
+	text-align: center;
+	font-size: 0.7em;
+	font-weight: bold;
+	font-style: oblique;
+	vertical-align: middle;
+	padding: 10px;
 }
 
 hr {
@@ -28,10 +47,10 @@ hr {
 	height: 100px;
 	width: auto;
 background-color: white;
-padding: 15px;
+padding: 15px 20% 15px 20%;
 border-radius: 0%;
 box-shadow: none;
-margin: 15px auto 5px auto;
+margin-top: 15px;
 }
 
 .pizza-content {
@@ -92,6 +111,38 @@ a:visited:hover {
 	text-decoration-color: #FFFFFF;
 }
 
+button {
+	color: white;
+	background-color: #FFFFFF25;
+	border-color: white;
+	font-size: 1em;
+	border-radius: 20%;
+	width: 2em;
+	height: 1.5em;
+}
+
+button:hover {
+	background-color: #FFFFFF75;
+}
+
+.state-link {
+	text-decoration: none;
+}
+
+.statelinks {
+	text-align: justify;
+	font-size: 1.2em;
+  }
+  
+ .statelinks::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+  }
+
+  .separator {
+	opacity: 50%;
+  }
 
 
 .pizza-footer {
