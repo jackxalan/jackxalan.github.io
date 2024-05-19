@@ -2,6 +2,7 @@ html {
 	background-color: #741514;
 }
 
+
 .pizza-header {
 	background-color: #BD2827;
 	border-bottom: 1px solid white;
@@ -43,9 +44,44 @@ html {
 	}
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
 	color: white;
 }
+
+h3, h4 {
+	opacity: 0.85;
+}
+
+/* unvisited link */
+a:link {
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+/* mouse over link */
+a:hover {
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+/* click on link */
+a:active {
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+a:visited:hover {
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+
 
 .pizza-footer {
 	background-color: #BD2827;
