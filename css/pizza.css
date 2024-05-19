@@ -1,0 +1,62 @@
+html {
+	background-color: #741514;
+}
+
+.pizza-header {
+	background-color: #BD2827;
+	border-bottom: 1px solid white;
+	padding: 15px;
+	width: 100vw;
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	max-width: 100%;
+	z-index: 10;
+	box-shadow: 0px 7px 15px #470908;
+	align-items: center;
+	/* position: fixed;
+	transition-duration: 0.2s;
+	transition-property: height; */
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.pizza-content {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+
+	/* For desktop: */
+	.pizza-content {
+		min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+
+	.endcredits {
+		min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+}
+
+h2, h3, h4 {
+	color: white;
+}
+
+.pizza-footer {
+	background-color: #BD2827;
+	border-top: 1px solid white;
+	padding: 10px 10px 10px 20px;
+	margin-top: 10px;
+	width: 100vw;
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	max-width: 100%;
+	z-index: 9;
+	box-shadow: 0px -7px 15px #470908;
+}
