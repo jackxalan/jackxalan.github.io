@@ -79,9 +79,9 @@ body {
 	z-index: 10;
 	box-shadow: 0px 7px 15px #020a22;
 	align-items: center;
-	position: fixed;
+	/* position: fixed;
 	transition-duration: 0.2s;
-	transition-property: height;
+	transition-property: height; */
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
@@ -109,14 +109,14 @@ body {
 	position: relative;
 	z-index: 10;
 	margin: 10px auto 15px auto;
-	transition: width 0.2s linear, height 0.2s linear, margin 0.2s linear;
+	/* transition: width 0.2s linear, height 0.2s linear, margin 0.2s linear; */
 	box-shadow: none;
 }
 
 h1 {
 	font-family: "Rubik Scribble", system-ui;
 	margin: 0 0.2em 0 0;
-	transition: font-size 0.2s linear;
+	/* transition: font-size 0.2s linear; */
 }
 
 .homepage {
