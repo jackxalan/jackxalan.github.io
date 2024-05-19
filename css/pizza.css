@@ -1,10 +1,9 @@
 html {
-	background-color: #741514;
+	background-color: #8c1b1a;
 }
 
-
 .pizza-header {
-	background-color: #BD2827;
+	background-color: #BE2827;
 	border-bottom: 1px solid white;
 	padding: 15px;
 	width: 100vw;
@@ -13,14 +12,26 @@ html {
 	width: fill-available;
 	max-width: 100%;
 	z-index: 10;
-	box-shadow: 0px 7px 15px #470908;
+	box-shadow: 0px 7px 15px #5e0f0e;
 	align-items: center;
-	/* position: fixed;
-	transition-duration: 0.2s;
-	transition-property: height; */
-	display: flex;
-	flex-direction: column;
-	overflow: auto;
+	margin-bottom: 25px;
+}
+
+hr {
+	border: 1px solid white;
+	opacity: 50%;
+	box-shadow: none;
+	margin: 15px 0 15px 0;
+}
+
+.pizza-logo {
+	height: 100px;
+	width: auto;
+background-color: white;
+padding: 15px;
+border-radius: 0%;
+box-shadow: none;
+margin: 15px auto 5px auto;
 }
 
 .pizza-content {
@@ -84,10 +95,10 @@ a:visited:hover {
 
 
 .pizza-footer {
-	background-color: #BD2827;
+	background-color: #BE2827;
 	border-top: 1px solid white;
 	padding: 10px 10px 10px 20px;
-	margin-top: 10px;
+	margin-top: 50px;
 	width: 100vw;
 	width: -moz-available;
 	width: -webkit-fill-available;
