@@ -344,14 +344,17 @@ blockquote {
 	border-radius: 15px;
 	margin: 10px;
 	align-self: center;
+	max-height: 45vh;
+
 }
 
 .moremedia {
-	width: 80vw;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-	grid-template-columns: auto auto auto auto auto;
 	max-width: 75vw;
 	overflow-x: scroll;
 }
+
+
+
