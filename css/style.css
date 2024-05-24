@@ -71,6 +71,8 @@ body {
 		grid-template-columns: auto auto auto auto auto; 
 		margin: 0 auto;
 	}
+
+	
 }
 
 
@@ -188,7 +190,7 @@ img {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 1000px;
+	max-height: 45vh;
 	border-radius: 15px;
 	z-index: 10;
 	box-shadow: 0px 10px 15px #04112e;
@@ -273,6 +275,10 @@ a:visited:hover {
 	text-decoration-color: #EB7F3D50;
 }
 
+small {
+	opacity: 80%;
+}
+
 .caption {
 	font-size: smaller;
 	font-style: italic;
@@ -340,13 +346,7 @@ blockquote {
 	margin: 10px 0 10px 0;
 }
 
-.mediaitem {
-	border-radius: 15px;
-	margin: 10px;
-	align-self: center;
-	max-height: 45vh;
 
-}
 
 .moremedia {
 	margin: 0 auto;
@@ -354,7 +354,29 @@ blockquote {
 	flex-direction: row;
 	max-width: 75vw;
 	overflow-x: scroll;
+	gap: 10px;
+	padding-bottom: 3px;
 }
 
+.first-letter {
+	float: left;
+	font-size: 2.9em;
+	font-weight: bolder;
+	line-height: 0.5em;
+	padding-top: 0.2em;
+	margin-right: 0.1em;
+	opacity: 80%;
+	color: #b7e6fc;
+}
 
+.albumdisplay {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+}
 
+.clear {
+	clear: both;
+}
