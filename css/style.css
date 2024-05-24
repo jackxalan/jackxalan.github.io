@@ -349,6 +349,9 @@ blockquote {
 .moremedia {
 	width: 80vw;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: auto auto auto;
+	display: flex;
+	flex-direction: row;
+	grid-template-columns: auto auto auto auto auto;
+	max-width: 75vw;
+	overflow-x: scroll;
 }
