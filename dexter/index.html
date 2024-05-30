@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="pokestyle.css">
+    <script src="pokedex.js"></script>
+ </head>
+<body>
+    <h1>POKéDEX</h1>
+    <div class="pokelist"><div id="pokemon-list"></div>
+</div>
+
+<script>
+    // Fetch the JSON data from the URL
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+        .then(response => response.json())
+        .then(data => {
+            const pokemonList = document.getElementById('pokemon-list');
+            data.results.forEach((pokemon, index) => {
+                const divItem = document.createElement('div');
+                divItem.classList.add('pokemon-item');
+
+                const numberDiv = document.createElement('div');
+                numberDiv.classList.add('pokemon-number');
+                numberDiv.textContent = "# " + (index + 1).toString().padStart(3, '0'); // Add "#" symbol
+
+                const link = document.createElement('a');
+                const pokemonNumber = pokemon.url.split('/').slice(-2, -1)[0]; // Extract the Pokemon number
+                link.href = `details.html?number=${pokemonNumber}`; // Pass the number as a query parameter
+                link.textContent = pokemon.name;
+
+                const nameDiv = document.createElement('div');
+                nameDiv.classList.add('pokemon-name');
+                nameDiv.appendChild(link);
+
+                // Wrap the entire item in a link
+                const itemLink = document.createElement('a');
+                itemLink.classList.add('pokemon-link');
+                itemLink.href = `details.html?number=${pokemonNumber}`;
+                itemLink.appendChild(divItem);
+
+                divItem.appendChild(numberDiv);
+                divItem.appendChild(nameDiv);
+                pokemonList.appendChild(itemLink);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+ </body>
+</html>
