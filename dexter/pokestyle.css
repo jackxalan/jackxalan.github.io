@@ -1,12 +1,21 @@
 html {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-	margin: auto;
 	display: flex;
 	min-height: 100vh;
 	min-width: 40vw;
-    max-width: 80vw;
-    vertical-align: middle;
 	scroll-behavior: smooth;
+	background-color: #071b41;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100vw;
+
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	max-width: 100%;
+	margin: 0 auto;
 	background-color: #EA5545;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -15,7 +24,21 @@ html {
 .body {
     font-family: 'Courier New', monospace;
     color: white;
+    display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	line-height: 1.5em;
+	width: 100vw;
+	max-width: 100%;
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	margin: 0 auto;
+   
 }
+   
 
 h1, h2, h3, h4, h5 {
     color: white;
@@ -39,10 +62,10 @@ h1, h2, h3, h4, h5 {
     padding: 10px 20px 10px 20px;
     text-transform: uppercase;
     font-weight: bold;
-    width: 75vw;
     font-family: 'Courier New', monospace;
     font-size: 1.1em;
-   
+    min-width: 60vw;
+   margin: 0 auto;
 }
 
 .pokemon-item {
