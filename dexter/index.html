@@ -5,54 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="pokestyle.css">
-    <script src="pokedex.js"></script>
+
  </head>
 <body>
     <h1>POKéDEX</h1>
     <div class="pokelist"><div id="pokemon-list"></div>
 </div>
 
-<script>
-    // Fetch the JSON data from the URL
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
-        .then(response => response.json())
-        .then(data => {
-            const pokemonList = document.getElementById('pokemon-list');
-            data.results.forEach((pokemon, index) => {
-                const divItem = document.createElement('div');
-                divItem.classList.add('pokemon-item');
-
-                // Create the image element
-                const image = new Image();
-                const pokemonNumber = index + 1;
-                image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonNumber}.png`;
-                image.alt = `Pokémon #${pokemonNumber}`;
-                image.classList.add('pokemon-image'); // Add a class for styling
-
-                // Create the Pokémon number element
-                const numberDiv = document.createElement('div');
-                numberDiv.classList.add('pokemon-number');
-                numberDiv.textContent = `# ${pokemonNumber.toString().padStart(3, '0')}`;
-
-                const pokemonName = pokemon.name.replace(/-F/g, '♀').replace(/-M/g, '♂');
-
-                // Create the Pokémon name link
-                const link = document.createElement('a');
-                link.href = `details.html?number=${pokemonNumber}`;
-                numberDiv.classList.add('pokemon-name');
-                link.textContent = pokemonName;
-
-                // Append the image, number, and name link to the container
-                divItem.appendChild(image);
-                divItem.appendChild(numberDiv);
-                divItem.appendChild(link);
-
-                // Append the container to the Pokémon list
-                pokemonList.appendChild(divItem);
-            });
-        })
-        .catch(error => console.error('Error fetching data:', error));
-</script>
-
+<script type="text/javascript" src="pokemonlist.js"></script>
  </body>
 </html>

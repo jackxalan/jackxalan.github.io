@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title></title>
     <meta charset="UTF-8">
-    <title>Pokemon Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="pokestyle.css">
 </head>
 <body>
-    <h1>Pokemon Details</h1>
     <div id="pokemon-details"></div>
 
     <script>
@@ -20,7 +21,7 @@
             .then(pokemon => {
                 const detailsContainer = document.getElementById('pokemon-details');
                 detailsContainer.innerHTML = `
-                    <p>Name: ${pokemon.name}</p>
+                    <h1>Name: ${pokemon.name}</h1>
                     <p>ID: ${pokemon.id}</p>
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png">
                     <h2>Stats:</h2>
