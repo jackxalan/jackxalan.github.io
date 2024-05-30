@@ -72,6 +72,11 @@ body {
 		margin: 0 auto;
 	}
 
+	.albumdisplay {
+		min-width: 540px;
+	max-width: 50vw;
+		margin: 0 auto;
+	}
 	
 }
 
@@ -375,7 +380,8 @@ blockquote {
 .albumdisplay {
 	 display: flex;
     align-items: center;
-    width: 100%;
+    width: 90vw;
+	margin: 0 auto;
 	font-size: 1.1em;
 	padding: 10px 15px 10px 15px;
 	border-radius: 15px;
