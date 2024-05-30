@@ -4,7 +4,7 @@ html {
 	display: flex;
 	min-height: 100vh;
 	min-width: 40vw;
-    max-width: 60vw;
+    max-width: 80vw;
     vertical-align: middle;
 	scroll-behavior: smooth;
 	background-color: #EA5545;
@@ -13,7 +13,7 @@ html {
 }
 
 .body {
-    font-family: monospace;
+    font-family: Helvetica, sans-serif;
     font-size: 1.5em;
     color: white;
 }
@@ -37,10 +37,34 @@ h1, h2, h3, h4, h5 {
     background-color: black;
     color: white;
     border-radius: 15px;
-    padding: 1vw;
+    padding: 10px 20px 10px 20px;
     text-transform: uppercase;
     font-size: 1.5em;
-    width: 50vw;
+    width: 75vw;
+    font-family: Helvetica, sans-serif;
+}
+
+.pokemon-item {
+    display: flex;
+}
+
+.pokemon-image {
+    display: block;
+    max-width: 50px;
+    height: auto;
+}
+
+.pokemon-name {
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.pokemon-number {
+   
+    text-align: left;
+    justify-content: left;
+    margin: auto 0;
+    text-wrap: nowrap;
 }
 
 .spacer {
@@ -48,26 +72,25 @@ h1, h2, h3, h4, h5 {
     height: 100%;
 }
 
-.a:link {
-    color: yellow;
-    text-decoration-color: yellow;
+a:link {
+    color: white;
     text-decoration: none;
 }
 
 a:visited {
-    color: yellow;
+    color: white;
     text-decoration: none;
 
 }
 
 a: hover {
-    color: yellow;
+    color: white;
     text-decoration: none;
 
 }
 
 a:active {
-    color: yellow;
+    color: white;
     text-decoration: none;
 
 }
@@ -79,10 +102,6 @@ a:active {
     border-bottom: 1px solid #ddd; /* Add a border between rows */
     padding: 10px 0; /* Add some spacing */
 }
-.pokemon-number {
-    width: 50px;
-    text-align: right;
-    text-wrap: nowrap;
-}
+
 .pokemon-name {
     margin-left: 10px;
