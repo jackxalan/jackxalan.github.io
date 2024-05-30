@@ -3,8 +3,25 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
     .then(response => response.json())
     .then(data => {
         const pokemonList = document.getElementById('pokemon-list');
+        const searchInput = document.getElementById('pokemon-search');
+
+        // Function to filter Pokémon based on search input
+        const filterPokemon = () => {
+            const searchText = searchInput.value.toLowerCase();
+            data.results.forEach((pokemon, index) => {
+                const pokemonName = pokemon.name.replace(/-F/g, '♀').replace(/-M/g, '♂');
+                const isVisible = pokemonName.toLowerCase().includes(searchText);
+                const divItem = document.getElementById(`pokemon-${index + 1}`);
+                divItem.style.display = isVisible ? 'flex' : 'none';
+            });
+        };
+
+        // Listen for changes in the search input
+        searchInput.addEventListener('input', filterPokemon);
+
         data.results.forEach((pokemon, index) => {
             const divItem = document.createElement('div');
+            divItem.id = `pokemon-${index + 1}`;
             divItem.classList.add('pokemon-item');
             divItem.style.cursor = 'pointer'; // Change cursor to pointer
 
