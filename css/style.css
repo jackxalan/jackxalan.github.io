@@ -1,5 +1,4 @@
 html {
-	position: relative;
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	display: flex;
 	height: 100%;
@@ -11,13 +10,11 @@ html {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100vw;
-
 	width: -moz-available;
 	/* WebKit-based browsers will ignore this. */
 	width: -webkit-fill-available;
 	/* Mozilla-based browsers will ignore this. */
 	width: fill-available;
-	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -35,8 +32,7 @@ body {
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-	width: 100vw;
-	max-width: 100%;
+	width: 100%;
 	width: -moz-available;
 	/* WebKit-based browsers will ignore this. */
 	width: -webkit-fill-available;

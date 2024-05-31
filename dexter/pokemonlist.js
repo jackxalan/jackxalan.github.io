@@ -10,7 +10,8 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
             const searchText = searchInput.value.toLowerCase();
             data.results.forEach((pokemon, index) => {
                 const pokemonName = pokemon.name.replace(/-F/g, '♀').replace(/-M/g, '♂');
-                const isVisible = pokemonName.toLowerCase().includes(searchText);
+                const pokemonNumber = pokemon.id;
+                const isVisible = pokemonName.toLowerCase().includes(searchText) || pokemonNumber.toString().includes(searchText);
                 const divItem = document.getElementById(`pokemon-${index + 1}`);
                 divItem.style.display = isVisible ? 'flex' : 'none';
             });

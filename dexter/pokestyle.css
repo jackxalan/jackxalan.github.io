@@ -4,41 +4,29 @@ html {
 	min-height: 100vh;
 	min-width: 40vw;
 	scroll-behavior: smooth;
-	background-color: #071b41;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	width: 100vw;
-
-	width: -moz-available;
-	/* WebKit-based browsers will ignore this. */
-	width: -webkit-fill-available;
-	/* Mozilla-based browsers will ignore this. */
-	width: fill-available;
-	max-width: 100%;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 100vw;
 	background-color: #EA5545;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-.body {
+body {
     font-family: 'Courier New', monospace;
     color: white;
     display: table-cell;
 	vertical-align: middle;
 	height: 100%;
 	line-height: 1.5em;
-	width: 100vw;
-	max-width: 100%;
-	width: -moz-available;
-	/* WebKit-based browsers will ignore this. */
-	width: -webkit-fill-available;
-	/* Mozilla-based browsers will ignore this. */
-	width: fill-available;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 100%;
    
 }
    
+.dexlogo {
+    float: left; 
+    margin-left: 15px; 
+}
 
 h1, h2, h3, h4, h5 {
     color: white;
@@ -64,8 +52,27 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     font-family: 'Courier New', monospace;
     font-size: 1.1em;
-    min-width: 60vw;
+    width: 80vw;
    margin: 0 auto;
+}
+
+.header-elements {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For desktop: */
+	
+    .pokelist {
+        min-width: 480px;
+        max-width: 540px;
+		margin: 0 auto;
+    }
+
+    .header-elements {
+        width: 540px;
+    }
 }
 
 .pokemon-item {
@@ -138,3 +145,13 @@ a:active {
 
 .pokemon-name {
     margin-left: 10px;
+}
+
+.pokemon-search {
+    float: right; 
+    margin: 2em 15px 0 0;
+}
+
+.clear {
+    clear: both;
+}

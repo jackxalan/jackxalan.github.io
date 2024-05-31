@@ -1,19 +1,20 @@
 <!doctype html>
 <html>
- <head>
+<head>
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="pokestyle.css">
-
- </head>
+</head>
 <body>
-    <h1 style="float: left; margin-left: 15px;">POKéDEX</h1>  
-<input type="search" id="pokemon-search" placeholder="Search for Pokémon" style="float: right; margin: 2em 15px 0 0;">
-<div style="clear: both;"></div>
-    <div class="pokelist"><div id="pokemon-list"></div>
+    <div class="header-elements">
+    <h1 class="dexlogo">POKéDEX</h1>
+    <input type="search" id="pokemon-search" class="pokemon-search" placeholder="Search for Pokémon">
 </div>
-
-<script type="text/javascript" src="pokemonlist.js"></script>
- </body>
+    <div class="clear"></div>
+    <div class="pokelist">
+        <div id="pokemon-list"></div>
+    </div>
+    <script type="text/javascript" src="pokemonlist.js"></script>
+</body>
 </html>
