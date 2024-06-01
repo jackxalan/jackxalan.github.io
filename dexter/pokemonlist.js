@@ -9,9 +9,9 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
         const filterPokemon = () => {
             const searchText = searchInput.value.toLowerCase();
             data.results.forEach((pokemon, index) => {
-                const pokemonName = pokemon.name.replace(/-F/g, '♀').replace(/-M/g, '♂');
+                const pokemonName = pokemon.name.replace("-F", "♀").replace(".-M", ". M").replace("-M", "♂");
                 const pokemonNumber = pokemon.id;
-                const isVisible = pokemonName.toLowerCase().includes(searchText) || pokemonNumber.toString().includes(searchText);
+                const isVisible = pokemonName.toLowerCase().includes(searchText);
                 const divItem = document.getElementById(`pokemon-${index + 1}`);
                 divItem.style.display = isVisible ? 'flex' : 'none';
             });
@@ -38,8 +38,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
             numberDiv.classList.add('pokemon-number');
             numberDiv.textContent = `# ${pokemonNumber.toString().padStart(3, '0')}`;
 
-            const pokemonName = pokemon.name.replace(/-F/g, '♀').replace(/-M/g, '♂');
-            pokemonName.replace(/-/g, ' ');
+            const pokemonName = pokemon.name.replace("-F", "♀").replace("-M", "♂").replace(".-M", ". M");
 
             // Create the Pokémon name link
             const link = document.createElement('a');
