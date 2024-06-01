@@ -166,7 +166,7 @@ body {
 }
 
 .square {
-    width: 35px;
+    width: 60px;
     height: 35px;
     background-color: #80CFF9;
     border-radius: 5px;
@@ -176,7 +176,7 @@ body {
     text-align: center;
     line-height: 35px;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 rect {
@@ -190,7 +190,7 @@ rect {
 }
 
 .secondsquare {
-    width: 32px;
+    width: 54px;
     height: 32px;
     background-color: #253F4C;
     border: 3px solid black;

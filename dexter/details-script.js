@@ -28,6 +28,28 @@ fetch(pokemonUrl)
         const speStat = pokemon.stats.find(stat => stat.stat.name === 'speed');
         const totStat = (Number(atkStat.base_stat) + Number(defStat.base_stat) + Number(satkStat.base_stat) + Number(sdefStat.base_stat) + Number(hpStat.base_stat) + Number(speStat.base_stat))
 
+        const typeColors = {
+            normal: '#A8A878',
+            fire: '#F08030',
+            water: '#6890F0',
+            grass: '#78C850',
+            electric: '#F8D030',
+            ice: '#98D8D8',
+            fighting: '#C03028',
+            poison: '#A040A0',
+            ground: '#E0C068',
+            flying: '#A890F0',
+            psychic: '#F85888',
+            bug: '#A8B820',
+            rock: '#B8A038',
+            ghost: '#705898',
+            dragon: '#7038F8',
+            dark: '#705848',
+            steel: '#B8B8D0',
+            fairy: '#EE99AC'
+        };
+        
+
         mainScreen.innerHTML = `
           <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png" class="screenartwork">
       `;
@@ -65,6 +87,8 @@ fetch(pokemonUrl)
         TOTbox. innerHTML = `
         ${totStat}
         `;
+
+        
 
 
         // Fetch species data for flavor text
