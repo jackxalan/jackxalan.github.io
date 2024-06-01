@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="pokestyle.css">
+    <link rel="stylesheet" href="details-style.css">
 </head>
+
 <body>
-    <div id="pokemon-details"></div>
 
-    <script>
-        // Get the Pokemon number from the query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const pokemonNumber = urlParams.get('number');
-        const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
+    <!-- <div id="pokemon-details"></div> -->
 
-        // Fetch the Pokemon details
-        fetch(pokemonUrl)
-            .then(response => response.json())
-            .then(pokemon => {
-                const detailsContainer = document.getElementById('pokemon-details');
-                detailsContainer.innerHTML = `
-                    <h1>Name: ${pokemon.name}</h1>
-                    <p>ID: ${pokemon.id}</p>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png">
-                    <h2>Stats:</h2>
-                    <ul>
-                        ${pokemon.stats.map(stat => `<li>${stat.stat.name}: ${stat.base_stat}</li>`).join('')}
-                    </ul>
-                    
-                    <!-- Add more details as needed -->
-                `;
-            })
-            .catch(error => console.error('Error fetching Pokemon details:', error));
-    </script>
+    <div class="header-elements">
+        <div class="bigbubble"></div>
+        <div class="littlebubble"></div>
+        <div class="littlebubble"></div>
+        <div class="retro-screen">
+            <div class="pokemon-number" id="pokemon-no">NO.<br>064</div>
+            <div class="pokemon-name" id="pokemon-name">KADABRA<br>Psi Pokemon</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="main-screen-container">
+        <div class="main-screen-case"></div>
+        <div class="main-screen" id="main-screen"></div>
+    </div>
+    <div class="back-and-screen">
+        <a href="../dexter/"><svg class="triangle">
+            <polygon points="0,50 50,0 50,100" fill="#F8D74A" />
+        </svg></a>
+        <div class="retro-screen" id="secondarydisplay">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+    <div class="clear"></div>
+    <div class="statbox">
+        <div class="statbox-row">
+            <div class="square">TOT</div>
+            <div class="square">HP</div>
+            <div class="square">ATK</div>
+            <div class="square">DEF</div>
+            <div class="square">SATK</div>
+            <div class="square">SDEF</div>
+            <div class="square">SPE</div>
+        </div>
+        <div class="statbox-row">
+            <div class="secondsquare" id="TOTbox"></div>
+            <div class="secondsquare" id="HPbox"></div>
+            <div class="secondsquare" id="ATKbox"></div>
+            <div class="secondsquare" id="DEFbox"></div>
+            <div class="secondsquare" id="SATKbox"></div>
+            <div class="secondsquare" id="SDEFbox"></div>
+            <div class="secondsquare" id="SPEbox"></div>
+        </div>
+        <div class="statbox-row"></div>
+    </div>
+    <div class="button-container">
+        <div class="blackcircle"></div>
+        <div class="bottombutton"></div>
+        <div class="bottombutton"></div>
+        <div class="orangecircle"></div>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="details-script.js"></script>
 </body>
+
 </html>
