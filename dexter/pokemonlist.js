@@ -62,7 +62,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
 
             // Make the entire divItem clickable
             divItem.addEventListener('click', () => {
-                window.location.href = link.href;
+                window.location.replace(link.href);
             });
 
             // Append the container to the Pokémon list
