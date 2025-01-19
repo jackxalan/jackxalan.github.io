@@ -135,6 +135,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-top: 0.6em;
 }
 
 @font-face {
@@ -221,7 +222,7 @@ button:hover.collapsible {
 }
 
 .content {
-	padding: 0 18px;
+	padding: 0;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
