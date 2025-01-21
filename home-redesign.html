@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<html lang="en-US">
+  <title>JACKxALAN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="Canvas">
+  <meta property="og:title" content="jackxalan">
+  <meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=zRubik+Scribble&display=swap">
+  <link rel="stylesheet" href="css/redesign-style.css">
+
+  <link href="https://mastodon.coffee/@jack" rel="me">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="polygon-mask" clipPathUnits="objectBoundingBox">
+          <polygon points="0,0 0,0.9 1,1 1,0" />
+        </clipPath>
+      </defs>
+    </svg>
+    <img
+      src="https://jackcummings.me/images/profilepic.jpg"
+      alt="Profile picture of Jack Cummings"
+      class="masked-image"
+    />
+    <div class="top-right" style="color:white; mix-blend-mode: difference;">
+      <h1 class="overlay-text">Hello, there.</h1>
+    </div>
+    <div class="bottom-left">
+      <h1 class="overlay-text">I'm Jack.</h1>
+    </div>
+  </div>
+
+		
+    
+    <hr>
+   
+     <!-- Buttons for Posts and Contacts -->
+  <div class="button-container" style="text-align: center;">
+    <button id="posts-button" onclick="showPosts()">POSTS</button>
+	<button id="section-button" onclick="showSections()">SECTIONS</button>
+    <button id="contact-button" onclick="showContact()">CONTACT<zx/button>
+  </div>
+      <div id="posts-section">
+    <div class="image-grid">
+      <div><a href="https://jackcummings.me/blog/best-punk-and-ska-albums"><img src="https://ia903208.us.archive.org/2/items/mbid-e35282ff-452b-44c6-8cf8-18484a15b147/mbid-e35282ff-452b-44c6-8cf8-18484a15b147-33270951243.png" alt="Best Punk and Ska Albums"></a></div>  
+      <div><a href="https://jackcummings.me/blog/update-my-disney-career"><img src="https://jackcummings.me/images/walts-apt-tour.jpg" alt="Update My Disney Career"></a></div>
+      <div><a href="https://jackcummings.me/blog/my-disney-career"><img src="https://jackcummings.me/images/gct-credential.png" alt="My Disney Career"></a></div>
+      <div><a href="https://jackcummings.me/blog/noodling"><img src="https://jackcummings.me/images/dexter-kadabra-frame.PNG" alt="Noodling Blog Post"></a></div>  
+      <div><a href="https://jackcummings.me/blog/an-identity-for-anaheim"><img src="https://jackcummings.me/images/anaheim-flag.png" alt="An Identity for Anaheim"></a></div>
+      <div><a href="https://jackcummings.me/blog/attempted-photography"><img src="https://jackcummings.me/images/dinosaurpark.jpeg" alt="Attempted Photography"></a></div>
+    </div>
+  </div>
+  
+  <div id="sections-section" style="display:none;">
+	  <div class="image-grid">
+		<div class="section-block"><a href="../blog">BLOG</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/pizza"><img src="https://jackcummings.me/images/slice-shop-logo.PNG"></a></div>
+		<div class="section-block"><a href="https://jackcummings.me/media-diet">MEDIA DIET</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/projects">PROJECTS</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/resume">RÉSUMÉ</a></div>
+	  </div>
+  </div>
+  
+  <!-- Contacts Section (hidden by default) -->
+  <div id="contact-section" style="display:none; font-size:2em;">
+    
+	  <div class="image-grid">
+		<div class="section-block"><a href="https://jackcummings.me/bluesky-feed">🦋</a></div>
+		<div class="section-block"><a href="https://instagram.com/indiana_jack">📷</a></div>
+		<div class="section-block"><a href="mailto:hi@jackcummings.me">✉️</a></div>
+	  </div>
+
+</div>
+  </div>
+
+  <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
+  <script>
+  function showPosts() {
+	  document.getElementById('sections-section').style.display = 'none';
+       document.getElementById('contact-section').style.display = 'none';
+	  document.getElementById('posts-section').style.display = 'block';
+	  document.getElementById('section-button').style.fontWeight = 'normal';
+    document.getElementById('posts-button').style.fontWeight = 'bold';
+    document.getElementById('contact-button').style.fontWeight = 'normal';
+  }
+
+  function showSections() {
+    document.getElementById('posts-section').style.display = 'none';
+    document.getElementById('contact-section').style.display = 'none';
+    document.getElementById('posts-button').style.fontWeight = 'normal';
+    document.getElementById('contact-button').style.fontWeight = 'normal';
+	document.getElementById('sections-section').style.display = 'block';
+    document.getElementById('section-button').style.fontWeight = 'bold';
+  }
+   function showContact() {
+	  document.getElementById('sections-section').style.display = 'none';
+    document.getElementById('section-button').style.fontWeight = 'normal';
+    document.getElementById('posts-section').style.display = 'none';
+    document.getElementById('contact-section').style.display = 'block';
+    document.getElementById('posts-button').style.fontWeight = 'normal';
+    document.getElementById('contact-button').style.fontWeight = 'bold';
+  }
+</script>
+
+  
+</body>
+
+
+
+
+
+</html>
