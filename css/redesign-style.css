@@ -5,7 +5,6 @@ html {
   background-attachment: fixed;
   width: 100vw;
   width: fill-available;
-font-family: serif;
 }
 
 .oldenburg-regular {
@@ -62,7 +61,7 @@ img {
 
 h1 {
 	font-family: "Oldenburg", system-ui;
-	font-size: 10vw;
+	font-size: 9.5vw;
 	margin: 0 auto;
 	font-weight: bold;
 	line-height: 1em;
@@ -73,7 +72,7 @@ h2 {
 	font-family: "Oldenburg", system-ui;
 	text-transform: uppercase;
 	line-height: 1em;
-	  font-size: 8vw;
+	  font-size: 6.5vw;
   margin: 0;
 }
 
@@ -84,7 +83,6 @@ h5 {
 
 
 p {
-	font-family: system-serif;
  margin: 0 1em;
 }
 /*
@@ -109,6 +107,14 @@ p {
 	font-size: 2em;
 	font-weight: bold;
 	
+}
+
+h1 {
+	font-size: 5vw;
+}
+
+h2 {
+	font-size: 3vw;
 }
 
 h5 {
@@ -182,7 +188,7 @@ column-gap: 1px;
 .media-grid img {
   width: 100%; /* Full width of the grid cell */
   aspect-ratio: 1; /* Force images to be square */
-  object-fit: fill; /* Crop the image to fill the square */
+  object-fit: contain; /* Crop the image to fill the square */
 }
 
 a {
@@ -228,15 +234,17 @@ h3 {
 	 display: flex;
       justify-content: center;
       align-items: center;
-      margin: 1 em auto;
-}
+      margin: 1em auto;
+	  padding-top: 15px;
+	  max-width: 50vw;
+  }
 
 .text-container {
       text-align: left; /* Aligns text to the left */
     }
 
 .circle-mask {
-		aspect-ratio:1;
+  aspect-ratio: 1;
   width: 150px;
   height: 150px;
   border-radius: 50%;
