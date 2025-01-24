@@ -36,17 +36,18 @@
       alt="Profile picture of Jack Cummings">
   </div>
   <div>
-	  <h3>jack</h3>
-	 <p>Here's some of what I've been listening to, watching, and reading.</p>
+	  <h3 style="font-family: Oldenburg; margin: 0;">jackXalan</h3>
+	  <p style="opacity:0.7; font-size: 0.55em; margin: 0;">📍 Rhode Island</p
+	 <p style="font-size: 0.5em; margin: 0;">Here's some of what I've been listening to, watching, and reading.</p>
   </div>
 </div>
-<hr style="margin: .25em;">
-   <div class="button-container" style="text-align: center;">
-    <button id="music-button" onclick="showMusic()" style="font-weight: bold;" accesskey="2">MUSIC</button>
-	<button id="movies-button" onclick="showMovies()">MOVIES</button>
-    <button id="books-button" onclick="showBooks()">BOOKS<zx/button>
+ <hr style="margin: .25em 0 .5em 0;;">
+   <div class="button-container">
+    <button id="music-button" onclick="showMusic()" class="selectedbutton" accesskey="2">🎧</button>
+	<button id="movies-button" class="buttonoff" onclick="showMovies()">🎞️</button>
+    <button id="books-button" class="buttonoff"onclick="showBooks()">📖</button>
   </div>
- <hr>
+ <hr style="margin: .25em 0;">
       <div id="music-section">
 	<!--	Use in future if month breakdown is appropriate
 		<h3>2025</h3>
@@ -59,9 +60,9 @@
 		<div><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" alt="Tennessee Songbird by Hannah Juanita"></a></div>
     </div>
   </div>
-  <div id="movies-section" style="display:none; color:CanvasText; background: #222733; padding: 30px; border-radius: 15px;">
-	  <img src="https://a.ltrbxd.com/logos/letterboxd-logo-alt-v-pos-rgb.svg" style="margin:0 auto 1em auto;aspect-ratio:1;width:150px;">
-	<div id="letterboxd-embed-wrapper-tc" style="background: Canvas;  padding:30px 15px;  border-radius: 15px; ">Loading...</div>
+  <div id="movies-section" style="display:none;">
+	<div id="letterboxd-embed-wrapper-tc">Loading...</div>
+	
 <script>
 fetch('https://lb-embed-content.bokonon.dev?username=jackxalan')
 .then(response => response.text())
@@ -72,46 +73,49 @@ document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;})
   </div>
   
   <!-- Books Section (hidden by default) -->
-  <div id="books-section" style="display:none; font-size:3em; max-width: 90vw;margin: 0 auto;">
+  <div id="books-section" style="display:none;">
 	  
 	 <!-- URL for book covers
 	 https://covers.openlibrary.org/b/$key/$value-$size.jpg
 	 Key can be IBSN or OLID for Open Library
 
 	 -->
-	  <div class="media-grid" style="row-gap: 5px;">
+	  <div class="book-grid">
 		  <div><a href="https://share.libbyapp.com/title/9055211"><img src="https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_23.zip&file=0013236044-L.jpg" alt="The Adventures of Amina al-Sirafi by Shannon Chakraborty"></a></div>
 		  <div><a href="https://share.libbyapp.com/title/2677901"><img src="https://covers.openlibrary.org/b/ISBN/1401207529-L.jpg" alt="Batman: Year One by Frank Miller and David Mazzucchelli"></a></div>
 		  <div><a href="https://share.libbyapp.com/title/2798031"><img src="https://ia904609.us.archive.org/view_archive.php?archive=/6/items/olcovers79/olcovers79-L.zip&file=798732-L.jpg" alt="Batman: Dark Victory by Jeph Loeb and Tim Sale"></a></div>
 		  <div><a href="https://share.libbyapp.com/title/2677900"><img src="https://covers.openlibrary.org/b/ISBN/1401232590-L.jpg" alt="Batman: The Long Halloween by Jeph Loeb and Tim Sale"></a></div>
 	  </div>
   </div>
+  <hr>
   <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
   <script>
   function showMusic() {
-	  document.getElementById('movies-section').style.display = 'none';
-       document.getElementById('books-section').style.display = 'none';
-	  document.getElementById('music-section').style.display = 'block';
-	  document.getElementById('movies-button').style.fontWeight = 'normal';
-    document.getElementById('music-button').style.fontWeight = 'bold';
-    document.getElementById('books-button').style.fontWeight = 'normal';
+	document.getElementById('movies-button').className = 'buttonoff';
+    document.getElementById('music-button').className = 'selectedbutton';
+    document.getElementById('books-button').className = 'buttonoff';
+	document.getElementById('movies-section').style.display = 'none';
+   	document.getElementById('books-section').style.display = 'none';
+	document.getElementById('music-section').style.display = 'block';
+	
   }
 
   function showMovies() {
+	document.getElementById('movies-button').className = 'selectedbutton';
+    document.getElementById('music-button').className = 'buttonoff';
+    document.getElementById('books-button').className = 'buttonoff';
     document.getElementById('music-section').style.display = 'none';
     document.getElementById('books-section').style.display = 'none';
-    document.getElementById('music-button').style.fontWeight = 'normal';
-    document.getElementById('books-button').style.fontWeight = 'normal';
 	document.getElementById('movies-section').style.display = 'block';
-    document.getElementById('movies-button').style.fontWeight = 'bold';
+
   }
    function showBooks() {
-	  document.getElementById('movies-section').style.display = 'none';
-    document.getElementById('movies-button').style.fontWeight = 'normal';
+	document.getElementById('movies-button').className = 'buttonoff';
+    document.getElementById('music-button').className = 'buttonoff';
+    document.getElementById('books-button').className = 'selectedbutton';
+	document.getElementById('movies-section').style.display = 'none';
     document.getElementById('music-section').style.display = 'none';
     document.getElementById('books-section').style.display = 'block';
-    document.getElementById('music-button').style.fontWeight = 'normal';
-    document.getElementById('books-button').style.fontWeight = 'bold';
   }
 </script>
 
