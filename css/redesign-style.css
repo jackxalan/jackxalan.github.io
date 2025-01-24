@@ -85,12 +85,13 @@ h5 {
 p {
  margin: 0 1em;
 }
-/*
+
 @media (prefers-color-scheme: dark) {
- p { background-color: rgba(255, 255, 255, 0.1);;
-  }
+	.selectedbutton {
+		background: rgba(255,255,255,0.9);
+	}
 }
-*/
+
 .masked-image {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -106,50 +107,51 @@ p {
 	line-height: 1em;
 	font-size: 2em;
 	font-weight: bold;
+	}
+
+	h1 {
+		font-size: 5vw;
+	}
 	
-}
-
-h1 {
-	font-size: 5vw;
-}
-
-h2 {
-	font-size: 3vw;
-}
-
-h5 {
-
-	margin: 0;
-}
-
-html {
-	min-width: 540px;
-		max-width: 50vw;
-		margin: 0 auto;
-}
-
-.container {
-	  margin-bottom: 1.5em;
-}
-
-.bottom-left{
-	position: absolute;
-  bottom: -.75em; 
-left: 0;
-
-}
-
-.top-right {
-  position: absolute;
-  top: 0.5em;
-  right: 0;
-}
-
-p {
-	margin: 0;
-}
-
-
+	h2 {
+		font-size: 3vw;
+	}
+	
+	h5 {
+	
+		margin: 0;
+	}
+	
+	html {
+		min-width: 540px;
+			max-width: 50vw;
+			margin: 0 auto;
+	}
+	
+	.container {
+		  margin-bottom: 1.5em;
+	}
+	
+	.bottom-left{
+		position: absolute;
+	  bottom: -.75em; 
+	left: 0;
+	
+	}
+	
+	.top-right {
+	  position: absolute;
+	  top: 0.5em;
+	  right: 0;
+	}
+	
+	p {
+		margin: 0;
+	}
+	
+	.bio {
+		max-width: 75%;
+	}
 }
 
 .grid-container {
@@ -190,6 +192,16 @@ column-gap: 1px;
   aspect-ratio: 1; /* Force images to be square */
   object-fit: contain; /* Crop the image to fill the square */
 }
+
+.book-grid {
+	  display: grid;
+  grid-template-columns: repeat(auto-fit, 8em);
+  justify-content: center;
+  gap: 3px; /* Spacing between images */
+  margin: .5em auto;
+}
+
+
 
 a {
 	text-decoration: none;
@@ -244,16 +256,18 @@ h3 {
     }
 
 .circle-mask {
-  aspect-ratio: 1;
+
+  min-width: 150px;
   width: 150px;
+  min-height: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  display: inline-block;
+  float: left;
+  margin-right: 30px;
 }
 
 .circle-mask img {
-	aspect-ratio:1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -261,5 +275,39 @@ h3 {
 
 .bio {
 	display:flex;
-	margin: 2em 10vw;
+max-width: 90%;
+margin: 1em auto;
+}
+
+.button-container {
+	text-align: center;
+	font-size: 2em;
+	 -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectedbutton {
+	 background-color: CanvasText;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+	border-radius: 15px;
+	filter:saturate(1)
+}
+
+.buttonoff {
+	background: none;
+	opacity: 0.5;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+  filter: saturate(0)
 }
