@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<html lang="en-US">
+  <title>JACKxALAN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="Canvas">
+  <meta property="og:title" content="jackxalan">
+  <meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/redesign-style.css">
+
+  <link href="https://mastodon.coffee/@jack" rel="me">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+</head>
+<body>
+
+<div class="title-container">
+	<div class="text-container">
+    <h2 style="text-align:left;"><a href="https://jackcummings.me/home-redesign.html">JACK'S</a></h1>
+    <h1 style="white-space:nowrap;">NOW PLAYING</h2>
+  </div>
+  </div>
+  <hr>
+  <div class="bio">
+   <div class="circle-mask">
+   <img
+      src="https://jackcummings.me/images/profilepic.jpg"
+      alt="Profile picture of Jack Cummings">
+  </div>
+  <div>
+	  <h3>jack</h3>
+	  <div class="button-container" style="text-align: center;">
+    <button id="music-button" onclick="showMusic()" style="font-weight: bold;" accesskey="2">MUSIC</button>
+	<button id="movies-button" onclick="showMovies()">MOVIES</button>
+    <button id="books-button" onclick="showBooks()">BOOKS<zx/button>
+  </div>
+  </div>
+</div>
+   <hr>
+      <div id="music-section">
+	<!--	Use in future if month breakdown is appropriate
+		<h3>2025</h3>
+		  <small>JANUARY</small> 
+	-->
+    <div class="media-grid">
+		<div><a href="https://music.apple.com/us/album/just-devils/1710718857"><img src="https://ia600505.us.archive.org/30/items/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594-37078695522_thumb500.jpg" alt="Just Devils by PWRUP"></a></div>
+		<div><a href="https://music.apple.com/us/album/the-bad-fire/1772756309"><img src="https://ia801905.us.archive.org/11/items/mbid-dc43061a-7ccf-4848-8996-cb6326768729/mbid-dc43061a-7ccf-4848-8996-cb6326768729-40393390761_thumb500.jpg" alt="The Bad Fire by Mogwai"></a></div>
+		<div><a href="https://music.apple.com/us/album/force-majeure/1764302463"><img src="https://ia904500.us.archive.org/29/items/mbid-929609c9-9f15-4b18-9887-fc3dbc5a8bdf/mbid-929609c9-9f15-4b18-9887-fc3dbc5a8bdf-40021156621_thumb500.jpg" alt="Force Majeure by Delivery"></a></div>
+		<div><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" alt="Tennessee Songbird by Hannah Juanita"></a></div>
+    </div>
+  </div>
+  <div id="movies-section" style="display:none; color:CanvasText; background: #222733; padding: 30px;">
+	  <img src="https://a.ltrbxd.com/logos/letterboxd-logo-alt-v-pos-rgb.svg" style="margin:0 auto 1em auto;aspect-ratio:1;width:150px;">
+	<div id="letterboxd-embed-wrapper-tc" style="background: Canvas;  padding: 30px;  border-radius: 15px; ">Loading...</div>
+<script>
+fetch('https://lb-embed-content.bokonon.dev?username=jackxalan')
+.then(response => response.text())
+.then(data => {
+document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;})
+;
+</script>
+  </div>
+  
+  <!-- Books Section (hidden by default) -->
+  <div id="books-section" style="display:none; font-size:3em;">
+    
+	  <div class="media-grid">
+		  
+	  </div>
+
+</div>
+  </div>
+
+  <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
+  <script>
+  function showMusic() {
+	  document.getElementById('movies-section').style.display = 'none';
+       document.getElementById('books-section').style.display = 'none';
+	  document.getElementById('music-section').style.display = 'block';
+	  document.getElementById('movies-button').style.fontWeight = 'normal';
+    document.getElementById('music-button').style.fontWeight = 'bold';
+    document.getElementById('books-button').style.fontWeight = 'normal';
+  }
+
+  function showMovies() {
+    document.getElementById('music-section').style.display = 'none';
+    document.getElementById('books-section').style.display = 'none';
+    document.getElementById('music-button').style.fontWeight = 'normal';
+    document.getElementById('books-button').style.fontWeight = 'normal';
+	document.getElementById('movies-section').style.display = 'block';
+    document.getElementById('movies-button').style.fontWeight = 'bold';
+  }
+   function showBooks() {
+	  document.getElementById('movies-section').style.display = 'none';
+    document.getElementById('movies-button').style.fontWeight = 'normal';
+    document.getElementById('music-section').style.display = 'none';
+    document.getElementById('books-section').style.display = 'block';
+    document.getElementById('music-button').style.fontWeight = 'normal';
+    document.getElementById('books-button').style.fontWeight = 'bold';
+  }
+</script>
+
+  
+</body>
+
+
+
+
+
+</html>
