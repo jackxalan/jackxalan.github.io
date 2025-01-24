@@ -90,6 +90,14 @@ p {
 	.selectedbutton {
 		background: rgba(255,255,255,0.9);
 	}
+	
+	html {
+		background: #000000;
+	}
+	
+	body {
+				background: #000000;
+	}
 }
 
 .masked-image {
@@ -247,7 +255,6 @@ h3 {
       justify-content: center;
       align-items: center;
       margin: 1em auto;
-	  padding-top: 15px;
 	  max-width: 50vw;
   }
 
@@ -311,3 +318,13 @@ margin: 1em auto;
   font-size: 0.7em;
   filter: saturate(0)
 }
+
+#movies-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 8em);
+      gap: 3px;
+      justify-content: center;
+    }
+    .movie img {
+      width: 100%;
+    }
