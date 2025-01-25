@@ -36,7 +36,7 @@
       alt="Profile picture of Jack Cummings">
   </div>
   <div>
-	  <h3 style="font-family: Oldenburg; margin: .5em auto; font-size: 1.5em">jackXalan</h3>
+	  <h3 style="font-family: Oldenburg; margin: .5em auto; ">jackXalan</h3>
 	 <p style="font-size: 0.8em; line-height: 1.25em;text-align: left; margin: auto 0;">Here's some of what I've been listening to, watching, and reading.</p>
   </div>
 </div>
@@ -59,56 +59,20 @@
 		<div><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" alt="Tennessee Songbird by Hannah Juanita"></a></div>
     </div>
   </div>
-  <div id="movies-section" style="display:none; margin: 0.5em;">
+  
+   
+  
+  <div id="movies-section" style="display:none; ">
 	 <div id="movies-container">
-    <a href="" id="Eraserhead" class="movie"></a>
+   <a href="" id="Eraserhead" class="movie"></a>
 	<a href="" id="Memento" class="movie"></a>
 	<a href="" id="The Straight Story" class="movie"></a>
 	<a href="" id="Blue Velvet" class="movie"></a>
     <a href="" id="Mulholland Drive" class="movie"></a>
     <a href="" id="Lost Highway" class="movie"></a>
-	<a href="" id="Inland Empire" class="movie"></a>
   </div>
 
-  <script>
-    const apiKey = '4526ca5104f6770580cbb773ede26961'; // Your TMDB API key
-    const movieTitles = ['Eraserhead', 'Memento', 'The Straight Story', 'Blue Velvet', 'Mulholland Drive', 'Lost Highway', 'Inland Empire']; // Movies to fetch
-
-    async function fetchMovieByTitle(title) {
-      try {
-        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(title)}`);
-        const data = await response.json();
-
-        if (data.results.length > 0) {
-          return data.results[0]; // Use the first result
-        } else {
-          console.error(`No results found for "${title}"`);
-          return null;
-        }
-      } catch (error) {
-        console.error('Error fetching movie:', error);
-      }
-    }
-
-    async function displayMovies() {
-      for (const title of movieTitles) {
-        const movie = await fetchMovieByTitle(title);
-        if (movie) {
-          const linkElement = document.getElementById(title);
-          if (linkElement) {
-            linkElement.href = `https://www.themoviedb.org/movie/${movie.id}`;
-            linkElement.innerHTML = `
-              <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
-            `;
-          } else {
-            console.error(`No element found with ID "${title}"`);
-          }
-        }
-      }
-    }
-
-    displayMovies();
-  </script>
+    <script src="https://jackcummings.me/scripts/now-playing.js"></script>
   </div>
   
   <!-- Books Section (hidden by default) -->
@@ -121,42 +85,15 @@
 	 -->
 	  <div class="book-grid">
 		  <div><a href="https://share.libbyapp.com/title/9055211"><img src="https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_23.zip&file=0013236044-L.jpg" alt="The Adventures of Amina al-Sirafi by Shannon Chakraborty"></a></div>
-		  <div><a href="https://share.libbyapp.com/title/2677901"><img src="https://covers.openlibrary.org/b/ISBN/1401207529-L.jpg" alt="Batman: Year One by Frank Miller and David Mazzucchelli"></a></div>
+		  <div><a href="https://share.libbyapp.com/title/2677901"><img src="https://ia801204.us.archive.org/view_archive.php?archive=/26/items/olcovers74/olcovers74-L.zip&file=749311-L.jpg" alt="Batman: Year One by Frank Miller and David Mazzucchelli"></a></div>
 		  <div><a href="https://share.libbyapp.com/title/2798031"><img src="https://ia904609.us.archive.org/view_archive.php?archive=/6/items/olcovers79/olcovers79-L.zip&file=798732-L.jpg" alt="Batman: Dark Victory by Jeph Loeb and Tim Sale"></a></div>
 		  <div><a href="https://share.libbyapp.com/title/2677900"><img src="https://covers.openlibrary.org/b/ISBN/1401232590-L.jpg" alt="Batman: The Long Halloween by Jeph Loeb and Tim Sale"></a></div>
 	  </div>
   </div>
   <hr>
   <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
-  <script>
-  function showMusic() {
-	document.getElementById('movies-button').className = 'buttonoff';
-    document.getElementById('music-button').className = 'selectedbutton';
-    document.getElementById('books-button').className = 'buttonoff';
-	document.getElementById('movies-section').style.display = 'none';
-   	document.getElementById('books-section').style.display = 'none';
-	document.getElementById('music-section').style.display = 'block';
-	
-  }
 
-  function showMovies() {
-	document.getElementById('movies-button').className = 'selectedbutton';
-    document.getElementById('music-button').className = 'buttonoff';
-    document.getElementById('books-button').className = 'buttonoff';
-    document.getElementById('music-section').style.display = 'none';
-    document.getElementById('books-section').style.display = 'none';
-	document.getElementById('movies-section').style.display = 'block';
-
-  }
-   function showBooks() {
-	document.getElementById('movies-button').className = 'buttonoff';
-    document.getElementById('music-button').className = 'buttonoff';
-    document.getElementById('books-button').className = 'selectedbutton';
-	document.getElementById('movies-section').style.display = 'none';
-    document.getElementById('music-section').style.display = 'none';
-    document.getElementById('books-section').style.display = 'block';
-  }
-</script>
+   <script src="https://jackcummings.me/scripts/now-playing.js"></script>
 
   
 </body>
