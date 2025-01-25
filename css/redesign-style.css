@@ -203,11 +203,23 @@ column-gap: 1px;
 
 .book-grid {
 	  display: grid;
-  grid-template-columns: repeat(auto-fit, 8em);
+        grid-template-columns: 1fr 1fr 1fr;
+
   justify-content: center;
   gap: 3px; /* Spacing between images */
   margin: .5em auto;
 }
+
+#movies-container {
+	
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3px;
+      justify-content: center;
+    }
+    .movie img {
+      width: 100%;
+    }
 
 
 
@@ -319,12 +331,3 @@ margin: 1em auto;
   filter: saturate(0)
 }
 
-#movies-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 8em);
-      gap: 3px;
-      justify-content: center;
-    }
-    .movie img {
-      width: 100%;
-    }
