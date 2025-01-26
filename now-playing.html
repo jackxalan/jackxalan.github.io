@@ -43,12 +43,12 @@
 </div>
  <hr style="margin: .25em 0 .5em 0;;">
    <div class="button-container">
-    <button id="music-button" onclick="showMusic()" class="selectedbutton" accesskey="2">🎧</button>
-	<button id="movies-button" class="buttonoff" onclick="showMovies()">🎞️</button>
-    <button id="books-button" class="buttonoff"onclick="showBooks()">📖</button>
-  </div>
+	 <button id="section1-button" onclick="showSection1()" class="selectedbutton" accesskey="2">🎧</button>
+	<button id="section2-button" class="buttonoff" onclick="showSection2()">🎞️</button>
+    <button id="section3-button" class="buttonoff"onclick="showSection3()">📖</button>
+ </div>
  <hr style="margin: .25em 0;">
-      <div id="music-section">
+      <div id="section1">
 	<!--	Use in future if month breakdown is appropriate
 		<h3>2025</h3>
 		  <small>JANUARY</small> 
@@ -65,7 +65,7 @@
   
    
   
-  <div id="movies-section" style="display:none; ">
+  <div id="section2" style="display:none; ">
 	 <div id="movies-container">
        <a href="" id="Kneecap" class="movie"></a>
    <a href="" id="Eraserhead" class="movie"></a>
@@ -80,7 +80,7 @@
   </div>
   
   <!-- Books Section (hidden by default) -->
-  <div id="books-section" style="display:none;">
+  <div id="section3" style="display:none;">
 	  
 	 <!-- URL for book covers
 	 https://covers.openlibrary.org/b/$key/$value-$size.jpg

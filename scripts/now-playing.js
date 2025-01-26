@@ -1,29 +1,29 @@
-function showMusic() {
-	document.getElementById('movies-button').className = 'buttonoff';
-    document.getElementById('music-button').className = 'selectedbutton';
-    document.getElementById('books-button').className = 'buttonoff';
-	document.getElementById('movies-section').style.display = 'none';
-   	document.getElementById('books-section').style.display = 'none';
-	document.getElementById('music-section').style.display = 'block';
+function showSection1() {
+	document.getElementById('section2-button').className = 'buttonoff';
+    document.getElementById('section1-button').className = 'selectedbutton';
+    document.getElementById('section3-button').className = 'buttonoff';
+	document.getElementById('section2').style.display = 'none';
+   	document.getElementById('section3').style.display = 'none';
+	document.getElementById('section1').style.display = 'block';
 	
   }
 
-  function showMovies() {
-	document.getElementById('movies-button').className = 'selectedbutton';
-    document.getElementById('music-button').className = 'buttonoff';
-    document.getElementById('books-button').className = 'buttonoff';
-    document.getElementById('music-section').style.display = 'none';
-    document.getElementById('books-section').style.display = 'none';
-	document.getElementById('movies-section').style.display = 'block';
+  function showSection2() {
+	document.getElementById('section2-button').className = 'selectedbutton';
+    document.getElementById('section1-button').className = 'buttonoff';
+    document.getElementById('section3-button').className = 'buttonoff';
+    document.getElementById('section1').style.display = 'none';
+    document.getElementById('section3').style.display = 'none';
+	document.getElementById('section2').style.display = 'block';
 
   }
-   function showBooks() {
-	document.getElementById('movies-button').className = 'buttonoff';
-    document.getElementById('music-button').className = 'buttonoff';
-    document.getElementById('books-button').className = 'selectedbutton';
-	document.getElementById('movies-section').style.display = 'none';
-    document.getElementById('music-section').style.display = 'none';
-    document.getElementById('books-section').style.display = 'block';
+   function showSection3() {
+	document.getElementById('section2-button').className = 'buttonoff';
+    document.getElementById('section1-button').className = 'buttonoff';
+    document.getElementById('section3-button').className = 'selectedbutton';
+	document.getElementById('section2').style.display = 'none';
+    document.getElementById('section1').style.display = 'none';
+    document.getElementById('section3').style.display = 'block';
   }
 
   

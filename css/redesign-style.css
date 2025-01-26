@@ -213,7 +213,7 @@ column-gap: 1px;
   object-fit: contain; /* Crop the image to fill the square */
 }
 
-.books-section {
+.section3 {
 	margin: 0.5em auto;
 }
 
@@ -226,7 +226,7 @@ column-gap: 1px;
   margin: .5em auto;
 }
 
-.movies-section {
+.section2 {
 margin: 0.5em auto;
 }
 
