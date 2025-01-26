@@ -186,7 +186,7 @@ column-gap: 1px;
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
-  gap: 3px; /* Spacing between images */
+  gap: 1px; /* Spacing between images */
   margin-top: .5em;
 }
 
