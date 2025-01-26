@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+  <title>Jack's Now Playing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="Canvas">
+  <meta property="og:title" content="Jack's Now Playing">
+    <meta property="og:description" content="Some of what I've been listening to, watching, and reading.">
+  <meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/redesign-style.css">
+
+  <link href="https://mastodon.coffee/@jack" rel="me">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+</head>
+<body>
+
+<div class="title-container">
+	<div class="text-container">
+    <h2 style="text-align:left;"><a href="https://jackcummings.me/home-redesign.html">JACK'S</a></h1>
+    <h1 style="white-space:nowrap;">NOW PLAYING</h2>
+  </div>
+  </div>
+  <hr>
+  <div class="bio">
+   <div class="circle-mask">
+   <img
+      src="https://jackcummings.me/images/profilepic.jpg"
+      alt="Profile picture of Jack Cummings">
+  </div>
+  <div>
+	  <h3 style="font-family: Oldenburg; margin: .5em auto; ">jackXalan</h3>
+	 <p style="font-size: 0.8em; line-height: 1.25em;text-align: left; margin: auto 0;">Here's some of what I've been listening to, watching, and reading.</p>
+<button><a href="https://music.apple.com/profile/indianajack">Apple Music</a></button><button><a href="https://boxd.it/21YEL">Letterboxd</a></button>
+  </div>
+</div>
+ <hr style="margin: .25em 0 .5em 0;;">
+   <div class="button-container">
+    <button id="music-button" onclick="showMusic()" class="selectedbutton" accesskey="2">🎧</button>
+	<button id="movies-button" class="buttonoff" onclick="showMovies()">🎞️</button>
+    <button id="books-button" class="buttonoff"onclick="showBooks()">📖</button>
+  </div>
+ <hr style="margin: .25em 0;">
+      <div id="music-section">
+	<!--	Use in future if month breakdown is appropriate
+		<h3>2025</h3>
+		  <small>JANUARY</small> 
+	-->
+    <div class="media-grid">
+      <div><a href="https://music.apple.com/us/album/fine-art/1727141293"><img src="https://ia800404.us.archive.org/8/items/mbid-15254972-7766-4359-8805-b87d224c087b/mbid-15254972-7766-4359-8805-b87d224c087b-39143625510_thumb500.jpg" alt="Fine Art by Kneecap"></a></div>
+		<div><a href="https://music.apple.com/us/album/just-devils/1710718857"><img src="https://ia600505.us.archive.org/30/items/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594-37078695522_thumb500.jpg" alt="Just Devils by PWRUP"></a></div>
+		<div><a href="https://music.apple.com/us/album/the-bad-fire/1772756309"><img src="https://ia801905.us.archive.org/11/items/mbid-dc43061a-7ccf-4848-8996-cb6326768729/mbid-dc43061a-7ccf-4848-8996-cb6326768729-40393390761_thumb500.jpg" alt="The Bad Fire by Mogwai"></a></div>
+		<div><a href="https://music.apple.com/us/album/force-majeure/1764302463"><img src="https://ia904500.us.archive.org/29/items/mbid-929609c9-9f15-4b18-9887-fc3dbc5a8bdf/mbid-929609c9-9f15-4b18-9887-fc3dbc5a8bdf-40021156621_thumb500.jpg" alt="Force Majeure by Delivery"></a></div>
+		<div><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" alt="Tennessee Songbird by Hannah Juanita"></a></div>
+    </div>
+  </div>
+  
+   
+  
+  <div id="movies-section" style="display:none; ">
+	 <div id="movies-container">
+       <a href="" id="Kneecap" class="movie"></a>
+   <a href="" id="Eraserhead" class="movie"></a>
+	<a href="" id="Memento" class="movie"></a>
+	<a href="" id="The Straight Story" class="movie"></a>
+	<a href="" id="Blue Velvet" class="movie"></a>
+    <a href="" id="Mulholland Drive" class="movie"></a>
+    <a href="" id="Lost Highway" class="movie"></a>
+    <a href="" id="Inland Empire" class="movie"></a>
+    </div>
+    <script src="https://jackcummings.me/scripts/now-playing.js"></script>
+  </div>
+  
+  <!-- Books Section (hidden by default) -->
+  <div id="books-section" style="display:none;">
+	  
+	 <!-- URL for book covers
+	 https://covers.openlibrary.org/b/$key/$value-$size.jpg
+	 Key can be IBSN or OLID for Open Library
+
+	 -->
+	  <div class="book-grid">
+		  <div><a href="https://share.libbyapp.com/title/9055211"><img src="https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_23.zip&file=0013236044-L.jpg" alt="The Adventures of Amina al-Sirafi by Shannon Chakraborty"></a></div>
+		  <div><a href="https://share.libbyapp.com/title/2677901"><img src="https://ia801204.us.archive.org/view_archive.php?archive=/26/items/olcovers74/olcovers74-L.zip&file=749311-L.jpg" alt="Batman: Year One by Frank Miller and David Mazzucchelli"></a></div>
+		  <div><a href="https://share.libbyapp.com/title/2798031"><img src="https://ia904609.us.archive.org/view_archive.php?archive=/6/items/olcovers79/olcovers79-L.zip&file=798732-L.jpg" alt="Batman: Dark Victory by Jeph Loeb and Tim Sale"></a></div>
+		  <div><a href="https://share.libbyapp.com/title/2677900"><img src="https://covers.openlibrary.org/b/ISBN/1401232590-L.jpg" alt="Batman: The Long Halloween by Jeph Loeb and Tim Sale"></a></div>
+	  </div>
+  </div>
+  <hr>
+  <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
+
+   <script src="https://jackcummings.me/scripts/now-playing.js"></script>
+
+  
+</body>
+
+
+
+
+
+</html>
