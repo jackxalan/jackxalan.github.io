@@ -182,6 +182,22 @@ column-gap: 1px;
   object-position: top center; /* Anchor the crop to the top-center */
 }
 
+/* Main grid container */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+  gap: 3px; /* Spacing between images */
+  margin-top: .5em;
+}
+
+/* Grid images */
+.photo-grid img {
+  width: 100%; /* Full width of the grid cell */
+  aspect-ratio: 1; /* Force images to be square */
+  object-fit: cover; /* Crop the image to fill the square */
+  object-position: center; /* Anchor the crop to the top-center */
+}
+
 
 .media-grid {
   display: grid;

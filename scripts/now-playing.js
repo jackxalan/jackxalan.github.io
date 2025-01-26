@@ -26,12 +26,6 @@ function showMusic() {
     document.getElementById('books-section').style.display = 'block';
   }
 
-function showMore(button, gridClass) {
-  const grid = button.closest(`#${gridClass}`).querySelectorAll('.hidden');
-  grid.forEach(item => item.classList.remove('hidden'));
-  button.parentElement.style.display = 'none'; // Hide the "Show More" button
-}
-
   
    const apiKey = '4526ca5104f6770580cbb773ede26961'; // Your TMDB API key
 
