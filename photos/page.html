@@ -4,26 +4,74 @@
 
 <head>
   <title>Jack's Photo</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="Canvas">
-  <meta property="og:title" content="Jack's Photo">
-    <meta property="og:description" content="A photo of something great by Jack.">
-  <meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/redesign-style.css">
-
-  <link href="https://mastodon.coffee/@jack" rel="me">
-
-  <link rel="icon" type="image/x-icon"
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="Canvas">
+	<meta property="og:title" content="Jack's Photo">
+	<meta property="og:description" content="A photo of something great by Jack.">
+  	<meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+  <!--
+	<link rel="stylesheet" href="../css/redesign-style.css">
+  -->
+  	<link href="https://mastodon.coffee/@jack" rel="me">
+  	<link rel="icon" type="image/x-icon"
     href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+	<style>
+		body {
+			font-family: 'Helvetica', sans-serif;
+			color: CanvasText;
+			color-scheme: light dark;
+		}
+
+		.photo-page-header {
+			font-weight:bold; 
+			font-size: 1.5em;
+			margin-left:0.5em;
+		}
+		
+		a {
+			text-decoration: none;;
+		}
+		
+		img {
+			max-width: 100%;
+		}
+	
+	@media (prefers-color-scheme: dark) {
+		html {
+			background: #000000;
+		}
+
+	}
+	@media only screen and (min-width: 700px) {
+		.endcredits {
+			max-width: 50vw;
+			margin: 0 auto;
+		}
+		
+		.photo-page-header {
+			max-width: 50vw;
+			margin: 0 auto;
+		}
+		
+		.photo-page-image {
+			max-height: 85vh;
+			max-width: 80vw;
+
+		}
+	}
+</style>
+	
 </head>
-<body style="align-items: center;">
-<a href="javascript:window.history.back();" style="font-weight:bold; font-size: 1.5em;margin-left:0.5em;"><</a>
+<body>
+	<div class="photo-page-header">
+<a href="javascript:window.history.back();"><</a>
+</div>
 <hr>
-<div>
+<div style="display: flex; justify-content: center;">
 	<img src="143.jpg" class="photo-page-image" id="page-photo">
 </div>
 	 <hr>
