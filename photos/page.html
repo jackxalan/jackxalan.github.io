@@ -20,16 +20,29 @@
   	<link rel="icon" type="image/x-icon"
     href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
 	<style>
+		html {
+			margin: 0;
+		}
 		body {
 			font-family: 'Helvetica', sans-serif;
 			color: CanvasText;
 			color-scheme: light dark;
+			margin: 0;
 		}
-
+		
+		.photo-page-container {
+    		display: flex;
+    		flex-direction: column; /* Stack children vertically */
+    		justify-content: center;
+    		align-items: center;
+		}
+		
 		.photo-page-header {
+			width: 100%; /* Ensure header spans full width */
+    		text-align: left; /* Align text to the left */
+   			margin: 1em 0 1em 0.5em; /* Maintain the left margin */
 			font-weight:bold; 
 			font-size: 1.5em;
-			margin-left:0.5em;
 		}
 		
 		a {
@@ -37,6 +50,7 @@
 		}
 		
 		img {
+			max-height: 100%;
 			max-width: 100%;
 		}
 	
@@ -47,42 +61,36 @@
 
 	}
 	@media only screen and (min-width: 700px) {
-		.endcredits {
-			max-width: 50vw;
-			margin: 0 auto;
-		}
-		
 		.photo-page-header {
-			max-width: 50vw;
-			margin: 0 auto;
+			max-width: 100%;
+			margin: 1em 0;
 		}
 		
 		.photo-page-image {
-			max-height: 85vh;
+			max-height: 95vh;
 			max-width: 80vw;
 
 		}
 	}
 </style>
-	
 </head>
-<body>
-	<div class="photo-page-header">
-<a href="javascript:window.history.back();"><</a>
-</div>
-<hr>
-<div style="display: flex; justify-content: center;">
-	<img src="143.jpg" class="photo-page-image" id="page-photo">
-</div>
-	 <hr>
-  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 1.26.25 - <a href="changelog.html">changelog</a></span></h5>
 
-  <script>
+<body>
+<div class="photo-page-container">
+	<div class="photo-page-header">
+		<a href="javascript:window.history.back();"><</a>
+	</div>
+	<div>
+		<img src="143.jpg" class="photo-page-image" id="page-photo">
+	</div>
+</div>
+
+<script>
 	  const urlParams = new URLSearchParams(window.location.search);
 const photoIDValue = urlParams.get('id');
 
 document.getElementById('page-photo').src = `https://jackcummings.me/photos/${photoIDValue}`;  
-  </script>
-  
+</script>
+
 </body>
 </html>
