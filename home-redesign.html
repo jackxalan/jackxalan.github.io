@@ -41,15 +41,28 @@
     </div>
   </div>	
     <p>I'm here for <a href="https://music.apple.com/profile/indianajack">music</a> and running and <a href="https://boxd.it/21YEL">film</a> and comics and books (sometimes).</p>
-    <hr>
-   
+ 
+	<hr style="margin: 1em 0 0 0;">
      <!-- Buttons for Posts and Contacts -->
   <div class="button-container" style="text-align: center;">
-    <button id="posts-button" onclick="showPosts()">POSTS</button>
 	<button id="section-button" onclick="showSections()">SECTIONS</button>
+	    <button id="posts-button" onclick="showPosts()">POSTS</button>
     <button id="contact-button" onclick="showContact()">CONTACT<zx/button>
   </div>
-      <div id="posts-section">
+      
+   <hr style="margin-top: 1em;">
+  <div id="sections-section" >
+	  <div class="image-grid">
+		<div class="section-block"><a href="https://jackcummings.me/blog">BLOG</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/pizza"><img src="https://jackcummings.me/images/slice-shop-logo.PNG"></a></div>
+		<div class="section-block"><a href="https://jackcummings.me/now-playing">NOW PLAYING</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/photos">PHOTOS</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/projects">PROJECTS</a></div>
+		<div class="section-block"><a href="https://jackcummings.me/resume">RÉSUMÉ</a></div>
+	  </div>
+  </div>
+  
+  <div id="posts-section" style="display:none;">
     <div class="image-grid">
       <div><a href="https://jackcummings.me/blog/best-punk-and-ska-albums"><img src="https://ia903208.us.archive.org/2/items/mbid-e35282ff-452b-44c6-8cf8-18484a15b147/mbid-e35282ff-452b-44c6-8cf8-18484a15b147-33270951243.png" alt="Best Punk and Ska Albums"></a></div>  
       <div><a href="https://jackcummings.me/blog/update-my-disney-career"><img src="https://jackcummings.me/images/walts-apt-tour.jpg" alt="Update My Disney Career"></a></div>
@@ -60,22 +73,11 @@
     </div>
   </div>
   
-  <div id="sections-section" style="display:none;">
-	  <div class="image-grid">
-		<div class="section-block"><a href="../blog">BLOG</a></div>
-		<div class="section-block"><a href="https://jackcummings.me/pizza"><img src="https://jackcummings.me/images/slice-shop-logo.PNG"></a></div>
-		<div class="section-block"><a href="https://jackcummings.me/now-playing">NOW PLAYING</a></div>
-		<div class="section-block"><a href="https://jackcummings.me/projects">PROJECTS</a></div>
-		<div class="section-block"><a href="https://jackcummings.me/resume">RÉSUMÉ</a></div>
-	  </div>
-  </div>
-  
   <!-- Contacts Section (hidden by default) -->
   <div id="contact-section" style="display:none; font-size:3em;">
     
 	  <div class="image-grid">
 		<div class="section-block"><a href="https://jackcummings.me/bluesky-feed">🦋</a></div>
-		<div class="section-block"><a href="https://instagram.com/indiana_jack">📷</a></div>
 		<div class="section-block"><a href="mailto:hi@jackcummings.me">✉️</a></div>
 	  </div>
 

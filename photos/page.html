@@ -21,7 +21,7 @@
     href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
 </head>
 <body style="align-items: center;">
-<a href="javascript:window.history.back();" style="font-weight:bold; font-size: 1.5em;"><</a>
+<a href="javascript:window.history.back();" style="font-weight:bold; font-size: 1.5em;margin-left:0.5em;"><</a>
 <hr>
 <div>
 	<img src="143.jpg" class="photo-page-image" id="page-photo">
@@ -32,11 +32,8 @@
   <script>
 	  const urlParams = new URLSearchParams(window.location.search);
 const photoIDValue = urlParams.get('id');
-console.log(photoIDValue);
 
-document.getElementById('page-photo').src = `https://jackcummings.me/photos/${photoIDValue}`;
-
-  
+document.getElementById('page-photo').src = `https://jackcummings.me/photos/${photoIDValue}`;  
   </script>
   
 </body>
