@@ -349,3 +349,8 @@ margin: 1em auto;
   filter: saturate(0)
 }
 
+.photo-page-image {
+max-width: 75vw;
+margin: 1em auto;
+}
+
