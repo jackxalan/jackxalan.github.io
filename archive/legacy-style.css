@@ -1,0 +1,401 @@
+html {
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	display: flex;
+	height: 100%;
+	min-height: -webkit-fill-available 100vh;
+	min-height: 100vh;
+	min-width: 40vw;
+	scroll-behavior: smooth;
+	background-color: #071b41;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100vw;
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	margin: 0 auto;
+}
+
+/* # @media  and (-webkit-min-device-pixel-ratio:0) {
+	#safari {background-color: #CCC}
+}
+ */
+
+
+body {
+	font-size: 1.25em;
+	font: -apple-system-body;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	line-height: 1.5em;
+	width: 100%;
+	width: -moz-available;
+	/* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;
+	/* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	margin: 0 auto;
+}
+
+.bodycontent {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+
+	/* For desktop: */
+	.bodycontent {
+		min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+
+	.endcredits {
+		min-width: 540px;
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+
+	.moremedia {
+		width: 80vw; 
+		display: grid; 
+		grid-template-columns: auto auto auto auto auto; 
+		margin: 0 auto;
+	}
+
+	.albumdisplay {
+		min-width: 540px;
+	max-width: 50vw;
+		margin: 0 auto;
+	}
+	
+}
+
+
+.page-header {
+	background-color: #0f2c63;
+	border-bottom: 1px solid #C84824;
+	padding: 15px;
+	width: 100vw;
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	max-width: 100%;
+	z-index: 10;
+	box-shadow: 0px 7px 15px #020a22;
+	align-items: center;
+	/* position: fixed;
+	transition-duration: 0.2s;
+	transition-property: height; */
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.page-footer {
+	background-color: #0f2c63;
+	border-top: 1px solid #C84824;
+	padding: 10px 10px 10px 20px;
+	margin-top: 10px;
+	width: 100vw;
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	max-width: 100%;
+	z-index: 10;
+	box-shadow: 0px -7px 15px #020a22;
+}
+
+.largeavatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	margin: 10px auto 15px auto;
+	/* transition: width 0.2s linear, height 0.2s linear, margin 0.2s linear; */
+	box-shadow: none;
+}
+
+h1 {
+	font-family: "Rubik Scribble", system-ui;
+	margin: 0 0.2em 0 0;
+	/* transition: font-size 0.2s linear; */
+	line-height: 1.05em;
+}
+
+.homepage {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0.6em;
+}
+
+@font-face {
+	font-family: "Urayasu";
+	src:
+		url("https://jackcummings.me/fonts/Urayasu.otf") format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Urayasu", sans-serif;
+	letter-spacing: 0.05em
+}
+
+
+h2 {
+	color: #b7e6fc;
+}
+
+h3 {
+	color: #b7e6fc;
+	margin: 1em 0 0.5em 0;
+}
+
+h4 {
+	color: #b7e6fc;
+}
+
+h4.resume {
+	font-family: "Helvetica-Neue", Helvetica, sans-serif;
+	letter-spacing: 0;
+}
+
+h5 {
+	color: #b7e6fc;
+	opacity: 75%;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+hr {
+	border: 1px solid #C84824;
+	opacity: 50%;
+	box-shadow: none;
+	margin: 15px 0 15px 0;
+}
+
+img {
+	display: block;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 45vh;
+	border-radius: 15px;
+	z-index: 10;
+	box-shadow: 0px 10px 15px #04112e;
+
+}
+
+button.collapsible {
+	width: 100%;
+	text-align: left;
+	padding: 0.4em 0.4em 0.4em 1em;
+	margin: auto auto 0.3em auto;
+	background-color: #b7e6fc25;
+	border-color: #b7e6fc;
+	color: #b7e6fc;
+	font-size: 1em;
+}
+
+.active {
+	margin: auto auto auto auto;
+}
+
+button:hover.collapsible {
+	background-color: #b7e6fc75;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.content {
+	padding: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+button {
+	background-color: #72EA8450;
+	border: 1px solid #72EA84;
+	border-radius: 15px;
+}
+
+button:hover {
+	background-color: #72EA8475;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: #25243a;
+	background: #DADBC5;
+}
+
+::selection {
+	color: #25243a;
+	background: #DADBC5;
+}
+
+/* unvisited link */
+a:link {
+	color: #72EA84;
+	text-decoration-color: #72EA8450;
+}
+
+/* mouse over link */
+a:hover {
+	color: #b7e6fc;
+	text-decoration-color: #b7e6fc50;
+}
+
+/* click on link */
+a:active {
+	color: #EB7F3D;
+	text-decoration-color: #EB7F3D50;
+}
+
+/* visited link */
+a:visited {
+	color: #72EA84;
+	text-decoration-color: #EB7F3D50;
+}
+
+a:visited:hover {
+	color: #EB7F3D;
+	text-decoration-color: #EB7F3D50;
+}
+
+small {
+	opacity: 80%;
+}
+
+.caption {
+	font-size: smaller;
+	font-style: italic;
+	text-align: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.yt-embd {
+	display: block;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	aspect-ratio: 16/9;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 5px;
+}
+
+.contactlinks {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: black;
+	line-height: 1.5em;
+	padding: 0 1em 0 1em;
+	text-align: center;
+}
+
+.logolink {
+	text-decoration: none;
+}
+
+
+
+blockquote {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 1em;
+	border-radius: 15px;
+}
+
+.endcredits {
+	font-family: sans-serif;
+	font-size: 0.7em;
+	font-weight: lighter;
+	width: 90vw;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+
+.mediagrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 10px 0 10px 0;
+}
+	
+.mediaitem {
+	border-radius: 15px;
+	margin: 10px;
+}
+
+
+.moremedia {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	max-width: 80vw;
+	overflow-x: scroll;
+}
+
+.first-letter {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  font-size: 2.9em;
+  font-weight: bolder;
+	opacity: 80%;
+	color: #b7e6fc;
+	font-family: "Urayasu", sans-serif;
+}
+
+.albumdisplay {
+	display: flex;
+    align-items: center;
+	margin: 15px auto;
+	font-size: 1.1em;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: #FFFFFF25;
+	width: 90%;
+}
+
+.album-credits {
+  text-align: right;
+ line-height: 1.2;
+    white-space: nowrap;
+}
+
+.spacer {
+  width: 100%
+}
+
+.clear {
+	clear: both;
+}
