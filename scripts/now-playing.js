@@ -55,7 +55,7 @@ function showSection1() {
         if (movie) {
           link.href = `https://www.themoviedb.org/movie/${movie.id}`;
           link.innerHTML = `
-            <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+            <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy">
           `;
         } else {
           console.error(`Movie data not found for "${title}"`);
