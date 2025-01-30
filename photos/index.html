@@ -44,7 +44,6 @@
 	<button id="section2-button" class="buttonoff" onclick="showSection2()">🏜️</button>
 	<button id="section3-button" class="buttonoff" onclick="showSection3()">🎤</button>
  </div>
- <script src="../scripts/now-playing.js"></script>
   <hr style="margin: .25em 0 .5em 0;">
 	<div id="section1">
 	 	<div class="photo-grid">
@@ -255,5 +254,36 @@
 </div>
  <hr>
   <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">photos last updated: 1.26.25 - <a href="changelog.html">changelog</a></span></h5>
+  
+  <script>
+	  // Section Switching Functions
+function showSection1() {
+  document.getElementById("section2-button").className = "buttonoff";
+  document.getElementById("section1-button").className = "selectedbutton";
+  document.getElementById("section3-button").className = "buttonoff";
+  document.getElementById("section2").style.display = "none";
+  document.getElementById("section3").style.display = "none";
+  document.getElementById("section1").style.display = "block";
+}
+
+function showSection2() {
+  document.getElementById("section2-button").className = "selectedbutton";
+  document.getElementById("section1-button").className = "buttonoff";
+  document.getElementById("section3-button").className = "buttonoff";
+  document.getElementById("section1").style.display = "none";
+  document.getElementById("section3").style.display = "none";
+  document.getElementById("section2").style.display = "block";
+}
+
+function showSection3() {
+  document.getElementById("section2-button").className = "buttonoff";
+  document.getElementById("section1-button").className = "buttonoff";
+  document.getElementById("section3-button").className = "selectedbutton";
+  document.getElementById("section2").style.display = "none";
+  document.getElementById("section1").style.display = "none";
+  document.getElementById("section3").style.display = "block";π
+}
+  </script>
+ 
 </body>
 </html>
