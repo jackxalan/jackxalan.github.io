@@ -45,7 +45,9 @@
    <div class="button-container">
 	 <button id="section1-button" onclick="showSection1()" class="selectedbutton" accesskey="2">🎧</button>
 	<button id="section2-button" class="buttonoff" onclick="showSection2()">🎞️</button>
-    <button id="section3-button" class="buttonoff"onclick="showSection3()">📖</button>
+    <button id="section3-button" class="buttonoff"onclick="showSection3()">📺</button>
+    <button id="section4-button" class="buttonoff"onclick="showSection4()">📖</button>
+	   <script src="scripts/now-playing.js"></script>
  </div>
  <hr style="margin: .25em 0;">
       <div id="section1">
@@ -82,8 +84,20 @@
     <script src="https://jackcummings.me/scripts/now-playing.js"></script>
   </div>
   
-  <!-- Books Section (hidden by default) -->
   <div id="section3" style="display:none;">
+	  <div id ="shows-container">
+		  <a href="" id="Your Friendly Neighborhood Spider-Man" class="show"></a>
+		  <a href="" id="Severance" class="show"></a>
+		  <a href="" id="RuPaul's Drag Race" class="show"></a>
+		  <a href="" id="Skeleton Crew" class="show"></a>		
+		  <a href="" id="What If...?" class="show"></a>  
+		  <a href="" id="The Penguin" class="show"></a>
+		  <a href="" id="Dune: Prophecy" class="show"></a>
+	  </div>
+  </div>
+  
+  <!-- Books Section (hidden by default) -->
+  <div id="section4" style="display:none;">
 	  
 	 <!-- URL for book covers
 	 https://covers.openlibrary.org/b/$key/$value-$size.jpg
@@ -101,9 +115,9 @@
 	  </div>
   </div>
   <hr>
-  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 1.28.25 - <a href="changelog.html">changelog</a></span></h5>
+  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 1.30.25 - <a href="changelog.html">changelog</a></span></h5>
 
-   <script src="https://jackcummings.me/scripts/now-playing.js"></script>
+   <script src="scripts/now-playing.js"></script>
 
   
 </body>
