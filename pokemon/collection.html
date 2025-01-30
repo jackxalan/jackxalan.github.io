@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+  <title>Jack's Now Playing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="Canvas">
+  <meta property="og:title" content="Jack's Now Playing">
+    <meta property="og:description" content="Some of what I've been listening to, watching, and reading.">
+  <meta property="og:image" content="https://jackcummings.me/photos/29.jpg" style="image-orientation:from-image;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/redesign-style.css">
+
+  <link href="https://mastodon.coffee/@jack" rel="me">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+<style>
+   .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            justify-items: center;
+			margin: 0 0.5em;
+        }
+        .grid img {
+            width: 100px;
+            height: 100px;
+        }
+		
+		@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.retro {
+    font-family: 'VT323', monospace;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1em auto;
+}
+		
+</style>
+</head>
+<body>
+
+<div class="title-container">
+	<div class="text-container">
+    <h2 style="text-align:left;"><a href="https://jackcummings.me/home-redesign.html">JACK'S</a></h2>
+    <h1 style="white-space:nowrap;">POKéMON</h1>
+  </div>
+  </div>
+  <hr style="margin: .25em 0 .5em 0;">
+ <div class="button-container">
+	 <button id="section1-button" class="selectedbutton" onclick="showSection1()">📱</button>
+	<button id="section2-button" class="buttonoff" onclick="showSection2()">✨</button>
+	<button id="section3-button" class="buttonoff" onclick="showSection3()" style="display:none;"></button>
+ </div>
+ <script src="../scripts/now-playing.js"></script>
+  <hr style="margin: .25em 0 .5em 0;">
+  <div id="section1">
+	  <div id="all-pokemon-count" class="retro"></div>
+	   <div class="grid" id="all-pokemon-grid"></div>
+  </div>
+  <div id="section2" style="display:none;">
+	  <div id="pokemon-count" class="retro"></div>
+    <div class="grid" id="pokemon-grid"></div>
+</div>
+<div id="section3"></div>
+  <hr>
+  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 1.28.25 - <a href="changelog.html">changelog</a></span></h5>
+
+  <script src="pokemon.js"></script>
+
+
+
+  
+</body>
+
+
+
+
+
+</html>

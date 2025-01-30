@@ -31,6 +31,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
             const pokemonNumber = index + 1;
             image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonNumber}.png`;
             image.alt = `Pokémon #${pokemonNumber}`;
+			image.loading = `lazy`;
             image.classList.add('pokemon-image'); // Add a class for styling
 
             // Create the Pokémon number element
