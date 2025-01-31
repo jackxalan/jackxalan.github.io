@@ -25,6 +25,7 @@
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             gap: 10px;
             justify-items: center;
+			margin: 0 0.5em;
         }
         .grid img {
             width: 100px;
@@ -52,26 +53,131 @@
   </div>
   </div>
   <hr style="margin: .25em 0 .5em 0;">
- <div class="button-container">
-	 <button id="section1-button" class="selectedbutton" onclick="showSection1()">📱</button>
-	<button id="section2-button" class="buttonoff" onclick="showSection2()">✨</button>
-	<button id="section3-button" class="buttonoff" onclick="showSection3()" style="display:none;"></button>
- </div>
- <script src="../scripts/now-playing.js"></script>
-  <hr style="margin: .25em 0 .5em 0;">
-  <div id="section1">
-	  <div id="all-pokemon-count" class="retro"></div>
-	   <div class="grid" id="all-pokemon-grid"></div>
+  <div>
+	   <div class="grid" id="my-pokemon-grid">
+		  <img src="" id="6" alt="Charizard" class="shiny">
+<img src="" id="65" alt="Alakazam">
+<img src="" id="94" alt="Gengar" class="shiny">
+<img src="" id="130" alt="Gyarados" class="shiny">
+<img src="" id="143" alt="Snorlax">
+<img src="" id="149" alt="Dragonite">
+<img src="" id="245" alt="Suicune">
+<img src="" id="249" alt="Lugia">
+<img src="" id="257" alt="Blaziken">
+<img src="" id="384" alt="Rayquaza" class="shiny">
+<img src="" id="385" alt="Jirachi">
+<img src="" id="389" alt="Torterra" class="shiny">
+<img src="" id="442" alt="Spiritomb" class="shiny">
+<img src="" id="445" alt="Garchomp" class="shiny">
+<img src="" id="448" alt="Lucario">
+<img src="" id="468" alt="Togekiss" class="shiny">
+<img src="" id="10236" alt="Samurott">
+<img src="" id="658" alt="Greninja">
+<img src="" id="10242" alt="Goodra">
+<img src="" id="711" alt="Gourgeist" class="shiny">
+<img src="" id="778" alt="Mimikyu" class="shiny">
+<img src="" id="809" alt="Melmetal" class="shiny">
+<img src="" id="815" alt="Cinderace">
+<img src="" id="823" alt="Corviknight" class="shiny">
+<img src="" id="862" alt="Obstagoon" class="shiny">
+<img src="" id="887" alt="Dragapult">
+<img src="" id="892" alt="Urshifu">
+<img src="" id="900" alt="Kleavor" class="shiny">
+<img src="" id="901" alt="Ursaluna">
+<img src="" id="959" alt="Tinkaton">
+<img src="" id="979" alt="Annihilape">
+<img src="" id="980" alt="Clodsire">
+	   </div>
   </div>
-  <div id="section2" style="display:none;">
-	  <div id="pokemon-count" class="retro"></div>
-    <div class="grid" id="pokemon-grid"></div>
-</div>
-<div id="section3"></div>
   <hr>
   <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 1.28.25 - <a href="changelog.html">changelog</a></span></h5>
 
-  <script src="pokemon.js"></script>
+  <script>
+	  const myPokemonIds = [6, 65, 94, 130, 143, 149, 245, 249, 257, 384, 385, 389, 442, 445, 448, 468, 503, 658, 706, 711, 778, 809, 815, 823, 862, 887, 892, 900, 901, 959, 979, 980]; 
+    const myPokemonGrid = document.getElementById("my-pokemon-grid");
+    const myPokemonCount = myPokemonIds.length
+	
+    async function fetchMyPokemon(id) {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    const data = await response.json();
+    return { id, imgSrc: data.sprites.front_default, name: data.name };
+}
+
+async function loadMyPokemon() {
+    const pokemonContainer = document.querySelectorAll("#my-pokemon-grid img"); // Fixed ID selector
+
+    for (const item of pokemonContainer) {
+        const mon = item.id; // Declare `mon` with `const`
+        const pokemon = await fetchMyPokemon(mon);
+        
+        if (pokemon) {
+            item.src = pokemon.imgSrc; // Use `item`, not `img`
+        }
+    }
+}
+
+async function fetchMyPokemon(id, isShiny, isHisuian) {
+    let url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    
+    // If it's a Hisuian form, adjust the URL to fetch the correct variant
+    if (isHisuian) {
+        url = `https://pokeapi.co/api/v2/pokemon/${id}-hisui`;
+    }
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    return { 
+        id, 
+        imgSrc: isShiny ? data.sprites.front_shiny : data.sprites.front_default, 
+        name: data.name 
+    };
+}
+
+async function loadMyPokemon() {
+    const pokemonContainer = document.querySelectorAll("#my-pokemon-grid img"); 
+
+    for (const item of pokemonContainer) {
+        const mon = item.id; 
+        const isShiny = item.classList.contains("shiny"); // Check for shiny class
+        const isHisuian = item.classList.contains("hisuian"); // Check for Hisuian class
+        const pokemon = await fetchMyPokemon(mon, isShiny, isHisuian);
+        
+        if (pokemon) {
+            // Create a link element
+            const link = document.createElement("a");
+            link.href = `https://www.serebii.net/pokedex-sv/${mon}.shtml`; // Serebii link format
+            link.target = "_blank"; // Open in a new tab
+
+            // Clone the img element and update its src
+            const newImg = item.cloneNode(true);
+            newImg.src = pokemon.imgSrc;
+
+            // Replace the original img with the wrapped link
+            link.appendChild(newImg);
+            item.replaceWith(link);
+        }
+    }
+}
+
+loadMyPokemon(); // Call the function
+
+		
+		/*
+        const promises = myPokemonIds.map(fetchMyPokemon);
+        const pokemonData = await Promise.all(promises); // Wait for all fetches to complete
+
+        pokemonData.sort((a, b) => myPokemonIds.indexOf(a.id) - myPokemonIds.indexOf(b.id)); // Sort by original ID order
+
+        pokemonData.forEach(pokemon => {
+            const img = document.createElement("img");
+            img.src = pokemon.imgSrc;
+            img.alt = pokemon.name;
+            img.loading = 'lazy';
+            myPokemonGrid.appendChild(img);
+        }); */
+	
+  </script>
 
 
 
