@@ -28,6 +28,66 @@
 	ul {
 		margin: 0 auto 0.5em auto;
 	}
+	/* General Button Styles */
+button {
+  all: unset;
+  display: block; /* Change from inline-block to block for easier centering */
+  max-width: 80vw; /* Ensures it doesn't get too wide */
+  width: fit-content; /* Makes the button fit its content */
+  border: 1px solid #8269a7;
+  border-radius: 15px;
+  padding: 0.4em 1em;
+  font-size: 0.9em;
+  color: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0.1em auto; /* Centers the button horizontally */
+}
+
+/* Collapsible Button Styles */
+button.collapsible {
+  text-align: left;
+  width: 85vw; /* Limits width to 90% of the viewport */
+  max-width: 600px; /* Prevents buttons from being too wide on larger screens */
+}
+    button:hover {
+      background-color: #72EA8475;
+    }
+
+    /* Collapsible Button Styles */
+
+    button.collapsible:hover {
+      background-color: #b7e6fc75;
+      cursor: pointer;
+    }
+
+    /* Collapsible Content */
+    .resume-content {
+      padding: 0;
+	  margin: 0 1em;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+ 
+	
+	.location-container {
+		display:flex;
+		align-items:center;
+	}
+	
+	.circle-mask {
+
+  min-width: 125px;
+  width: 125px;
+  min-height: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin:0 20px;
+}
 	
   </style>
 </head>
