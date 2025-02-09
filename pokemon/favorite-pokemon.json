@@ -181,10 +181,16 @@
       "notes": "Met in Adventureland, Disneyland, U.S.A."
     },
 	{
-      "id": 250,
+      "id": 249,
       "name": "Lugia",
-      "caught_date": "Met in Johto as a young trainer.",
-      "notes": ""
+      "caught_date": "",
+      "notes": "Met in Johto as a young trainer."
+    },
+    {
+      "id": 250,
+      "name": "Ho-Oh",
+      "caught_date": "",
+      "notes": "Met in Johto as a young trainer."
     },
 	{
       "id": 251,
