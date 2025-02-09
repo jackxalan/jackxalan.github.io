@@ -45,16 +45,17 @@
 </style>
 </head>
 <body>
-
-<div class="title-container">
-	<div class="text-container">
-    <h2 style="text-align:left;"><a href="https://jackcummings.me/home-redesign.html">JACK'S</a></h2>
-    <h1 style="white-space:nowrap;">POKéMON</h1>
-  </div>
+  <div class="title-container">
+    <div class="text-container">
+      <h2 style="text-align:left;">
+        <a href="https://jackcummings.me/home-redesign.html">JACK'S</a>
+      </h2>
+      <h1 style="white-space:nowrap;">POKéMON</h1>
+    </div>
   </div>
   <hr style="margin: .25em 0 .5em 0;">
   <div>
-	   <div class="grid" id="my-pokemon-grid">
+      <div class="grid" id="my-pokemon-grid">
 <img src="" id="6" alt="Charizard" class="shiny">
 <img src="" id="65" alt="Alakazam" class="shiny">
 <img src="" id="94" alt="Gengar" class="shiny">
@@ -84,101 +85,59 @@
 <img src="" id="959" alt="Tinkaton">
 <img src="" id="979" alt="Annihilape">
 <img src="" id="980" alt="Clodsire">
-	   </div>
+    </div>
   </div>
   <hr>
-  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;"><a href="changelog.html">changelog</a></span></h5>
+  <h5 class="endcredits">
+    website by <a href="index.html">jackxalan</a>
+    <span style="float: right;">
+      <a href="changelog.html">changelog</a>
+    </span>
+  </h5>
 
   <script>
-	  const myPokemonIds = [6, 65, 94, 130, 143, 149, 245, 249, 257, 384, 385, 389, 442, 445, 448, 468, 503, 658, 706, 711, 778, 809, 815, 823, 862, 887, 892, 900, 901, 959, 979, 980]; 
-    const myPokemonGrid = document.getElementById("my-pokemon-grid");
-    const myPokemonCount = myPokemonIds.length
-	
-    async function fetchMyPokemon(id) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    const data = await response.json();
-    return { id, imgSrc: data.sprites.front_default, name: data.name };
-}
+    async function fetchPokemonData(id, isShiny) {
+      const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+      const response = await fetch(url);
+      const data = await response.json();
+      return {
+        id,
+        imgSrc: isShiny ? data.sprites.front_shiny : data.sprites.front_default,
+        name: data.name,
+        isShiny
+      };
+    }
 
-async function loadMyPokemon() {
-    const pokemonContainer = document.querySelectorAll("#my-pokemon-grid img"); // Fixed ID selector
+    async function loadPokemonImages() {
+      const pokemonContainer = document.querySelectorAll("#my-pokemon-grid img");
 
-    for (const item of pokemonContainer) {
-        const mon = item.id; // Declare `mon` with `const`
-        const pokemon = await fetchMyPokemon(mon);
-        
+      for (const item of pokemonContainer) {
+        const mon = item.id;
+        const isShiny = item.classList.contains("shiny");
+        const pokemon = await fetchPokemonData(mon, isShiny);
+
         if (pokemon) {
-            item.src = pokemon.imgSrc; // Use `item`, not `img`
+          // Create a link element
+          const link = document.createElement("a");
+
+          // Append shiny parameter if the Pokémon is shiny
+          const shinyParam = pokemon.isShiny ? "&shiny=true" : "";
+          link.href = `detail.html?id=${mon}${shinyParam}`;
+          link.target = "_blank"; // Open in a new tab
+
+          // Clone the img element and update its src
+          const newImg = item.cloneNode(true);
+          newImg.src = pokemon.imgSrc;
+
+          // Replace the original img with the wrapped link
+          link.appendChild(newImg);
+          item.replaceWith(link); // Update the DOM with the new link and image
         }
-    }
-}
-
-async function fetchMyPokemon(id, isShiny, isHisuian) {
-    let url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-    
-    // If it's a Hisuian form, adjust the URL to fetch the correct variant
-    if (isHisuian) {
-        url = `https://pokeapi.co/api/v2/pokemon/${id}-hisui`;
+      }
     }
 
-    const response = await fetch(url);
-    const data = await response.json();
-
-    return { 
-        id, 
-        imgSrc: isShiny ? data.sprites.front_shiny : data.sprites.front_default, 
-        name: data.name 
-    };
-}
-
-async function loadMyPokemon() {
-    const pokemonContainer = document.querySelectorAll("#my-pokemon-grid img"); 
-
-    for (const item of pokemonContainer) {
-        const mon = item.id; 
-        const isShiny = item.classList.contains("shiny"); // Check for shiny class
-        const isHisuian = item.classList.contains("hisuian"); // Check for Hisuian class
-        const pokemon = await fetchMyPokemon(mon, isShiny, isHisuian);
-        
-        if (pokemon) {
-            // Create a link element
-            const link = document.createElement("a");
-            link.href = `https://www.serebii.net/pokedex-sv/${mon}.shtml`; // Serebii link format
-            link.target = "_blank"; // Open in a new tab
-
-            // Clone the img element and update its src
-            const newImg = item.cloneNode(true);
-            newImg.src = pokemon.imgSrc;
-
-            // Replace the original img with the wrapped link
-            link.appendChild(newImg);
-            item.replaceWith(link);
-        }
-    }
-}
-
-loadMyPokemon(); // Call the function
-
-		
-		/*
-        const promises = myPokemonIds.map(fetchMyPokemon);
-        const pokemonData = await Promise.all(promises); // Wait for all fetches to complete
-
-        pokemonData.sort((a, b) => myPokemonIds.indexOf(a.id) - myPokemonIds.indexOf(b.id)); // Sort by original ID order
-
-        pokemonData.forEach(pokemon => {
-            const img = document.createElement("img");
-            img.src = pokemon.imgSrc;
-            img.alt = pokemon.name;
-            img.loading = 'lazy';
-            myPokemonGrid.appendChild(img);
-        }); */
-	
+    loadPokemonImages(); // Call the function to load the Pokémon images
   </script>
-
-
-
-  
 </body>
 
 
