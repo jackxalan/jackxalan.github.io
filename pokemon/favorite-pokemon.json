@@ -4,13 +4,13 @@
       "id": 6,
       "name": "Charizard",
       "caught_date": "02/20/2021",
-      "notes": ""
+      "notes": "Hatched from an egg in Galar on Route 5."
     },
     {
       "id": 65,
       "name": "Alakazam",
       "caught_date": "03/03/2022",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 94,
@@ -22,7 +22,7 @@
       "id": 130,
       "name": "Gyarados",
       "caught_date": "07/05/2020",
-      "notes": ""
+      "notes": "The red dragon of Johto's Lake of Rage."
     },
     {
       "id": 143,
@@ -34,19 +34,19 @@
       "id": 149,
       "name": "Dragonite",
       "caught_date": "12/01/2018",
-      "notes": ""
+      "notes": "Caught in Pokémon GO."
     },
 	 {
       "id": 257,
       "name": "Blaziken",
       "caught_date": "10/11/2013",
-      "notes": ""
+      "notes": "One of my oldest POKéMON; received from a distribution event in POKéMON X."
     },
 	{
       "id": 279,
       "name": "Pelipper",
       "caught_date": "07/28/2020",
-      "notes": ""
+      "notes": "Encountered soaring in the skies over Hoenn;"
     },
     {
       "id": 376,
@@ -58,37 +58,37 @@
       "id": 389,
       "name": "Torterra",
       "caught_date": "",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 442,
       "name": "Spiritomb",
       "caught_date": "",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 468,
       "name": "Togekiss",
       "caught_date": "04/01/2022",
-      "notes": ""
+      "notes": "Encountered in Hisui, flying above Cottonsedge Prairie in the Crimson Mirelands."
     },
     {
       "id": 10236,
       "name": "Samurott",
       "caught_date": "",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 658,
       "name": "Greninja",
       "caught_date": "10/18/2016",
-      "notes": ""
+      "notes": "Ash's partner; received from a distribution event in POKéMON Sun."
     },
     {
       "id": 10242,
       "name": "Goodra",
       "caught_date": "",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 711,
@@ -118,61 +118,61 @@
       "id": 823,
       "name": "Corviknight",
       "caught_date": "09/02/2020",
-      "notes": ""
+      "notes": "Encountered in Galar."
     },
 	 {
       "id": 845,
       "name": "Cramorant",
       "caught_date": "02/03/2021",
-      "notes": ""
+      "notes": "Encountered in Galar."
     },
     {
       "id": 862,
       "name": "Obstagoon",
       "caught_date": "02/04/2021",
-      "notes": ""
+      "notes": "Encountered in Galar."
     },
     {
       "id": 887,
       "name": "Dragapult",
       "caught_date": "12/30/2021",
-      "notes": ""
+      "notes": "Encountered in Galar."
     },
     {
       "id": 892,
       "name": "Urshifu",
       "caught_date": "",
-      "notes": ""
+      "notes": "Received as Kubfu from Mustard's Master Dojo on the Isle of Armor."
     },
     {
       "id": 900,
       "name": "Kleavor",
       "caught_date": "03/02/2022",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 901,
       "name": "Rána",
       "caught_date": "01/31/2022",
-      "notes": ""
+      "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 959,
       "name": "Tinkaton",
       "caught_date": "08/16/2023",
-      "notes": ""
+      "notes": "Encountered in Paldea."
     },
     {
       "id": 979,
       "name": "Annihilape",
       "caught_date": "11/20/2022",
-      "notes": ""
+      "notes": "Encountered in Paldea."
     },
     {
       "id": 980,
       "name": "Clodsire",
       "caught_date": "",
-      "notes": ""
+      "notes": "Encountered in Paldea."
     }
   ]
 }
