@@ -181,16 +181,10 @@
       "notes": "Met in Adventureland, Disneyland, U.S.A."
     },
 	{
-      "id": 249,
-      "name": "Lugia",
-      "caught_date": "",
-      "notes": "Met in Johto as a young trainer."
-    },
-    {
       "id": 250,
-      "name": "Ho-Oh",
-      "caught_date": "",
-      "notes": "Met in Johto as a young trainer."
+      "name": "Lugia",
+      "caught_date": "Met in Johto as a young trainer.",
+      "notes": ""
     },
 	{
       "id": 251,
@@ -229,7 +223,7 @@
       "notes": "We met in Alola, and went on an adventure."
     },
 	{
-      "id": 801,
+      "id": 10147,
       "name": "Magearna",
       "caught_date": "",
       "notes": "My most cherished encounter; we met after i became a POKéMON Master and caught 'em all."
