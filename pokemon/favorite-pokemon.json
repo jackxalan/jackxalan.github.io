@@ -46,7 +46,7 @@
       "id": 279,
       "name": "Pelipper",
       "caught_date": "07/28/2020",
-      "notes": "Encountered soaring in the skies over Hoenn;"
+      "notes": "Encountered soaring in the skies over Hoenn"
     },
     {
       "id": 376,
@@ -263,6 +263,6 @@
       "name": "Koraidon",
       "caught_date": "11/20/2022",
       "notes": "We met on a sandy beach near my Paldean home."
-    },
+    }
   ]
 }
