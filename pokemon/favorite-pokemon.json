@@ -173,6 +173,96 @@
       "name": "Clodsire",
       "caught_date": "",
       "notes": "Encountered in Paldea."
-    }
+    },
+	{
+      "id": 151,
+      "name": "Mew",
+      "caught_date": "",
+      "notes": "Met in Adventureland, Disneyland, U.S.A."
+    },
+	{
+      "id": 250,
+      "name": "Lugia",
+      "caught_date": "Met in Johto as a young trainer.",
+      "notes": ""
+    },
+	{
+      "id": 251,
+      "name": "Celebi",
+      "caught_date": "",
+      "notes": "Encountered in Paldea."
+    },
+	{
+      "id": 384,
+      "name": "Rayquaza",
+      "caught_date": "",
+      "notes": "After a long search, we met in a crystal cavern in Paldea."
+    },
+	{
+      "id": 385,
+      "name": "Jirachi",
+      "caught_date": "",
+      "notes": "We met in Sinnoh, and went on an adventure."
+    },
+	{
+      "id": 493,
+      "name": "Arcus",
+      "caught_date": "",
+      "notes": "We met in the heavens after meeting every POKéMON."
+    },
+	{
+      "id": 716,
+      "name": "Xerneas",
+      "caught_date": "",
+      "notes": "From the forests of Kalos, Xerneas lured me back to the world of POKéMON."
+    },
+		{
+      "id": 789,
+      "name": "Nebby",
+      "caught_date": "",
+      "notes": "We met in Alola, and went on an adventure."
+    },
+	{
+      "id": 801,
+      "name": "Magearna",
+      "caught_date": "",
+      "notes": "My most cherished encounter; we met after i became a POKéMON Master and caught 'em all."
+    },
+	{
+      "id": 807,
+      "name": "Zeraora",
+      "caught_date": "",
+      "notes": "Encountered in a Galarian raid den."
+    },
+	{
+      "id": 888,
+      "name": "Zacian",
+      "caught_date": "",
+      "notes": "Encountered with the help of a voucher discovered in Providence."
+    },
+	{
+      "id": 889,
+      "name": "Zamazenta",
+      "caught_date": "",
+      "notes": "Encountered with the help of a voucher discovered in Providence."
+    },
+	{
+      "id": 890,
+      "name": "Eternatus",
+      "caught_date": "",
+      "notes": "Encountered with the help of a voucher discovered in Providence."
+    },
+	{
+      "id": 905,
+      "name": "Enamorus",
+      "caught_date": "",
+      "notes": "A gift for collecting every pokemon in Hisui."
+    },
+	{
+      "id": 1007,
+      "name": "Koraidon",
+      "caught_date": "11/20/2022",
+      "notes": "We met on a sandy beach near my Paldean home."
+    },
   ]
 }
