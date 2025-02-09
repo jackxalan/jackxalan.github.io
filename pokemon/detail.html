@@ -81,7 +81,7 @@ body {
 
             // Fetch the JSON data
             try {
-                const response = await fetch('favorite-pokemon.json');
+                const response = await fetch('https://jackcummings.me/pokemon/favorite-pokemon.json');
                 if (!response.ok) throw new Error('Failed to load JSON data');
                 const data = await response.json();
 
