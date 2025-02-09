@@ -30,7 +30,7 @@ async function fetchAllPokemon(id) {
     const grid = document.getElementById("pokemon-grid");
     const pokemonCount = pokemonIds.length
 	
-	document.getElementById("pokemon-count").innerText = pokemonCount + " REGISTERED";
+	document.getElementById("pokemon-count").innerText = pokemonCount + " SHINY FORMS";
 	
     async function fetchPokemon(id) {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
@@ -55,4 +55,17 @@ async function fetchAllPokemon(id) {
 
     loadShinyPokemon();
 	
-	
+	// Section Switching Functions
+function showSection1() {
+  document.getElementById("section2-button").className = "buttonoff";
+  document.getElementById("section1-button").className = "selectedbutton";
+  document.getElementById("section2").style.display = "none";
+  document.getElementById("section1").style.display = "block";
+};
+
+function showSection2() {
+  document.getElementById("section2-button").className = "selectedbutton";
+  document.getElementById("section1-button").className = "buttonoff";
+  document.getElementById("section1").style.display = "none";
+  document.getElementById("section2").style.display = "block";
+};
