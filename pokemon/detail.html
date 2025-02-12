@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="../css/redesign-style.css">
-
+	<link rel="stylesheet" href="pokestyle.css">
   	<link href="https://mastodon.coffee/@jack" rel="me">
   	<link rel="icon" type="image/x-icon"
     href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
@@ -28,12 +28,6 @@ body {
 	font-weight: bold;
 	font-size: 1.5em;
 }
-
-.pokemon-info {
-		text-align: center;
-	margin: 1em auto;
-}
-		
 
 </style>
 </head>
@@ -59,56 +53,69 @@ body {
   </h5>
 
     <script>
-        // Function to fetch Pokémon image from PokeAPI
-        async function fetchPokemonImage(id, isShiny) {
-            try {
-                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-                if (!response.ok) throw new Error('Pokémon not found');
-                const data = await response.json();
-                const spriteUrl = isShiny ? data.sprites.other['official-artwork'].front_shiny : data.sprites.other['official-artwork'].front_default;
-                return spriteUrl;
-            } catch (error) {
-                console.error(error);
-                return ''; // Return an empty string if there's an error
-            }
+ // Function to fetch Pokémon image from PokeAPI
+async function fetchPokemonImage(id, isShiny) {
+    try {
+        // Special handling for Magearna (ID 10147)
+        const isMagearna = id === 10147;
+
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        if (!response.ok) throw new Error('Pokémon not found');
+        
+        const data = await response.json();
+
+        // For Magearna's alternate form handling
+        let spriteUrl;
+        if (isMagearna) {
+            // Magearna may have different sprites or alternate forms, adjust as needed.
+            spriteUrl = isShiny ? data.sprites.other['official-artwork'].front_shiny : data.sprites.other['official-artwork'].front_default;
+        } else {
+            spriteUrl = isShiny ? data.sprites.other['official-artwork'].front_shiny : data.sprites.other['official-artwork'].front_default;
         }
 
-        // Function to display Pokémon details
-        async function displayPokemonDetails() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const pokemonID = parseInt(urlParams.get('id'));
-            const isShiny = urlParams.get('shiny') === 'true';
+        return spriteUrl;
+    } catch (error) {
+        console.error(error);
+        return ''; // Return an empty string if there's an error
+    }
+}
 
-            // Fetch the JSON data
-            try {
-                const response = await fetch('https://jackcummings.me/pokemon/favorite-pokemon.json');
-                if (!response.ok) throw new Error('Failed to load JSON data');
-                const data = await response.json();
+// Function to display Pokémon details
+async function displayPokemonDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const pokemonID = parseInt(urlParams.get('id'));
+    const isShiny = urlParams.get('shiny') === 'true';
 
-                // Find the Pokémon in the JSON data
-                const pokemon = data.pokemon_caught.find(p => p.id === pokemonID);
+    // Fetch the JSON data
+    try {
+        const response = await fetch('https://jackcummings.me/pokemon/favorite-pokemon.json');
+        if (!response.ok) throw new Error('Failed to load JSON data');
+        const data = await response.json();
 
-                if (pokemon) {
-                    // Update the page content with Pokémon details
-                    document.getElementById('pokemon-name').textContent = pokemon.name;
-					document.getElementById('pokemon-name').style.fontFamily = "'VT323', monospace";
-                    document.getElementById('caught-date').textContent = `Caught on: ${pokemon.caught_date}`;
-                    document.getElementById('pokemon-notes').textContent = pokemon.notes || "No notes available.";
+        // Find the Pokémon in the JSON data
+        const pokemon = data.pokemon_caught.find(p => p.id === pokemonID);
 
-                    // Fetch and display the Pokémon image
-                    const imageUrl = await fetchPokemonImage(pokemonID, isShiny);
-                    document.getElementById('pokemon-image').src = imageUrl;
-                } else {
-                    console.log('Pokémon not found');
-                    document.getElementById('pokemon-name').textContent = 'Pokémon not found';
-                }
-            } catch (error) {
-                console.error('Error fetching or processing data:', error);
-            }
+        if (pokemon) {
+            // Update the page content with Pokémon details
+            document.getElementById('pokemon-name').textContent = pokemon.name;
+            document.getElementById('pokemon-name').style.fontFamily = "'VT323', monospace";
+            document.getElementById('caught-date').textContent = `Caught on: ${pokemon.caught_date}`;
+            document.getElementById('pokemon-notes').textContent = pokemon.notes || "No notes available.";
+
+            // Fetch and display the Pokémon image
+            const imageUrl = await fetchPokemonImage(pokemonID, isShiny);
+            document.getElementById('pokemon-image').src = imageUrl;
+        } else {
+            console.log('Pokémon not found');
+            document.getElementById('pokemon-name').textContent = 'Pokémon not found';
         }
+    } catch (error) {
+        console.error('Error fetching or processing data:', error);
+    }
+}
 
-        // Call the function to display Pokémon details
-        displayPokemonDetails();
+// Call the function to display Pokémon details
+displayPokemonDetails();
     </script>
 </body>
 
