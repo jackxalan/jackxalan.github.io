@@ -1,53 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  displayMovies();
-  displayShows();
-});
-
-// Section Switching Functions
-function showSection1() {
-  document.getElementById("section2-button").className = "buttonoff";
-  document.getElementById("section1-button").className = "selectedbutton";
-  document.getElementById("section3-button").className = "buttonoff";
-  document.getElementById("section4-button").className = "buttonoff";
-  document.getElementById("section2").style.display = "none";
-  document.getElementById("section3").style.display = "none";
-  document.getElementById("section1").style.display = "block";
-  document.getElementById("section4").style.display = "none";
-}
-
-function showSection2() {
-  document.getElementById("section2-button").className = "selectedbutton";
-  document.getElementById("section1-button").className = "buttonoff";
-  document.getElementById("section3-button").className = "buttonoff";
-  document.getElementById("section4-button").className = "buttonoff";
-  document.getElementById("section1").style.display = "none";
-  document.getElementById("section3").style.display = "none";
-  document.getElementById("section2").style.display = "block";
-  document.getElementById("section4").style.display = "none";
-}
-
-function showSection3() {
-  document.getElementById("section2-button").className = "buttonoff";
-  document.getElementById("section1-button").className = "buttonoff";
-  document.getElementById("section3-button").className = "selectedbutton";
-  document.getElementById("section4-button").className = "buttonoff";
-  document.getElementById("section2").style.display = "none";
-  document.getElementById("section1").style.display = "none";
-  document.getElementById("section3").style.display = "block";
-  document.getElementById("section4").style.display = "none";
-}
-
-function showSection4() {
-  document.getElementById("section2-button").className = "buttonoff";
-  document.getElementById("section1-button").className = "buttonoff";
-  document.getElementById("section3-button").className = "buttonoff";
-  document.getElementById("section4-button").className = "selectedbutton";
-  document.getElementById("section2").style.display = "none";
-  document.getElementById("section1").style.display = "none";
-  document.getElementById("section3").style.display = "none";
-  document.getElementById("section4").style.display = "block";
-}
-
 // TMDB API Key
 const apiKey = "4526ca5104f6770580cbb773ede26961";
 
@@ -136,3 +86,72 @@ async function displayShows() {
     }
   }
 }
+
+// Show Section
+function showSection(sectionNumber) {
+  const totalSections = 5; // Update this if you add more sections
+
+  for (let i = 1; i <= totalSections; i++) {
+    const section = document.getElementById(`section${i}`);
+    const button = document.getElementById(`section${i}-button`);
+
+    if (i === sectionNumber) {
+      section.style.display = "block";
+      button.className = "selectedbutton";
+    } else {
+      section.style.display = "none";
+      button.className = "buttonoff";
+    }
+  }
+}
+
+// Fetch Podcast Data
+async function fetchPodcastData() {
+  const container = document.getElementById('podcast-container');
+  const podcastDivs = container.querySelectorAll('div');
+
+  const podcastNames = Array.from(podcastDivs).map(div => div.id.toLowerCase());
+
+  try {
+    const requests = podcastNames.map(name =>
+      fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(name)}&entity=podcast`)
+        .then(response => response.json())
+        .then(data => data.results.find(podcast => podcast.collectionName.toLowerCase() === name))
+    );
+
+    const podcasts = await Promise.all(requests);
+
+    // Insert the artwork into the respective divs
+    podcasts.forEach((podcast, index) => {
+      if (podcast) {
+        // Create an anchor element
+        const link = document.createElement('a');
+        link.href = podcast.collectionViewUrl; // Podcast feed URL
+        link.target = '_blank'; // Open in a new tab
+
+        // Create an image element
+        const image = document.createElement('img');
+        image.src = podcast.artworkUrl600; // High-resolution artwork
+        image.alt = `${podcast.collectionName} Podcast`;
+        image.width = 300; // Adjust the width as needed
+
+        // Append the image to the anchor
+        link.appendChild(image);
+
+        // Append the anchor to the respective div
+        podcastDivs[index].appendChild(link);
+      } else {
+        console.error('Podcast not found.');
+      }
+    });
+  } catch (error) {
+    console.error('Error fetching podcast data:', error);
+  }
+}
+
+// Initialize the application
+document.addEventListener("DOMContentLoaded", () => {
+  displayMovies();
+  displayShows();
+  fetchPodcastData();
+});
