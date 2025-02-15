@@ -134,8 +134,7 @@ async function fetchPodcastData() {
         image.src = podcast.artworkUrl600; // High-resolution artwork
         image.alt = `${podcast.collectionName} Podcast`;
         image.width = 300; // Adjust the width as needed
-        image.loading = 'lazy';
-        
+
         // Append the image to the anchor
         link.appendChild(image);
 
