@@ -42,13 +42,14 @@
   </div>
 </div>
  <hr style="margin: .25em 0 .5em 0;">
-   <div class="button-container">
-	 <button id="section1-button" onclick="showSection1()" class="selectedbutton" accesskey="2">🎧</button>
-	<button id="section2-button" class="buttonoff" onclick="showSection2()">🎞️</button>
-    <button id="section3-button" class="buttonoff"onclick="showSection3()">📺</button>
-    <button id="section4-button" class="buttonoff"onclick="showSection4()">📖</button>
-	   <script src="scripts/now-playing.js"></script>
- </div>
+  <div class="button-container">
+  <button id="section1-button" onclick="showSection(1)" class="selectedbutton" accesskey="2">🎧</button>
+  <button id="section2-button" onclick="showSection(2)" class="buttonoff">🎞️</button>
+  <button id="section3-button" onclick="showSection(3)" class="buttonoff">📺</button>
+  <button id="section4-button" onclick="showSection(4)" class="buttonoff">📖</button>
+  <button id="section5-button" onclick="showSection(5)" class="buttonoff">🎙️</button> <!-- New Section 5 -->
+  <script src="scripts/now-playing.js"></script>
+</div>
  <hr style="margin: .25em 0;">
       <div id="section1">
 	<!--	Use in future if month breakdown is appropriate
@@ -58,8 +59,6 @@
 				  <h3 style="font-family:Oldenburg;margin:0.5em;">FEBRUARY '25</h3>
     <div class="media-grid">
 		<!-- <div><a href=""><img src="" alt=""></a></div> -->
-    <div><a href="https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743"><img src="https://ia800200.us.archive.org/30/items/mbid-791c4f1f-1024-365c-ba25-a24a1b17f56b/mbid-791c4f1f-1024-365c-ba25-a24a1b17f56b-5453908996_thumb500.jpg" alt="The Miseducation of Lauryn Hill by Lauryn Hill" loading="lazy"></a></div>
-    <div><a href="https://music.apple.com/us/album/my-apologies-to-the-chef/1773190646"><img src="https://ia601504.us.archive.org/2/items/mbid-388b461a-0eeb-48ff-9881-594c82dd2e97/mbid-388b461a-0eeb-48ff-9881-594c82dd2e97-41200225556_thumb500.jpg" alt="My Apologies to the Chef by Winona Fighter" loading="lazy"></a></div>
     <div><a href="https://music.apple.com/us/album/mm-food/1516750770"><img src="https://ia802809.us.archive.org/22/items/mbid-263d7827-4c0e-4d7f-a8f1-5877194fe532/mbid-263d7827-4c0e-4d7f-a8f1-5877194fe532-25498831242_thumb500.jpg" alt="MM..FOOD by MF DOOM" loading="lazy"></a></div>
     <div><a href="https://music.apple.com/us/album/the-unraveling-of-puptheband/1604581828"><img src="https://ia802204.us.archive.org/26/items/mbid-713195a2-105b-4dad-824a-57bbce6156c9/mbid-713195a2-105b-4dad-824a-57bbce6156c9-31507128250_thumb500.jpg" alt="The Unraveling of Puptheband by PUP" loading="lazy"></a>
 </div>
@@ -92,13 +91,13 @@
     <div class="media-grid">
     <div><a href="https://music.apple.com/us/album/spiral-in-a-straight-line/1756575884"> <img src="https://ia600801.us.archive.org/4/items/mbid-c3168fe5-6d3f-4ee8-a09f-ec8bcc58726e/mbid-c3168fe5-6d3f-4ee8-a09f-ec8bcc58726e-39868329465_thumb500.jpg" loading="lazy" alt="Spiral in a Straight Line by Touché Amore"></a></div>
     <div><a href="https://music.apple.com/us/album/starship-syncopation/1755304423"><img src="https://ia800101.us.archive.org/19/items/mbid-f4a87b2d-2f8b-4ff9-9002-0a44f48b32a2/mbid-f4a87b2d-2f8b-4ff9-9002-0a44f48b32a2-39520829413_thumb500.jpg" loading="lazy" alt="Starship Syncopation by Cory Wong"></a></div>
-    <div><a href="https://music.apple.com/us/album/okemah-rising/1669401240"><img src="https://ia801601.us.archive.org/12/items/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17-35711047376_thumb500.jpg" alt="Okemah Rising by Dropkick Murphys" loading="lazy"></a></div>
+	<div><a href="https://music.apple.com/us/album/okemah-rising/1669401240"><img src="https://ia801601.us.archive.org/12/items/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17-35711047376_thumb500.jpg" alt="Okemah Rising by Dropkick Murphys" loading="lazy"></a></div>
 		<div><a href="https://music.apple.com/us/album/this-machine-still-kills-fascists-expanded-edition/1663331530"><img src ="https://ia801500.us.archive.org/25/items/mbid-065d63d0-ac17-4dc5-9e34-6cdfda9d9451/mbid-065d63d0-ac17-4dc5-9e34-6cdfda9d9451-34634419052_thumb500.jpg" loading="lazy" alt="This Machine Still Kills Fascists by Dropkick Murphys"></a></div>
-    <div><a href="https://music.apple.com/us/album/tangk/1708015501"><img src="https://ia800506.us.archive.org/15/items/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1-37009318020_thumb500.jpg" alt="TANGK by IDLES" loading="lazy"></a></div>
+		<div><a href="https://music.apple.com/us/album/tangk/1708015501"><img src="https://ia800506.us.archive.org/15/items/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1-37009318020_thumb500.jpg" alt="TANGK by IDLES" loading="lazy"></a></div>
 		<div><a href="https://music.apple.com/us/album/joy-as-an-act-of-resistance/1391070525"><img src="https://ia802809.us.archive.org/20/items/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e-31116969977_thumb500.jpg" loading="lazy" alt="Joy as an Act of Resistance by Idles"></a></div>
 		<div><a href="https://music.apple.com/us/album/just-devils/1710718857"><img src="https://ia600505.us.archive.org/30/items/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594-37078695522_thumb500.jpg" loading="lazy" alt="Just Devils by PWRUP"></a></div>
 		<div><a href="https://music.apple.com/us/album/the-bad-fire/1772756309"><img src="https://ia801905.us.archive.org/11/items/mbid-dc43061a-7ccf-4848-8996-cb6326768729/mbid-dc43061a-7ccf-4848-8996-cb6326768729-40393390761_thumb500.jpg" loading="lazy" alt="The Bad Fire by Mogwai"></a></div>
-    <div><a href="https://music.apple.com/us/album/my-dusty-road/1440952316"><img src="https://ia601508.us.archive.org/23/items/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c-33575623899_thumb500.jpg" alt="My Dusty Road by Woody Guthrie" loading="lazy"></a></div>
+		<div><a href="https://music.apple.com/us/album/my-dusty-road/1440952316"><img src="https://ia601508.us.archive.org/23/items/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c-33575623899_thumb500.jpg" alt="My Dusty Road by Woody Guthrie" loading="lazy"></a></div>
 		<div><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" loading="lazy" alt="Tennessee Songbird by Hannah Juanita"></a></div>
     </div>
   </div>
@@ -107,7 +106,6 @@
   <div id="section2" style="display:none; ">
 	  <h3 style="font-family:Oldenburg;margin:0.5em;">FEBRUARY '25</h3>
 	   <div id="movies-container">
-      	      <a href="" id="Dune: Part Two" class="movie"></a>
 	      <a href="" id="Sherlock Jr." class="movie"></a>
 	      <a href="" id="Modern Times" class="movie"></a>
 	      <a href="" id="Space is the Place" class="movie"></a>
@@ -169,6 +167,24 @@
 		  <div><a href="https://share.libbyapp.com/title/648453"><img src="https://ia800404.us.archive.org/view_archive.php?archive=/33/items/l_covers_0010/l_covers_0010_22.zip&file=0010226364-L.jpg" alt="God Emperor of Dune by Frank Herbert" loading="lazy"></a></div>
 	  </div>
   </div>
+  <div id="section5" style="display:none; ">
+<h3 style="font-family:Oldenburg;margin:0.5em;">SHOWS</h3>
+	<div class="media-grid" id="podcast-container">
+		<div id="Upgrade"></div>
+		<div id="Fighting in the War Room: A Movies and Pop Culture Podcast"></div>
+		<div id="Trial By Content"></div>
+		<div id="Connected"></div>
+		<div id="Remaster"></div>
+		<div id="Accidental Tech Podcast"></div>
+		<div id="Cerebro"></div>
+		<div id="Cortex"></div>
+		<div id="Welcome to Night Vale"></div>
+	</div>
+<!--
+	<h3 style="font-family:Oldenburg;margin:0.5em;">EPISODES</h3>
+    <div class="podcast-episode"></div>
+  </div> 
+-->
   <hr>
   <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 2.13.25 - <a href="changelog.html">changelog</a></span></h5>
 
