@@ -87,7 +87,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
 	.selectedbutton {
-		background: rgba(255,255,255,0.9);
+		background: rgba(255,255,255,1);
 	}
 	
 	html {
@@ -104,6 +104,10 @@ p {
 	
 	button {
 		border: 1px #8269a7;
+	}
+	
+	.podcast-container {
+		background-color: rgba(255,255,255,0.1) !important;
 	}
 }
 
@@ -211,7 +215,7 @@ column-gap: 1px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
   gap: 1px; /* Spacing between images */
-  margin-top: .5em;
+  margin-top: .5em auto;
 }
 
 
@@ -231,16 +235,12 @@ column-gap: 1px;
 
   justify-content: center;
   gap: 1px; /* Spacing between images */
-  margin-top: .5em;
+  margin: .5em auto;
 }
 
 .section2 {
 margin: 0.5em auto;
 }
-
-.section4 {
-  margin: 0.5em auto;
-  }
 
 #movies-container {
 	
@@ -381,4 +381,44 @@ a:link {
 	color: #8269a7;
 }
 
- 
+ .podcast-container {
+    display: flex;
+	flex-direction:row;
+    align-items: stretch; /* Makes the text match the image height */
+    gap: 1em;
+	padding: 15px;
+	background-color:rgba(0,0,0,0.1);
+	margin: 1em;
+    border-radius: 15px;
+  }
+
+  .podcast-container img {
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+  }
+
+  .podcast-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns text vertically */
+    flex: 1; /* Makes text take remaining space */
+  }
+
+  .podcast-title {
+    font-weight: bold;
+    font-size: 1em;
+	line-height: 1em;
+    margin: 0.5em 0 0.75em 0;
+  }
+
+  .podcast-meta {
+    font-size: 0.8em;
+	line-height: 0.8em;
+    font-weight: 300;
+  }
+
+  .podcast-description {
+    font-size: 0.7em;
+    line-height: 1.2em;
+  }
