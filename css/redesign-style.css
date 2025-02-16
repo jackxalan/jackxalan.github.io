@@ -1,111 +1,451 @@
- html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-	max-width:100%;
-    font-family: ui-rounded;
+html {
+  min-width: 40vw;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  width: fill-available;
 }
+
+.oldenburg-regular {
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-size: 1.25em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+ background-color: Canvas;
+  color: CanvasText;
+  color-scheme: light dark;
+}
+
+
+
+img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove unwanted spacing below the image */
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.bottom-left{
+  position: absolute;
+  bottom: -1em; 
+  left: 0.5em;
+  z-index: 10;
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+}
+
+.overlay-text {
+	line-height: 1em;
+	font-size: 7.25vw;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Oldenburg", system-ui;
+	font-size: 9.5vw;
+	margin: 0 auto;
+	font-weight: bold;
+	line-height: 1em;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Oldenburg", system-ui;
+	text-transform: uppercase;
+	line-height: 1em;
+    margin: 0;
+}
+
+h5 {
+	font-size: 0.5em;
+	margin: 0 1em;
+}
+
+
+p {
+ margin: auto 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+	.selectedbutton {
+		background: rgba(255,255,255,1);
+	}
+	
+	html {
+		background: #000000;
+	}
+	
+	body {
+				background: #000000;
+	}
+	
+	a:link {
+		color:#8269a7
+	}
+	
+	button {
+		border: 1px #8269a7;
+	}
+	
+	.podcast-container {
+		background-color: rgba(255,255,255,0.1) !important;
+	}
+}
+
+.masked-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Avoid extra space below image */
+  clip-path: url(#polygon-mask); /* Apply the SVG clipping mask */
+  -webkit-clip-path: url(#polygon-mask); /* Ensure compatibility with WebKit browsers */
+}
+
 
 @media only screen and (min-width: 700px) {
-
-	#section1 {
-		min-width:540px;
-	max-width: 60vw;
-	margin:1em auto;
-}
-
-#section2 {
-	min-width:540px;
-	max-width: 60vw;
-	margin:1em auto;
-}
 	
+	html {
+		min-width: 540px;
+			max-width: 50vw;
+			margin: 0 auto;
+	}
+	
+	.overlay-text {
+	line-height: 1em;
+	font-weight: bold;
+	font-size: 1.75em;
+	}
+
+	h1 {
+		font-size: 5vw;
+	}
+	
+	
+	h5 {
+	
+		margin: 0;
+	}
+	
+	
+	.container {
+		  margin-bottom: 1.5em;
+	}
+	
+	.bottom-left{
+		position: absolute;
+	  bottom: -.75em; 
+	left: 0;
+	
+	}
+	
+	.top-right {
+	  position: absolute;
+	  top: 0.5em;
+	  right: 0;
+	}
+	
+	p {
+		margin: 0;
+	}
+	
+	.bio {
+		max-width: 75%;
+	}
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+text-align: center;
+row-gap: 1px;
+column-gap: 1px;
+}
+
+/* Main grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+  gap: 1px; /* Spacing between images */
+  margin-top: .5em;
+}
+
+/* Grid images */
+.image-grid img {
+  width: 100%; /* Full width of the grid cell */
+  aspect-ratio: 1; /* Force images to be square */
+  object-fit: cover; /* Crop the image to fill the square */
+  object-position: top center; /* Anchor the crop to the top-center */
+}
+
+/* Main grid container */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+  gap: 1px; /* Spacing between images */
+  margin-top: .5em;
+}
+
+/* Grid images */
+.photo-grid img {
+  width: 100%; /* Full width of the grid cell */
+  aspect-ratio: 1; /* Force images to be square */
+  object-fit: cover; /* Crop the image to fill the square */
+  object-position: center; /* Anchor the crop to the top-center */
+}
+
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+  gap: 1px; /* Spacing between images */
+  margin-top: .5em auto;
+}
+
+
+.media-grid img {
+  width: 100%; /* Full width of the grid cell */
+  aspect-ratio: 1; /* Force images to be square */
+  object-fit: contain; /* Crop the image to fill the square */
+}
+
+.section3 {
+	margin: 0.5em auto;
+}
+
+.book-grid {
+	  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+  justify-content: center;
+  gap: 1px; /* Spacing between images */
+  margin: .5em auto;
+}
+
+.section2 {
+margin: 0.5em auto;
+}
+
+#movies-container {
+	
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1px;
+      justify-content: center;
+    }
+    .movie img {
+      width: 100%;
+    }
+	
+	#shows-container {
+	
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1px;
+      justify-content: center;
+    }
+    .show img {
+      width: 100%;
+    }
+
+
+
+a {
+	text-decoration: none;
+}
+
+.section-block {
+  display: flex; /* Enables Flexbox */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center;
+  font-weight: bold;
+  width: 100%; /* Full width of the grid cell */
+  aspect-ratio: 1; /* Force blocks to be square */
+  object-position: center; /* Anchor the crop to the top-center */
+  
+}
+
+.section-block img {
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: contain; /* Ensures the image fits within the block without cropping */
+   object-position: center; /* Anchor the crop to the top-center */
+}
+
+
+hr {
+	opacity: 30%;
+}
 
 small {
-  font-family: "Oldenburg", serif;
-  margin-left:0;
-  opacity: 0.7;
+	font: 0.75em;
+	font-weight: bold;
+	margin: 0 1em;
 }
 
-.blog-thumbnail {
-	margin: 1em 0.5em;
+h3 {
+	margin: 0 0.75em;
 }
 
-ul {
-	margin: 0;
-}
+.title-container {
+	 display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1em auto;
+	  max-width: 50vw;
+  }
 
-.header-container {
-    position: relative;
-    width: 100vw; /* Ensures it covers the full viewport width */
-}
-
-.header-image {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0 90%;
-    display: block; /* Prevents unwanted whitespace under image */
-}
-
-.profile-pic {
-    position: relative;
-	max-width:175px;
-    bottom: 75px;
-    left: 0.5em;
-}
+.text-container {
+      text-align: left; /* Aligns text to the left */
+    }
 
 .circle-mask {
-    border: 3px solid Canvas;
+
+  min-width: 150px;
+  width: 150px;
+  min-height: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 30px;
 }
 
-.username {
-	position:absolute;
-	right:0px;
-            text-align: right;
-            margin: 0.5em 1em 0 1em;
-            width: fit-content; /* Key change: Makes .username only as wide as its content */
-            max-width: 100%; /* Still prevent it from becoming wider than its parent */
-            display: inline-block; /* Helps with alignment if needed */
-        }
+.circle-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-        .username h1 {
-            text-align: right;
-            margin-top: 0.25em;
-            font-size: 2em;
-        }
-
-        .username h4 {
-            font-weight: lighter;
-            margin: 0;
-        }
-
-
-        .username small {
-			margin:0;
-            display: block;
-            text-align: center;
-            font-weight: unset;
-			line-height:1.4em;
-			margin-top:0.5em;
-        }
+.bio {
+	display:flex;
+max-width: 90%;
+margin: 1em auto;
+align-items:center;
+}
 
 .button-container {
-    display: flex; /* Ensures flexbox behavior */
+	text-align: center;
+	font-size: 2em;
+	 -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectedbutton {
+	 background-color: CanvasText;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+	border-radius: 15px;
+	filter:saturate(1)
+}
+
+.buttonoff {
+	background: none;
+	opacity: 0.5;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+  filter: saturate(0)
+}
+
+.photo-page-image {
+max-width: 100%;
+margin: 1em auto;
+}
+
+a:link {
+	color: #8269a7;
+}
+
+ .podcast-container {
+    display: flex;
 	flex-direction:column;
-    justify-content: center; /* Centers the buttons horizontally */
-    width: 100%; /* Ensures it stretches across the available space */
-	margin:0;
+    align-items: stretch; /* Makes the text match the image height */
+    gap: 1em;
+	padding: 15px;
+	background-color:rgba(0,0,0,0.1);
+	margin: 1em;
+    border-radius: 15px;
+  }
 
+.podcast-container img {
+    width: 100%; /* Or another percentage that works for your layout */
+	height: auto;
+    border-radius: 8px;
 }
 
-.buttons {
-	display:flex;
-	flex-direction:row;
-	    justify-content: center; /* Centers the buttons horizontally */
-		margin: 0 auto;
+  .podcast-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns text vertically */
+    flex: 1; /* Makes text take remaining space */
+  }
 
-}
+  .podcast-title {
+    font-weight: bold;
+    font-size: 1em;
+	line-height: 1em;
+    margin: 0.5em 0;
+  }
 
+  .podcast-meta {
+    font-size: 0.8em;
+	line-height: 0.8em;
+    font-weight: 300;
+  }
+
+  .podcast-description {
+    font-size: 0.7em;
+    line-height: 1.2em;
+  }
+  
+  .monthly-notes {
+	  font-size:0.85em;
+	  line-height: 1.2em;
+	  font-style:oblique;
+	  font-weight:lighter;
+	  text-align: center;
+	  margin: 0 2em 1.5em 2em;
+  }
+  
+  .thought-container {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  margin: 0 0.5em;
+  }
+  
+  
+  
+  .thought-date {
+	  display:block;
+	  font-size: 0.75em;
+	  font-weight: lighter;
+	  text-align:right;
+  }
