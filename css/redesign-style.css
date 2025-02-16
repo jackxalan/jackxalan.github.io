@@ -392,11 +392,11 @@ a:link {
     border-radius: 15px;
   }
 
-  .podcast-container img {
-    width: 100%;
-    height: auto;
+.podcast-container img {
+    width: 100%; /* Or another percentage that works for your layout */
+	height: auto;
     border-radius: 8px;
-  }
+}
 
   .podcast-text {
     display: flex;
@@ -409,7 +409,7 @@ a:link {
     font-weight: bold;
     font-size: 1em;
 	line-height: 1em;
-    margin: 0.5em 0 0.75em 0;
+    margin: 0.5em 0;
   }
 
   .podcast-meta {
@@ -421,4 +421,13 @@ a:link {
   .podcast-description {
     font-size: 0.7em;
     line-height: 1.2em;
+  }
+  
+  .monthly-notes {
+	  font-size:0.85em;
+	  line-height: 1.2em;
+	  font-style:oblique;
+	  font-weight:lighter;
+	  text-align: center;
+	  margin: 0 2em 1.5em 2em;
   }
