@@ -6,7 +6,7 @@
     font-family: ui-rounded;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
 	#section1 {
 		min-width:540px;
@@ -54,7 +54,7 @@ ul {
     position: relative;
 	max-width:175px;
     bottom: 75px;
-    left: 30px;
+    left: 0.5em;
 }
 
 .circle-mask {
@@ -84,12 +84,12 @@ ul {
 
 
         .username small {
-												margin:0;
+			margin:0;
             display: block;
             text-align: center;
             font-weight: unset;
-												line-height:1.4em;
-												margin-top:0.5em;
+			line-height:1.4em;
+			margin-top:0.5em;
         }
 
 .button-container {
