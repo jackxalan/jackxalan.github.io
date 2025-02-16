@@ -1,0 +1,111 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	max-width:100%;
+    font-family: ui-rounded;
+}
+
+@media only screen and (min-width: 600px) {
+
+	#section1 {
+		min-width:540px;
+	max-width: 60vw;
+	margin:1em auto;
+}
+
+#section2 {
+	min-width:540px;
+	max-width: 60vw;
+	margin:1em auto;
+}
+	
+}
+
+
+small {
+  font-family: "Oldenburg", serif;
+  margin-left:0;
+  opacity: 0.7;
+}
+
+.blog-thumbnail {
+	margin: 1em 0.5em;
+}
+
+ul {
+	margin: 0;
+}
+
+.header-container {
+    position: relative;
+    width: 100vw; /* Ensures it covers the full viewport width */
+}
+
+.header-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 90%;
+    display: block; /* Prevents unwanted whitespace under image */
+}
+
+.profile-pic {
+    position: relative;
+	max-width:175px;
+    bottom: 75px;
+    left: 30px;
+}
+
+.circle-mask {
+    border: 3px solid Canvas;
+}
+
+.username {
+	position:absolute;
+	right:0px;
+            text-align: right;
+            margin: 0.5em 1em 0 1em;
+            width: fit-content; /* Key change: Makes .username only as wide as its content */
+            max-width: 100%; /* Still prevent it from becoming wider than its parent */
+            display: inline-block; /* Helps with alignment if needed */
+        }
+
+        .username h1 {
+            text-align: right;
+            margin-top: 0.25em;
+            font-size: 2em;
+        }
+
+        .username h4 {
+            font-weight: lighter;
+            margin: 0;
+        }
+
+
+        .username small {
+			margin:0;
+            display: block;
+            text-align: right;
+            font-weight: unset;
+			line-height:1.4em;
+
+        }
+
+.button-container {
+    display: flex; /* Ensures flexbox behavior */
+	flex-direction:column;
+    justify-content: center; /* Centers the buttons horizontally */
+    width: 100%; /* Ensures it stretches across the available space */
+	margin:0;
+
+}
+
+.buttons {
+	display:flex;
+	flex-direction:row;
+	    justify-content: center; /* Centers the buttons horizontally */
+		margin: 0 auto;
+
+}
+
