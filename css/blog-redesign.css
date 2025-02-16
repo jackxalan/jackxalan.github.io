@@ -84,12 +84,12 @@ ul {
 
 
         .username small {
-			margin:0;
+												margin:0;
             display: block;
-            text-align: right;
+            text-align: center;
             font-weight: unset;
-			line-height:1.4em;
-
+												line-height:1.4em;
+												margin-top:0.5em;
         }
 
 .button-container {
