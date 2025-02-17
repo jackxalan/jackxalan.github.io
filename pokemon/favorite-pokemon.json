@@ -51,19 +51,19 @@
     {
       "id": 376,
       "name": "Metagross",
-      "caught_date": "09/10/2022",
+      "caught_date": "",
       "notes": ""
     },
     {
       "id": 389,
-      "name": "An Torr",
-      "caught_date": "02/08/2022",
+      "name": "Torterra",
+      "caught_date": "",
       "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
       "id": 442,
       "name": "Spiritomb",
-      "caught_date": "07/24/2022",
+      "caught_date": "",
       "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": 10236,
       "name": "Samurott",
-      "caught_date": "02/01/2022",
+      "caught_date": "",
       "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": 10242,
       "name": "Goodra",
-      "caught_date": "01/31/2022",
+      "caught_date": "",
       "notes": "Alpha POKéMON; encountered in Hisui."
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": 778,
       "name": "Mimikyu",
-      "caught_date": "02/26/2021",
+      "caught_date": "",
       "notes": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": 815,
       "name": "Cinderace",
-      "caught_date": "11/15/2019",
+      "caught_date": "",
       "notes": ""
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": 892,
       "name": "Urshifu",
-      "caught_date": "06/17/2020",
+      "caught_date": "",
       "notes": "Received as Kubfu from Mustard's Master Dojo on the Isle of Armor."
     },
     {
@@ -181,16 +181,10 @@
       "notes": "Met in Adventureland, Disneyland, U.S.A."
     },
 	{
-      "id": 249,
-      "name": "Lugia",
-      "caught_date": "",
-      "notes": "Met in Johto as a young trainer."
-    },
-  {
       "id": 250,
-      "name": "Ho-Oh",
-      "caught_date": "",
-      "notes": "Met in Johto as a young trainer."
+      "name": "Lugia",
+      "caught_date": "Met in Johto as a young trainer.",
+      "notes": ""
     },
 	{
       "id": 251,
@@ -212,9 +206,15 @@
     },
 	{
       "id": 493,
-      "name": "Arceus",
+      "name": "Arcus",
       "caught_date": "",
       "notes": "We met in the heavens after meeting every POKéMON."
+    },
+	{
+      "id": 647,
+      "name": "Keldeo",
+      "caught_date": "02/16/2025",
+      "notes": "A gift for meeting all of the POKéMON of Galar and its nearby regions."
     },
 	{
       "id": 716,
@@ -232,7 +232,7 @@
       "id": 10147,
       "name": "Magearna",
       "caught_date": "",
-      "notes": "My most cherished encounter; we met after I became a POKéMON Master and caught 'em all."
+      "notes": "My most cherished encounter; we met after i became a POKéMON Master and caught 'em all."
     },
 	{
       "id": 807,
