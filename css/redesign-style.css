@@ -441,11 +441,22 @@ a:link {
 	  margin: 0 0.5em;
   }
   
-  
-  
   .thought-date {
 	  display:block;
 	  font-size: 0.75em;
 	  font-weight: lighter;
 	  text-align:right;
+  }
+
+.album {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  .star {
+    position: absolute;
+    bottom: 0.25em;
+    right: 0.25em;
+    font-size: 1.5em;
+    color: gold;
   }
