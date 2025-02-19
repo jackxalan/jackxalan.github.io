@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const favoriteAlbums = document.querySelectorAll('.favorite.album');
+    favoriteAlbums.forEach(album => {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.textContent = '★';
+      album.appendChild(star);
+    });
+  });
+
 // TMDB API Key
 const apiKey = "4526ca5104f6770580cbb773ede26961";
 
