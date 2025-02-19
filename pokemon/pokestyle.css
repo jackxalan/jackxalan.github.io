@@ -1,4 +1,5 @@
-   .grid {
+
+.grid {
 			display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             gap: 10px;
@@ -58,6 +59,8 @@ max-width:400px;
 }
 
 .badge-container {
+	position: absolute;
+	bottom:-7px;
 	display:flex;
 	flex-direction: row;
 	width: 80%;
@@ -67,9 +70,8 @@ max-width:400px;
 }
 
 .badge{
-	max-height: 75px;
-	width: 15%;
-	margin: 0 0.5em;
+	width: 13%;
+	margin: 0 0.25em;
 }
 
 
@@ -78,3 +80,9 @@ max-width:400px;
 	margin: 1em auto;
 }
 		
+.trainer-card {
+	display:flex;
+	flex-direction:column;
+	position: relative;
+	align-items:center;
+}
