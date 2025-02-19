@@ -451,7 +451,6 @@ a:link {
 .album {
     position: relative;
     display: inline-block;
-    margin: 10px;
   }
   .star {
     position: absolute;
