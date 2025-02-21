@@ -1,0 +1,362 @@
+{
+	"lps_and_eps": [
+    {
+        "id": 1,
+        "artist": "A Day to Remember",
+        "album_name": "Big Ole Album Vol. 1",
+        "notes": ""
+    },
+    {
+        "id": 2,
+        "artist": "Aaron West & the Roaring Twenties",
+        "album_name": "We Don\u2019t Have Each Other",
+        "notes": "Signed"
+    },
+    {
+        "id": 3,
+        "artist": "Angels & Airwaves",
+        "album_name": "Chasing Shadows",
+        "notes": "EP"
+    },
+    {
+        "id": 4,
+        "artist": "Angels & Airwaves",
+        "album_name": "Of Nightmares",
+        "notes": "EP"
+    },
+    {
+        "id": 5,
+        "artist": "Angels & Airwaves",
+        "album_name": "Stomping the Phantom Break Pedal",
+        "notes": "EP"
+    },
+    {
+        "id": 6,
+        "artist": "Bad Brains",
+        "album_name": "Bad Brains",
+        "notes": ""
+    },
+    {
+        "id": 7,
+        "artist": "Bad Operation",
+        "album_name": "Bad Operation",
+        "notes": ""
+    },
+    {
+        "id": 8,
+        "artist": "Circle Jerks",
+        "album_name": "Group Sex",
+        "notes": ""
+    },
+    {
+        "id": 9,
+        "artist": "Cobra Starship",
+        "album_name": "Hot Mess",
+        "notes": ""
+    },
+    {
+        "id": 10,
+        "artist": "Emery",
+        "album_name": "The Question (Live)",
+        "notes": ""
+    },
+    {
+        "id": 11,
+        "artist": "Family Force 5",
+        "album_name": "Business Up Front, Party In the Back: Diamond Edition",
+        "notes": ""
+    },
+    {
+        "id": 12,
+        "artist": "Fat Mike",
+        "album_name": "Fat Mike Gets Strung Out",
+        "notes": ""
+    },
+    {
+        "id": 13,
+        "artist": "Joel P. West",
+        "album_name": "Shang-Chi and the Legend of the Ten Rings",
+        "notes": "Original Soundtrack"
+    },
+    {
+        "id": 14,
+        "artist": "John Williams & The City of Prague Philharmonic Orchestra",
+        "album_name": "Music of Star Wars Saga",
+        "notes": "Original Soundtrack"
+    },
+    {
+        "id": 15,
+        "artist": "Lemuria",
+        "album_name": "Pebble",
+        "notes": ""
+    },
+    {
+        "id": 16,
+        "artist": "My Chemical Romance",
+        "album_name": "Three Cheers for Sweet Revenge",
+        "notes": ""
+    },
+    {
+        "id": 17,
+        "artist": "Operation Ivy",
+        "album_name": "Energy",
+        "notes": ""
+    },
+    {
+        "id": 18,
+        "artist": "Pup",
+        "album_name": "The Unraveling of Puptheband",
+        "notes": ""
+    },
+    {
+        "id": 19,
+        "artist": "Refused",
+        "album_name": "The Shape of Punk to Come",
+        "notes": ""
+    },
+    {
+        "id": 20,
+        "artist": "Refused & Various artists",
+        "album_name": "The Shape of Punk To Come Obliterated",
+        "notes": ""
+    },
+    {
+        "id": 21,
+        "artist": "Relient K",
+        "album_name": "Mmhmm",
+        "notes": ""
+    },
+    {
+        "id": 22,
+        "artist": "The Newton Brothers",
+        "album_name": "X-Men \u201897",
+        "notes": "Original Soundtrack"
+    },
+    {
+        "id": 23,
+        "artist": "The Wonder Years",
+        "album_name": "The Upsides",
+        "notes": "Box-set"
+    },
+    {
+        "id": 24,
+        "artist": "The Wonder Years",
+        "album_name": "Suburbia, I\u2019ve Given You All and Now I\u2019m Nothing",
+        "notes": "Box-set"
+    },
+    {
+        "id": 25,
+        "artist": "The Wonder Years",
+        "album_name": "Sister Cities",
+        "notes": "Deluxe Book"
+    },
+    {
+        "id": 26,
+        "artist": "Tom Delonge",
+        "album_name": "To the Stars\u2026 Demos, Odds and Ends",
+        "notes": ""
+    },
+    {
+        "id": 27,
+        "artist": "Various artists",
+        "album_name": "This is New Tone: Live from the 2023 Bad Time Records Tour",
+        "notes": ""
+    },
+    {
+        "id": 28,
+        "artist": "Various artists",
+        "album_name": "The Official Album of Walt Disney World EPCOT CENTER",
+        "notes": ""
+    },
+    {
+        "id": 29,
+        "artist": "Various artists",
+        "album_name": "Gravity Falls",
+        "notes": "Original Soundtrack"
+    },
+    {
+        "id": 30,
+        "artist": "Various artists",
+        "album_name": "This Is Boston, Not L.A.",
+        "notes": "Compilation"
+    },
+    {
+        "id": 31,
+        "artist": "We are the Union",
+        "album_name": "Ordinary Life",
+        "notes": ""
+    },
+    {
+        "id": 32,
+        "artist": "Jeff Russo",
+        "album_name": "Legion",
+        "notes": "Original Soundtrack"
+    },
+    {
+        "id": 33,
+        "artist": "Underoath",
+        "album_name": "They\u2019re Only Chasing Safety",
+        "notes": ""
+    },
+    {
+        "id": 34,
+        "artist": "Four Year Strong",
+        "album_name": "Enemy of the World",
+        "notes": ""
+    }
+],
+"forty_fives" :[
+    {
+        "id": 1,
+        "artist": "Lemuria",
+        "album_name": "Turnstile Comix #3",
+        "notes": "With book"
+    },
+    {
+        "id": 2,
+        "artist": "The Wonder Years",
+        "album_name": "Came Out Swinging",
+        "notes": ""
+    },
+    {
+        "id": 3,
+        "artist": "Paramore",
+        "album_name": "Running Out of Time",
+        "notes": "Flexidisc"
+    },
+    {
+        "id": 4,
+        "artist": "The Wonder Years & Motion City Soundtrack",
+        "album_name": "Split",
+        "notes": ""
+    },
+    {
+        "id": 5,
+        "artist": "Michael Giachhino",
+        "album_name": "Inside Out",
+        "notes": "Black Flag: Damaged Art"
+    },
+    {
+        "id": 6,
+        "artist": "The Shrine feat. Keith Morris",
+        "album_name": "Never More Than Now!",
+        "notes": "Signed"
+    },
+    {
+        "id": 7,
+        "artist": "Z-Trip feat. Murs and Supernatrual",
+        "album_name": "The Breakfast Club",
+        "notes": ""
+    },
+    {
+        "id": 8,
+        "artist": "Descendents & Circle Jerks",
+        "album_name": "Split",
+        "notes": "Signed"
+    },
+    {
+        "id": 9,
+        "artist": "Wince",
+        "album_name": "Media Prayer",
+        "notes": ""
+    },
+    {
+        "id": 10,
+        "artist": "Fucked Up",
+        "album_name": "Remember Me / What They Didn\u2019t Know",
+        "notes": ""
+    },
+    {
+        "id": 11,
+        "artist": "Fucked Up",
+        "album_name": "Do All Words Can Do / What Would You Do?",
+        "notes": ""
+    },
+    {
+        "id": 12,
+        "artist": "Fucked Up",
+        "album_name": "Octavio Made the Bomb",
+        "notes": ""
+    },
+    {
+        "id": 13,
+        "artist": "NOFX",
+        "album_name": "The P.M.R.C. Can Suck on This",
+        "notes": ""
+    },
+    {
+        "id": 14,
+        "artist": "Fucked Up",
+        "album_name": "Byrdesdale Garden City / Into the Light",
+        "notes": ""
+    }
+],
+"milo": [
+    {
+        "id": 1,
+        "artist": "Disneyland Records",
+        "album_name": "The Story of Hans Brinker and the Silver Skates",
+        "notes": ""
+    },
+    {
+        "id": 2,
+        "artist": "Disneyland Records",
+        "album_name": "Walt Disney\u2019s Alice in Wonderland",
+        "notes": "With book"
+    },
+    {
+        "id": 3,
+        "artist": "Children\u2019s Television Workshop",
+        "album_name": "Sesame Street 2: The Official Book-and-Record Album",
+        "notes": "With book"
+    },
+    {
+        "id": 4,
+        "artist": "Children\u2019s Television Workshop",
+        "album_name": "Sesame Street: The Official Book & Record",
+        "notes": "With book"
+    },
+    {
+        "id": 5,
+        "artist": "Disneyland Records",
+        "album_name": "Rubber Duckie and Other Songs from Sesame Street",
+        "notes": ""
+    },
+    {
+        "id": 6,
+        "artist": "Children\u2019s Television Workshop",
+        "album_name": "The Sesame Street Fairy Tale Album",
+        "notes": ""
+    },
+    {
+        "id": 7,
+        "artist": "The Sherman Brothers",
+        "album_name": "Walt Disney\u2019s Mary Poppins",
+        "notes": ""
+    },
+    {
+        "id": 8,
+        "artist": "Jack Gilford",
+        "album_name": "Winnie the Pooh",
+        "notes": ""
+    },
+    {
+        "id": 9,
+        "artist": "Disneyland Records",
+        "album_name": "Walt Disney\u2019s Cinderella",
+        "notes": ""
+    },
+    {
+        "id": 10,
+        "artist": "Disneyland Records",
+        "album_name": "Walt Disney\u2019s Pinocchio",
+        "notes": ""
+    },
+    {
+        "id": 11,
+        "artist": "Children\u2019s Television Workshop",
+        "album_name": "Sesame Street 10th Anniversary Album",
+        "notes": ""
+    }
+]
+}
