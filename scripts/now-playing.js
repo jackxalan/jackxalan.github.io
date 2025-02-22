@@ -7,6 +7,37 @@ document.addEventListener("DOMContentLoaded", function() {
       album.appendChild(star);
     });
   });
+  
+ document.addEventListener("DOMContentLoaded", function() {
+    const fortyFiveAlbums = document.querySelectorAll('.forty-five.album');
+    fortyFiveAlbums.forEach(album => {
+      const fortyfive = document.createElement('div');
+      fortyfive.className = 'fortyfive';
+      fortyfive.textContent = '4️⃣5️⃣';
+      album.appendChild(fortyfive);
+    });
+  }); 
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const extendedPlays = document.querySelectorAll('.ep.album');
+    extendedPlays.forEach(album => {
+      const extendedplay = document.createElement('div');
+      extendedplay.className = 'extendedplay';
+      extendedplay.textContent = '🇪';
+      album.appendChild(extendedplay);
+    });
+  }); 
+  
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const miloAlbums = document.querySelectorAll('.milo.album');
+    miloAlbums.forEach(album => {
+      const miloalbum = document.createElement('div');
+      miloalbum.className = 'miloalbum';
+      miloalbum.textContent = '🧸';
+      album.appendChild(miloalbum);
+    });
+  });  
 
 // TMDB API Key
 const apiKey = "4526ca5104f6770580cbb773ede26961";
