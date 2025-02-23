@@ -39,51 +39,47 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });  
 
-// TMDB API Key
-const apiKey = "4526ca5104f6770580cbb773ede26961";
+const apiKey = '4526ca5104f6770580cbb773ede26961'; // Your TMDB API key
 
-// Fetch Movies by Title
-async function fetchMovieByTitle(title) {
+async function fetchMovieByTitleAndYear(title, year) {
   try {
-    const response = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(title)}`
-    );
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(title)}${year ? `&year=${year}` : ''}`;
+    const response = await fetch(url);
     const data = await response.json();
 
     if (data.results.length > 0) {
-      return data.results[0]; // Use the first result
+      return data.results[0]; // Use the first result (filtered by year if available)
     } else {
-      console.error(`No results found for "${title}"`);
+      console.error(`No results found for "${title}" (${year || "unknown year"})`);
       return null;
     }
   } catch (error) {
-    console.error("Error fetching movie:", error);
-    return null;
+    console.error('Error fetching movie:', error);
   }
 }
 
-// Display Movies
 async function displayMovies() {
-  const movieLinks = document.querySelectorAll("#movies-container a");
+  const movieLinks = document.querySelectorAll('#movies-container a');
 
   for (const link of movieLinks) {
-    const title = link.id; // Use the ID of the link as the movie title
-    const movie = await fetchMovieByTitle(title);
+    const parts = link.id.split('|'); 
+    const title = parts[0]; // Always exists
+    const year = parts[1] || ""; // Use empty string if year is missing
+
+    const movie = await fetchMovieByTitleAndYear(title, year);
 
     if (movie) {
       link.href = `https://www.themoviedb.org/movie/${movie.id}`;
       link.innerHTML = `
-        <img src="${
-          movie.poster_path
-            ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-            : "https://via.placeholder.com/500x750?text=No+Image"
-        }" alt="${movie.title}" loading="lazy">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
       `;
     } else {
-      console.error(`Movie data not found for "${title}"`);
+      console.error(`Movie data not found for "${title}" (${year || "unknown year"})`);
     }
   }
 }
+
+displayMovies();
 
 // Fetch Shows by Title
 async function fetchShowByTitle(title) {
@@ -196,3 +192,36 @@ document.addEventListener("DOMContentLoaded", () => {
   displayShows();
   fetchPodcastData();
 });
+
+ document.getElementById("save-button").addEventListener("click", async () => {
+            const container = document.getElementById("export-container");
+
+            html2canvas(container, { scale: 2 }).then(canvas => {
+                canvas.toBlob(blob => {
+                    const file = new File([blob], "album-wrap.png", { type: "image/png" });
+
+                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                        document.getElementById("share-button").style.display = "inline-block"; // Show Share button
+                        document.getElementById("share-button").addEventListener("click", async () => {
+                            try {
+                                await navigator.share({
+                                    title: "My Monthly Album Wrap-Up",
+                                    text: "Check out my music wrap-up!",
+                                    files: [file]
+                                });
+                            } catch (error) {
+                                console.error("Error sharing:", error);
+                            }
+                        });
+                    }
+
+                    // Auto-download fallback
+                    const link = document.createElement("a");
+                    link.href = URL.createObjectURL(blob);
+                    link.download = "album-wrap.png";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            });
+        });
