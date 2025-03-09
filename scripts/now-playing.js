@@ -81,18 +81,17 @@ async function displayMovies() {
 
 displayMovies();
 
-// Fetch Shows by Title
-async function fetchShowByTitle(title) {
+// Fetch Shows by Title and Year
+async function fetchShowByTitleAndYear(title, year) {
   try {
-    const response = await fetch(
-      `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${encodeURIComponent(title)}`
-    );
+    const url = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${encodeURIComponent(title)}${year ? `&first_air_date_year=${year}` : ''}`;
+    const response = await fetch(url);
     const data = await response.json();
 
     if (data.results.length > 0) {
-      return data.results[0]; // Use the first result
+      return data.results[0]; // Use the first result (filtered by year if available)
     } else {
-      console.error(`No results found for "${title}"`);
+      console.error(`No results found for "${title}" (${year || "unknown year"})`);
       return null;
     }
   } catch (error) {
@@ -106,8 +105,11 @@ async function displayShows() {
   const showLinks = document.querySelectorAll("#shows-container a");
 
   for (const link of showLinks) {
-    const title = link.id; // Use the ID of the link as the show title
-    const show = await fetchShowByTitle(title);
+    const parts = link.id.split('|'); 
+    const title = parts[0]; // Always exists
+    const year = parts[1] || ""; // Use empty string if year is missing
+
+    const show = await fetchShowByTitleAndYear(title, year);
 
     if (show) {
       link.href = `https://www.themoviedb.org/tv/${show.id}`;
@@ -119,10 +121,12 @@ async function displayShows() {
         }" alt="${show.name}" loading="lazy">
       `;
     } else {
-      console.error(`Show data not found for "${title}"`);
+      console.error(`Show data not found for "${title}" (${year || "unknown year"})`);
     }
   }
 }
+
+displayShows();
 
 // Show Section
 function showSection(sectionNumber) {
