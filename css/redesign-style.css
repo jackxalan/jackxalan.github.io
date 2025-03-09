@@ -85,6 +85,18 @@ p {
  margin: auto 0.5em;
 }
 
+.linkbutton-container {
+	display:flex;
+	flex-direction: row;
+	gap: 0.5em;
+	margin-top: 0.5em;
+}
+
+.linkbutton {
+	padding: 0.5em;
+	border-radius: 5px;
+}
+
 @media (prefers-color-scheme: dark) {
 	.selectedbutton {
 		background: rgba(255,255,255,1);
@@ -339,6 +351,11 @@ h3 {
 max-width: 90%;
 margin: 1em auto;
 align-items:center;
+}
+
+.biousername {
+	font-family: Oldenburg; 
+	margin: 0 auto 0.5em 0;
 }
 
 .button-container {
