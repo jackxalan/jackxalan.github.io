@@ -1,7 +1,13 @@
  // Initialize the map centered over the USA.
     const map = L.map('map', {
-      center: [39.8283, -98.5795],
-      zoom: 4,
+     center: [40, -100], // Center at a neutral global position
+    zoom: 3,
+    worldCopyJump: false, // Prevents the infinite wrapping issue
+    maxBounds: [
+      [-85, -180], // Southwest corner
+      [85, 180]    // Northeast corner
+    ],
+    maxBoundsViscosity: 1.0,
       scrollWheelZoom: false
     });
     
