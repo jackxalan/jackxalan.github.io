@@ -1,38 +1,48 @@
 <!doctype html>
 <html lang="en-US">
-  <title>JACKxALAN</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="Canvas">
-  <meta property="og:title" content="jackxalan">
-  <meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Now Playing">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<base target="_self">
-  <link rel="apple-touch-icon" href="/images/looneyavatar.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/redesign-style.css">
 
-  <link href="https://mastodon.coffee/@jack" rel="me">
-
-  <link rel="icon" type="image/x-icon"
-    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+	<title>JACKxALAN</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="Canvas">
+	<meta property="og:title" content="jackxalan">
+	<meta property="og:image" content="https://jackcummings.me/images/looneyavatar.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Now Playing">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+	<link rel="apple-touch-icon" href="/images/looneyavatar.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/redesign-style.css">
+	<link href="https://mastodon.coffee/@jack" rel="me">
+	<link rel="icon" type="image/x-icon"
+	href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+	
+	<style>
+		.zstack {
+			display: grid;
+			align-items: top;
+			justify-items: center;
+		}
+		.zstack > * {
+			grid-area: 1/1/1/1;
+		}
+	</style>
 </head>
 <body>	
     <img
       src="images/profilepic.jpg"
       alt="Profile picture of Jack Cummings"
-	  style="mask: linear-gradient(black, black, transparent);
-backdrop-filter: blur(8px);"
+	  style="mask: linear-gradient(black, black, transparent); backdrop-filter: blur(50px);"
     />	
-	<div id="content-background">
+	<div id="content-background" class="zstack">
 		<img
       src="images/profilepic.jpg"
       id="blurred-background"
-	  style="transform: scaleY(-1); filter: blur(2.5rem) brightness(33%);position:absolute;"
+	  style="transform: scaleY(-1); filter: blur(2.5rem) brightness(43%);width:100%;height:auto;"
     />	
 	<div id="content-stuff" style="position:relative;">
 		 <h2 style="margin-left:0.25em;">I'm Jack.</h2>
