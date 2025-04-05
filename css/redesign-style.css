@@ -99,7 +99,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
 	.selectedbutton {
-		background: rgba(255,255,255,1);
+		background: #8269a7;
 	}
 	
 	html {
@@ -360,15 +360,15 @@ align-items:center;
 
 .button-container {
 	text-align: center;
-	font-size: 2em;
 	 -webkit-appearance: none;
     -moz-appearance: none;
 }
 
 .selectedbutton {
-	 background-color: CanvasText;
+	 background-color: #8269a7;
   border: none;
   color: white;
+  font-size: 2em;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -382,6 +382,7 @@ align-items:center;
 	opacity: 0.5;
   border: none;
   color: white;
+  font-size: 1.5em;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -506,34 +507,8 @@ a:link {
 	
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
+	  gap: 1px;
       justify-content: center;
 	  margin: 0 10px;
     }
-    .game img {
-      width: 100%;
-	  border-radius: 10px 10px 0 0;
-    }
 	
-	.game-container {
-		display: flex;
- 		flex-direction: column;
-  		margin: 0;
-  		line-height: 1.05em;
-  		background: rgba(255, 255, 255, 0.1);
-  		border-radius: 10px;
-}
-.game-caption {
-	  text-align: center;
-	  margin: auto 0;
-}
-
-.game-container img {
-  display: block;
-  margin: 0 auto;
-}
-
-.game-container p {
-  margin: 0.5em;
-  font-size: 0.75em;
-}
