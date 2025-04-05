@@ -358,6 +358,11 @@ align-items:center;
 	margin: 0 auto 0.5em 0;
 }
 
+.button-container {
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .selectedbutton {
 	 background-color: CanvasText;
   border: none;
@@ -366,7 +371,7 @@ align-items:center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 1em;
 	border-radius: 15px;
 	filter:saturate(1)
 }
@@ -380,7 +385,7 @@ align-items:center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.7em;
+  font-size: 0.9em;
   filter: saturate(0)
 }
 
