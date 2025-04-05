@@ -130,7 +130,7 @@ displayShows();
 
 // Show Section
 function showSection(sectionNumber) {
-  const totalSections = 5; // Update this if you add more sections
+  const totalSections = 6; // Update this if you add more sections
 
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById(`section${i}`);
