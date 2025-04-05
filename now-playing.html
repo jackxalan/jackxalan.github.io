@@ -52,7 +52,8 @@
   <button id="section3-button" onclick="showSection(3)" class="buttonoff">📺</button>
   <button id="section4-button" onclick="showSection(4)" class="buttonoff">📖</button>
   <button id="section5-button" onclick="showSection(5)" class="buttonoff">🎙️</button> <!-- New Section 5 -->
-</div>
+  <button id="section6-button" onclick="showSection(6)" class="buttonoff">👾</button> <!-- New Section 6 -->
+  </div>
  <hr style="margin: .25em 0;">
       <div id="section1">
 	<!--	Use in future if month breakdown is appropriate
@@ -292,8 +293,24 @@
   </div>
 </a>
   </div> 
-  
-  <hr style="margin-top:0;">
+   <div id="section6" style="display:none;">
+	  <h3 style="font-family:Oldenburg;margin:0.75em;">PLAYING</h3>
+	  <div class ="games-container">
+		  <a href="" data-title="South of Midnight" class="game"></a>
+	  </div>
+	  <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">PLAYED</h3>
+	  <div class ="games-container">
+		  <a href="" data-title="Assassin's Creed: Shadows" class="game"></a>
+		  <a href="" data-title="Indiana Jones and the Great Circle" class="game"></a>
+		  <a href="" data-title="The Legend of Zelda: Echoes of Wisdom" class="game"></a>
+		  <a href="" data-title="Star Wars Outlaws" class="game"></a>
+		   <a href="" data-title="Thank Goodness You're Here!" class="game"></a>
+		   <a href="" data-title="Animal Well" class="game"></a>
+	  </div>
+	  
+  </div>
+  <div id="games-attribution" style="font-size:0.5em;text-align:center;font-weight:lighter;margin-top:0.5em;">Game art from <a href="https://rawg.io">RAWG</a></div>
+  <hr style="margin-top:0.5em;">
   <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">now-playing last updated: 03.17.2025 - <a href="changelog.html">changelog</a></span></h5>
 
    <script src="scripts/now-playing.js"></script>
