@@ -358,13 +358,6 @@ align-items:center;
 	margin: 0 auto 0.5em 0;
 }
 
-.button-container {
-	text-align: center;
-	font-size: 2em;
-	 -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
 .selectedbutton {
 	 background-color: CanvasText;
   border: none;
@@ -383,13 +376,14 @@ align-items:center;
 	opacity: 0.5;
   border: none;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 0.7em;
   filter: saturate(0)
 }
+
 
 .photo-page-image {
 max-width: 100%;
@@ -520,8 +514,7 @@ a:link {
 		display: flex;
  		flex-direction: column;
   		margin: 0;
-  		font-weight:bold;
-  		line-height: 1.2em;
+  		line-height: 1.05em;
   		background: rgba(255, 255, 255, 0.1);
   		border-radius: 10px;
 }
@@ -537,5 +530,5 @@ a:link {
 
 .game-container p {
   margin: 0.5em;
-  font-size: 0.85em;
+  font-size: 0.75em;
 }
