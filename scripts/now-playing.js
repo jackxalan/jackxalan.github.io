@@ -190,12 +190,6 @@ async function fetchPodcastData() {
   }
 }
 
-// Initialize the application
-document.addEventListener("DOMContentLoaded", () => {
-  displayMovies();
-  displayShows();
-  fetchPodcastData();
-});
 
 const rawgApiKey = 'c378aad1f6114b89b29fe3836bb54bcd'; // Your RAWG API key
 
@@ -221,38 +215,27 @@ async function fetchGameByTitle(title) {
 
 async function displayGames() {
   const gameLinks = document.querySelectorAll('.games-container a');
+  console.log("Found game links:", gameLinks);
 
   for (const link of gameLinks) {
     const title = link.dataset.title;
-    if (!title) continue;
-
+    if (!title) {
+      console.error('Missing data-title attribute on element:', link);
+      continue;
+    }
     const game = await fetchGameByTitle(title);
 
     if (game) {
-      // Create a new wrapper div
-      const container = document.createElement('div');
-      container.classList.add('game-container');
-
-      // Clone and update the anchor tag
+      // Set the link to the game website or fallback RAWG game URL.
       link.href = game.website || `https://rawg.io/games/${game.slug}`;
-      link.innerHTML = `<img src="${game.background_image}" alt="${game.name}">`;
-      const clonedLink = link.cloneNode(true);
-
-      // Create caption wrapper with auto top margin
-      const captionWrapper = document.createElement('div');
-      captionWrapper.classList.add('game-caption');
-
-      const caption = document.createElement('p');
-      caption.textContent = title;
-      captionWrapper.appendChild(caption);
-
-      // Combine everything
-      container.appendChild(clonedLink);
-      container.appendChild(captionWrapper);
-
-      // Replace old link with new container
-      link.parentNode.replaceChild(container, link);
+      link.innerHTML = `
+        <img src="${game.background_image}" alt="${game.name}" loading="lazy">
+      `;
+    } else {
+      console.error(`Game data not found for "${title}"`);
     }
   }
 }
+
+// Ensure the DOM is loaded before running displayGames
 document.addEventListener('DOMContentLoaded', displayGames);
