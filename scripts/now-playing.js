@@ -197,35 +197,62 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchPodcastData();
 });
 
- document.getElementById("save-button").addEventListener("click", async () => {
-            const container = document.getElementById("export-container");
+const rawgApiKey = 'c378aad1f6114b89b29fe3836bb54bcd'; // Your RAWG API key
 
-            html2canvas(container, { scale: 2 }).then(canvas => {
-                canvas.toBlob(blob => {
-                    const file = new File([blob], "album-wrap.png", { type: "image/png" });
+async function fetchGameByTitle(title) {
+  try {
+    const url = `https://api.rawg.io/api/games?search=${encodeURIComponent(title)}&key=${rawgApiKey}`;
+    console.log(`Fetching: ${url}`);
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(`Data received for "${title}":`, data);
 
-                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                        document.getElementById("share-button").style.display = "inline-block"; // Show Share button
-                        document.getElementById("share-button").addEventListener("click", async () => {
-                            try {
-                                await navigator.share({
-                                    title: "My Monthly Album Wrap-Up",
-                                    text: "Check out my music wrap-up!",
-                                    files: [file]
-                                });
-                            } catch (error) {
-                                console.error("Error sharing:", error);
-                            }
-                        });
-                    }
+    if (data.results && data.results.length > 0) {
+      return data.results[0]; // First match
+    } else {
+      console.error(`No results found for "${title}"`);
+      return null;
+    }
+  } catch (error) {
+    console.error('Error fetching game:', error);
+    return null;
+  }
+}
 
-                    // Auto-download fallback
-                    const link = document.createElement("a");
-                    link.href = URL.createObjectURL(blob);
-                    link.download = "album-wrap.png";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                });
-            });
-        });
+async function displayGames() {
+  const gameLinks = document.querySelectorAll('.games-container a');
+
+  for (const link of gameLinks) {
+    const title = link.dataset.title;
+    if (!title) continue;
+
+    const game = await fetchGameByTitle(title);
+
+    if (game) {
+      // Create a new wrapper div
+      const container = document.createElement('div');
+      container.classList.add('game-container');
+
+      // Clone and update the anchor tag
+      link.href = game.website || `https://rawg.io/games/${game.slug}`;
+      link.innerHTML = `<img src="${game.background_image}" alt="${game.name}">`;
+      const clonedLink = link.cloneNode(true);
+
+      // Create caption wrapper with auto top margin
+      const captionWrapper = document.createElement('div');
+      captionWrapper.classList.add('game-caption');
+
+      const caption = document.createElement('p');
+      caption.textContent = title;
+      captionWrapper.appendChild(caption);
+
+      // Combine everything
+      container.appendChild(clonedLink);
+      container.appendChild(captionWrapper);
+
+      // Replace old link with new container
+      link.parentNode.replaceChild(container, link);
+    }
+  }
+}
+document.addEventListener('DOMContentLoaded', displayGames);
