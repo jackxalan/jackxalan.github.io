@@ -187,6 +187,10 @@ p {
 	.bio {
 		max-width: 75%;
 	}
+
+	.homepage-text, homepage-text2 {
+   margin:auto;
+}
 }
 
 .grid-container {
@@ -543,3 +547,28 @@ a:link {
 		.zstack > * {
 			grid-area: 1/1/1/1;
 		}
+
+   .hstack {
+        display: flex;
+        flex-direction: row;
+        }
+        
+        .vstack {
+        display: flex;
+        flex-direction: column;
+        }
+
+.blur {
+background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.homepage-text {
+margin: 50px 0 0 50px;
+}
+
+.homepage-text2 {
+margin: 0.25em 0 0 50px;
+}
