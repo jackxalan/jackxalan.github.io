@@ -1,8 +1,6 @@
-<!doctype html>
-<html lang="en-US">
-
-	<title>JACKxALAN</title>
-	
+<!DOCTYPE html>
+<html>
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="theme-color" content="Canvas">
@@ -20,34 +18,24 @@
 	<link href="https://mastodon.coffee/@jack" rel="me">
 	<link rel="icon" type="image/x-icon"
 	href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
-	
-	<style>
-		.zstack {
-			display: grid;
-			align-items: top;
-			justify-items: center;
-		}
-		.zstack > * {
-			grid-area: 1/1/1/1;
-		}
-	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://jackcummings.me/css/redesign-style.css">
 </head>
-<body>	
-    <img
-      src="images/profilepic.jpg"
+<body>
+  <img
+      src="https://jackcummings.me/images/profilepic.jpg"
       alt="Profile picture of Jack Cummings"
 	  style="mask: linear-gradient(black, black, transparent); backdrop-filter: blur(50px);"
     />	
-	<div id="content-background" class="zstack">
+	<div class="zstack">
 		<img
       src="images/profilepic.jpg"
       id="blurred-background"
 	  style="transform: scaleY(-1); filter: blur(2.5rem) brightness(43%);width:100%;height:auto;"
     />	
-	<div id="content-stuff" style="position:relative;">
-		 <h2 style="margin-left:0.25em;">I'm Jack.</h2>
-
-    <p style="margin-top:0.5em;">a punk/ska/XsceneX person from the early 2010s.</p>
+	<div class="blur vstack" style="width: 100%; height: 100%; border-radius: 30px 30px 0 0; \z-index: 10;">
+    <h2 class="homepage-text" style="margin: 50px 0 0 50px;">I'm Jack.</h2>
+    <p class="homepage-text2" style="margin: 0.25em 0 0 50px;">a punk/ska/XsceneX person from the early 2010s.</p>
 	<div class="image-grid" style="font-size: 4em;margin: 0;">
 		<div class="section-block"><a href="now-playing.html" title="Now Playing">▶️</a></div>
 		<div class="section-block"><a href="photos/index.html" title="Photos">📷</a></div>
@@ -55,15 +43,16 @@
 		<div class="section-block"><a href="pizza/index.html" title="The Slice Shop">🍕</a></div>	
 		<div class="section-block"><a href="projects.html" title="Projects">🛠️</a></div>	
     <div class="section-block"><a href="collections/index.html" title="Collections">🗄️</a></div>	
-    
-    <!--
-    <div class="section-block"><a href="resume.html" title="Résumé">📑</a></div>			''l		
-    -->
-
+	</div>
+    </div>
+     <img
+      src="https://jackcummings.me/images/profilepic.jpg"
+      id="blurred-background"
+       class="profilepic"
+	  style="transform: scaleY(-1); margin:0; margin: 0 auto; mask: linear-gradient(black, black, transparent); backdrop-filter: blur(50px); "
+    />	
 	</div>
 	<hr>
 	  <h5 class="endcredits">website by <a href="../index.html">jackxalan</a> <span style="float: right;"><a href="changelog">changelog</a></span></h5>
-	</div>
-	</div>
 </body>
 </html>
