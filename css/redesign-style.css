@@ -596,9 +596,15 @@ font-size: 1.5em;
 
 .color-box {
 	border-radius: 30px;
-  background: linear-gradient(to top left, #A569E3, transparent 50%),
-              linear-gradient(to top right, #FF6EC7, transparent 50%), /* bright pink */
-              linear-gradient(to bottom left, #7CF4FF, transparent 50%), /* vibrant cyan */
-              linear-gradient(to bottom right, #FFE96C, transparent 50%); /* bright yellow */
+  background: linear-gradient(to top left, #A8FF60, transparent 55%),
+              linear-gradient(to top right, #FF6EC7, transparent 55%), /* bright pink */
+              linear-gradient(to bottom left, #7CF4FF, transparent 55%), /* vibrant cyan */
+              linear-gradient(to bottom right, #FFE96C, transparent 55%); /* bright yellow */
   background-blend-mode: screen;
+}
+
+@media (display-mode: standalone) and (max-device-width: 430px) {
+  body {
+    margin: 40px 0;
+  }
 }
