@@ -602,9 +602,3 @@ font-size: 1.5em;
               linear-gradient(to bottom right, #FFE96C, transparent 55%); /* bright yellow */
   background-blend-mode: screen;
 }
-
-@media (display-mode: standalone) and (max-device-width: 430px) {
-  body {
-    margin: 150px 0;
-  }
-}
