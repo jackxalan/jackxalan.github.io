@@ -605,6 +605,6 @@ font-size: 1.5em;
 
 @media (display-mode: standalone) and (max-device-width: 430px) {
   body {
-    margin: 40px 0;
+    margin: 150px 0;
   }
 }
