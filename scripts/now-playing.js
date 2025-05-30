@@ -1,43 +1,43 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const favoriteAlbums = document.querySelectorAll('.favorite.album');
-    favoriteAlbums.forEach(album => {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.textContent = '★';
-      album.appendChild(star);
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const favoriteAlbums = document.querySelectorAll('.favorite.album');
+  favoriteAlbums.forEach(album => {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.textContent = '★';
+    album.appendChild(star);
   });
-  
- document.addEventListener("DOMContentLoaded", function() {
-    const fortyFiveAlbums = document.querySelectorAll('.forty-five.album');
-    fortyFiveAlbums.forEach(album => {
-      const fortyfive = document.createElement('div');
-      fortyfive.className = 'fortyfive';
-      fortyfive.textContent = '4️⃣5️⃣';
-      album.appendChild(fortyfive);
-    });
-  }); 
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    const extendedPlays = document.querySelectorAll('.ep.album');
-    extendedPlays.forEach(album => {
-      const extendedplay = document.createElement('div');
-      extendedplay.className = 'extendedplay';
-      extendedplay.textContent = '🇪';
-      album.appendChild(extendedplay);
-    });
-  }); 
-  
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    const miloAlbums = document.querySelectorAll('.milo.album');
-    miloAlbums.forEach(album => {
-      const miloalbum = document.createElement('div');
-      miloalbum.className = 'miloalbum';
-      miloalbum.textContent = '🧸';
-      album.appendChild(miloalbum);
-    });
-  });  
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fortyFiveAlbums = document.querySelectorAll('.forty-five.album');
+  fortyFiveAlbums.forEach(album => {
+    const fortyfive = document.createElement('div');
+    fortyfive.className = 'fortyfive';
+    fortyfive.textContent = '4️⃣5️⃣';
+    album.appendChild(fortyfive);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const extendedPlays = document.querySelectorAll('.ep.album');
+  extendedPlays.forEach(album => {
+    const extendedplay = document.createElement('div');
+    extendedplay.className = 'extendedplay';
+    extendedplay.textContent = '🇪';
+    album.appendChild(extendedplay);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const miloAlbums = document.querySelectorAll('.milo.album');
+  miloAlbums.forEach(album => {
+    const miloalbum = document.createElement('div');
+    miloalbum.className = 'miloalbum';
+    miloalbum.textContent = '🧸';
+    album.appendChild(miloalbum);
+  });
+});
 
 const apiKey = '4526ca5104f6770580cbb773ede26961'; // Your TMDB API key
 
@@ -62,7 +62,7 @@ async function displayMovies() {
   const movieLinks = document.querySelectorAll('#movies-container a');
 
   for (const link of movieLinks) {
-    const parts = link.id.split('|'); 
+    const parts = link.id.split('|');
     const title = parts[0]; // Always exists
     const year = parts[1] || ""; // Use empty string if year is missing
 
@@ -105,7 +105,7 @@ async function displayShows() {
   const showLinks = document.querySelectorAll("#shows-container a");
 
   for (const link of showLinks) {
-    const parts = link.id.split('|'); 
+    const parts = link.id.split('|');
     const title = parts[0]; // Always exists
     const year = parts[1] || ""; // Use empty string if year is missing
 
@@ -114,10 +114,9 @@ async function displayShows() {
     if (show) {
       link.href = `https://www.themoviedb.org/tv/${show.id}`;
       link.innerHTML = `
-        <img src="${
-          show.poster_path
-            ? `https://image.tmdb.org/t/p/w500${show.poster_path}`
-            : "https://via.placeholder.com/500x750?text=No+Image"
+        <img src="${show.poster_path
+          ? `https://image.tmdb.org/t/p/w500${show.poster_path}`
+          : "https://via.placeholder.com/500x750?text=No+Image"
         }" alt="${show.name}" loading="lazy">
       `;
     } else {
@@ -239,3 +238,43 @@ async function displayGames() {
 
 // Ensure the DOM is loaded before running displayGames
 document.addEventListener('DOMContentLoaded', displayGames);
+
+async function renderAllAlbums() {
+  try {
+    const response = await fetch('now-playing-content/albums.json');
+    const data = await response.json();
+    const container = document.getElementById('albums-container');
+    if (!container) return;
+
+    let html = '';
+    for (const year of Object.keys(data)) {
+      html += `<h2>${year}</h2>`;
+      const months = data[year];
+      for (const month of Object.keys(months)) {
+        html += `<h3 style="font-family:Oldenburg;margin:0.75em;">${month.toUpperCase()} '${year.slice(-2)}</h3>`;
+        html += `<div class="media-grid">`;
+        for (const album of months[month]) {
+          const classes = [
+            album.favorite ? 'favorite' : '',
+            album.ep ? 'ep' : '',
+            'album'
+          ].join(' ').trim();
+          html += `
+            <div class="${classes}">
+              <a href="${album.url}" target="_blank" rel="noopener">
+                <img src="${album.image}" alt="${album.title} by ${album.artist}" loading="lazy">
+              </a>
+            </div>
+          `;
+        }
+        html += `</div>`;
+      }
+    }
+    container.innerHTML = html;
+  } catch (e) {
+    console.error('Error loading albums:', e);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', renderAllAlbums);
+

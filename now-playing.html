@@ -3,285 +3,206 @@
 <html lang="en-US">
 
 <head>
-  <title>Jack's Now Playing</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="Canvas">
-  <meta property="og:title" content="Jack's Now Playing">
-  <meta property="og:description" content="Some of what I've been listening to, watching, and reading.">
-  <meta property="og:image" content="https://jackcummings.me/images/now-playing.png" style="image-orientation:from-image;">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Now Playing">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="/images/looneyavatar.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/redesign-style.css">
+      <title>Jack's Now Playing</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="theme-color" content="Canvas">
+      <meta property="og:title" content="Jack's Now Playing">
+      <meta property="og:description" content="Some of what I've been listening to, watching, and reading.">
+      <meta property="og:image" content="https://jackcummings.me/images/now-playing.png"
+            style="image-orientation:from-image;">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Now Playing">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="apple-touch-icon" href="/images/looneyavatar.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/redesign-style.css">
 
-  <link href="https://mastodon.coffee/@jack" rel="me">
+      <link href="https://mastodon.coffee/@jack" rel="me">
 
-  <link rel="icon" type="image/x-icon"
-    href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
+      <link rel="icon" type="image/x-icon"
+            href="https://raw.githubusercontent.com/jackxalan/jackxalan.github.io/main/images/favicon.png">
 </head>
+
 <body>
 
-<div class="title-container">
-	<div class="text-container">
-    <h2 style="text-align:left;"><a href="index.html">JACK'S</a></h2>
-    <h1 style="white-space:nowrap;">NOW PLAYING</h1>
-  </div>
-  </div>
-  <hr>
-  <div class="bio">
-   <div class="circle-mask">
-   <img
-      src="https://jackcummings.me/images/profilepic.jpg"
-      alt="Profile picture of Jack Cummings">
-  </div>
-  <div>
-	  <h3 class="biousername">jackXalan</h3>
-	 <p style="font-size: 0.8em; line-height: 1.25em;text-align: left; margin: auto 0;">Here's some of what I've been listening to, watching, and reading.</p>
-<div class="linkbutton-container"><button class="linkbutton"><a href="https://music.apple.com/profile/indianajack">Apple Music</a></button><button class="linkbutton"><a href="https://boxd.it/21YEL">Letterboxd</a></button></div>
-  </div>
-</div>
-  <div class="button-container">
-  <button id="section1-button" onclick="showSection(1)" class="selectedbutton" accesskey="2">🎧</button>
-  <button id="section2-button" onclick="showSection(2)" class="buttonoff">🎞️</button>
-  <button id="section3-button" onclick="showSection(3)" class="buttonoff">📺</button>
-  <button id="section4-button" onclick="showSection(4)" class="buttonoff">📖</button>
-<!--  <button id="section5-button" onclick="showSection(5)" class="buttonoff">🎙️</button>  -->
-  <button id="section6-button" onclick="showSection(6)" class="buttonoff">👾</button> <!-- New Section 6 -->
-  </div>
- <hr style="margin: .5em 0;">
-      <div id="section1">
-	<!--	Use in future if month breakdown is appropriate
-		<h3>2025</h3>
-		  <small>JANUARY '25</small> 
-	-->
-      <h3 style="font-family:Oldenburg;margin:0.75em;">MAY '25</h3>
-    		<div class="media-grid">
-        <div class="album"><a href=""><img src="" alt=""></a></div>
-			</div>
-			<h3 style="font-family:Oldenburg;margin:0.75em;">APRIL '25</h3>
-    		<div class="media-grid">
-        <div class="album"><a href="https://music.apple.com/us/album/thunderball/1788987814"><img src="https://ia903203.us.archive.org/7/items/mbid-478f05cc-62ed-4e06-b0de-f283d765a7ba/mbid-478f05cc-62ed-4e06-b0de-f283d765a7ba-41245042612_thumb500.jpg" alt="Thunderball by Melvins" loading ="lazy"></a></div>
-        <div class="favorite album"><a href="https://music.apple.com/us/album/violence-dimension/1788308758?uo=4"><img src="https://ia601808.us.archive.org/7/items/mbid-364eeb79-51be-4fea-9d52-00145ace4dad/mbid-364eeb79-51be-4fea-9d52-00145ace4dad-41797390959_thumb500.jpg" alt="Violence Dimension by Conan" loading ="lazy"></a></div>
-        <div class="ep album"><a href="https://music.apple.com/us/album/if-you-only-knew-ep/1716091728?uo=4"><img src="https://ia801402.us.archive.org/35/items/mbid-386a4123-9ceb-4cf5-b870-25c17284aba5/mbid-386a4123-9ceb-4cf5-b870-25c17284aba5-41307088815_thumb500.jpg" alt="If You Only Knew - EP by Blackwater Holylight" loading ="lazy"></a></div>      
-				<div class ="album"><a href="https://music.apple.com/us/album/death-hilarious/1785046370"><img src="https://ia800104.us.archive.org/31/items/mbid-d560293f-f39e-4850-92c6-4966c87c5f15/mbid-d560293f-f39e-4850-92c6-4966c87c5f15-41002007819_thumb500.jpg" alt="Death Hilarious by Pigs Pigs Pigs Pigs Pigs Pigs Pigs" loading ="lazy"></a></div>
-        <div class="album"><a href="https://music.apple.com/us/album/in-shallow-seas-we-sail/714416680"><img src="https://ia801301.us.archive.org/9/items/mbid-d1b51b80-87cf-4dde-b9d7-b47564ddf258/mbid-d1b51b80-87cf-4dde-b9d7-b47564ddf258-11571482568_thumb500.jpg" alt="In Shallow Seas We Sail by Emery" loading ="lazy"></a></div>
-				<div class="album"><a href="https://music.apple.com/us/album/f-ck-u-skrillex-you-think-ur-andy-warhol-but-ur-not-3/1805173207"><img src="https://ia800808.us.archive.org/26/items/mbid-15826038-0d37-4c38-99be-b7da61f5e366/mbid-15826038-0d37-4c38-99be-b7da61f5e366-41599625608_thumb500.jpg" alt="FUCK YOU SKRILLEX YOU THINK UR ANDY WARHOL BUT UR NOT!! <3 by Skrillex" loading ="lazy"></a></div>
-			</div>
-  			  <h3 style="font-family:Oldenburg;margin:0.75em;">MARCH '25</h3>
-				  <div class="monthly-notes">My brain took me off course and off-theme this month, to venture into the murky depths and far-flung reaches of the void, as my descent into doom metal continues.</div>
-    <div class="media-grid">
-		<div class="album"><a href="https://music.apple.com/us/album/niis-world/1775776432"><img src="https://ia800409.us.archive.org/4/items/mbid-bd6ff593-0681-40f4-a7c0-8e58f9de09cb/mbid-bd6ff593-0681-40f4-a7c0-8e58f9de09cb-41014007254_thumb500.jpg" alt="NIIS World by NIIS" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/nu-delhi/1785966921"><img src="https://ia800806.us.archive.org/0/items/mbid-99b2f068-17e8-4987-945e-8130aef275b4/mbid-99b2f068-17e8-4987-945e-8130aef275b4-41157519855_thumb500.jpg" alt="Nu Delhi by Bloodywood" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/monnos/1072769079?uo=4"><img src="https://ia800907.us.archive.org/32/items/mbid-50d1cd1d-b422-4d63-a7c5-aa2ae4276903/mbid-50d1cd1d-b422-4d63-a7c5-aa2ae4276903-8378025242_thumb500.jpg" alt="Monnos by Conan" loading ="lazy"></a></div>
-			 <div class="album"><a href="https://music.apple.com/us/album/griefs-infernal-flower/1009392659"><img src="https://ia801300.us.archive.org/16/items/mbid-b5855dc4-79bb-48dd-bb28-624e70c3479b/mbid-b5855dc4-79bb-48dd-bb28-624e70c3479b-11443152723_thumb500.jpg" alt="Grief's Eternal Flower by Windhand" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/rising/1440922798"><img src="https://ia803101.us.archive.org/21/items/mbid-36b362f1-3b22-4982-a3cd-93050f32f01e/mbid-36b362f1-3b22-4982-a3cd-93050f32f01e-19722565944_thumb500.jpg" alt="Rising by Rainbow" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/danzig/1440918930"><img src="https://ia904509.us.archive.org/24/items/mbid-9d6678ac-77e6-4b30-8789-3439cd5f4c0a/mbid-9d6678ac-77e6-4b30-8789-3439cd5f4c0a-29460642191_thumb500.jpg" alt="Danzig by Danzig" loading ="lazy"></a></div>
-       <div class="favorite album"><a href="https://music.apple.com/us/album/existential-void-guardian/1414497370?uo=4"><img src="https://ia802808.us.archive.org/31/items/mbid-29396136-e0cd-4773-958b-45e955bcc60a/mbid-29396136-e0cd-4773-958b-45e955bcc60a-20441359291_thumb500.jpg" alt="Existential Void Guardian by Conan" loading ="lazy"></a></div>
-       <div class="favorite album"><a href="https://music.apple.com/us/album/vacation/450654000"><img src="https://ia600202.us.archive.org/11/items/mbid-4b801c9d-b5da-4f7f-9cc1-2838dbcc7e87/mbid-4b801c9d-b5da-4f7f-9cc1-2838dbcc7e87-3263314594_thumb500.jpg" alt="Vacation by Bomb the Music Industry!" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/animals/1065974284?uo=4"><img src="https://ia904600.us.archive.org/4/items/mbid-da270afb-4e5f-418e-bc5e-c03092234ee4/mbid-da270afb-4e5f-418e-bc5e-c03092234ee4-12699617987_thumb500.jpg" alt="Animals by Pink Floyd" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/black-sabbath-vol-4/785242007?uo=4"><img src="https://ia803403.us.archive.org/29/items/mbid-72293323-ccf8-4052-8de1-b71fd1d8c2e3/mbid-72293323-ccf8-4052-8de1-b71fd1d8c2e3-28997485641_thumb500.jpg" alt="Black Sabbath, Vol. 4 by Black Sabbath" loading ="lazy"></a></div>	    
-       <div class="favorite album"><a href="https://music.apple.com/us/album/soma/676466174"><img src="https://ia903207.us.archive.org/0/items/mbid-fb1eb7f9-2a97-4eba-845e-29895c1a742e/mbid-fb1eb7f9-2a97-4eba-845e-29895c1a742e-5190885197_thumb500.jpg" alt="Soma by Windhand" loading ="lazy"></a></div>
-       <div class="favorite album"><a href="https://music.apple.com/us/album/infest-the-rats-nest/1475710992?uo=4"><img src="https://ia802809.us.archive.org/5/items/mbid-9f0f1dac-8d2d-4956-a662-763bda58aeaa/mbid-9f0f1dac-8d2d-4956-a662-763bda58aeaa-25259224270_thumb500.jpg" alt="Infest the Rats' Nest by King Gizzard & The Lizard Wizard" loading ="lazy"></a></div>    
-       <div class="album"><a href="https://music.apple.com/us/album/satori/646218361?uo=4"><img src="https://ia804506.us.archive.org/12/items/mbid-ab228bbf-5e8f-4bb0-ab98-e7564f019cbd/mbid-ab228bbf-5e8f-4bb0-ab98-e7564f019cbd-30044814766_thumb500.jpg" alt="Satori by Flower Travellin' Band" loading ="lazy"></a></div>
-       <div class="favorite album"><a href="https://music.apple.com/us/album/kingdom-come/1443644825"><img src="https://ia600105.us.archive.org/32/items/mbid-dda77f1e-c48e-46b5-986b-1be05f952047/mbid-dda77f1e-c48e-46b5-986b-1be05f952047-40518072456_thumb500.jpg" alt="Kingdom Come by Sir Lord Baltimore" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/ecca-vandal/1443777557?uo=4"><img src="https://ia800102.us.archive.org/31/items/mbid-669928b4-4564-48eb-b701-73b4173acf91/mbid-669928b4-4564-48eb-b701-73b4173acf91-39750926296_thumb500.jpg" alt="Ecca Vandal by Ecca Vandal" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/tsunami-sea/1779147456?uo=4"><img src="https://ia803200.us.archive.org/32/items/mbid-965275a5-7504-416d-a6dd-8535555172c6/mbid-965275a5-7504-416d-a6dd-8535555172c6-40451219460_thumb500.jpg" alt="Tsunami Sea by Spiritbox" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/mayhem/1792666546"><img src="https://ia600108.us.archive.org/13/items/mbid-6b766c2d-04b5-48ee-8a56-db92a3719582/mbid-6b766c2d-04b5-48ee-8a56-db92a3719582-41072894960_thumb500.jpg" alt="MAYHEM by Lady Gaga" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/the-return-of-tomorrow/1735951544?uo=4"><img src="https://ia804601.us.archive.org/31/items/mbid-bb3551dd-d401-4c71-be02-9f1082aaa393/mbid-bb3551dd-d401-4c71-be02-9f1082aaa393-38763342897_thumb500.jpg" alt="The Return of Tomorrow by Fu Manchu" loading ="lazy"></a></div>
-       <div class="album"><a href="https://vektroid.bandcamp.com/album/floral-shoppe"><img src="https://ia800309.us.archive.org/24/items/mbid-22f93e9f-7174-4529-b4d6-277674862e2d/mbid-22f93e9f-7174-4529-b4d6-277674862e2d-8890620701_thumb500.jpg" alt="Floral Shoppe by Macintosh Plus" loading ="lazy"></a></div>    
-       <div class="favorite album"><a href="https://music.apple.com/us/album/life-metal/1452306890?uo=4"><img src="https://ia800903.us.archive.org/1/items/mbid-d41f5fc9-d390-4c41-9661-9a480c520f04/mbid-d41f5fc9-d390-4c41-9661-9a480c520f04-22298585298_thumb500.jpg" alt="Life Metal by sunn O)))" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/sleeps-holy-mountain-full-dynamic-range-edition/969252365?uo=4"><img src="https://ia800903.us.archive.org/11/items/mbid-1b0e6568-b4b6-46fa-ba36-be81f2cb7fc3/mbid-1b0e6568-b4b6-46fa-ba36-be81f2cb7fc3-32503727367_thumb500.jpg" alt="Sleep’s Holy Mountain by Sleep" loading ="lazy"></a></div>    
-       <div class="favorite album"><a href="https://music.apple.com/us/album/witchcult-today/965381711?uo=4"><img src="https://ia601600.us.archive.org/17/items/mbid-9a0b05fd-b260-4aa7-af62-82485ce7d472/mbid-9a0b05fd-b260-4aa7-af62-82485ce7d472-36087305640_thumb500.jpg" alt="Witchcult Today by Electric Wizard" loading ="lazy"></a></div>
-       <div class="album"><a href="https://music.apple.com/us/album/eternal-return/1410436187"><img src="https://ia902805.us.archive.org/35/items/mbid-488866f9-2b08-4f96-92ae-54405089b50e/mbid-488866f9-2b08-4f96-92ae-54405089b50e-20576990629_thumb500.jpg" alt="Eternal Return by Windhand" loading ="lazy"></a></div>	    
-       <div class="album"><a href="https://music.apple.com/us/album/petals-for-armor/1511028064"><img src="https://ia803207.us.archive.org/15/items/mbid-7978669a-a528-4c78-b366-de7825cd9733/mbid-7978669a-a528-4c78-b366-de7825cd9733-32891407268_thumb500.jpg" alt="Petals For Armor by Hayley Williams" loading ="lazy"></a></div>
-        </div>
-				  <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">FEBRUARY '25</h3>
-				  <div class="monthly-notes">Celebrating Black History Month!<br><br>While the Super Bowl obviously had me back into GNX, the delight of my month has been rediscovering my love for that line between heavy and funk with Funkadelic and Fishbone.</div>
-    <div class="media-grid">
-		<!-- <div><a href=""><img src="" alt=""></a></div> -->	    
-<div class="favorite album"><a href="https://music.apple.com/us/album/i-i-survived-dub/252735766"><img src="https://ia600508.us.archive.org/11/items/mbid-016d5dbf-216b-4f15-82c5-67545b113a52/mbid-016d5dbf-216b-4f15-82c5-67545b113a52-14999491201_thumb500.jpg" alt="I and I Survived (dub) by Bad Brains" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/noise-addiction/355415290?uo=4"><img src="https://ia902209.us.archive.org/30/items/mbid-a21e05d2-2ab8-48a4-b95d-a8eb0be515aa/mbid-a21e05d2-2ab8-48a4-b95d-a8eb0be515aa-31555258767_thumb500.jpg" alt="Noise Addiction by Pure Hell" loading ="lazy"></a></div>	    
-<div class="favorite album"><a href="https://music.apple.com/us/album/for-the-whole-world-to-see/303817016?uo=4"><img src="https://ia903404.us.archive.org/32/items/mbid-bbae10a3-3690-46a3-83c9-8e5aa6f8a83a/mbid-bbae10a3-3690-46a3-83c9-8e5aa6f8a83a-40019047165_thumb500.jpg" alt="...For the Whole World to See by Death" loading ="lazy"></a></div>	    
-<div class="favorite album"><a href="https://music.apple.com/us/album/master-of-reality/785239139?uo=4"><img src="https://ia601502.us.archive.org/28/items/mbid-679c53b8-738e-4023-80f1-71b787215031/mbid-679c53b8-738e-4023-80f1-71b787215031-32761469626_thumb500.jpg" alt="Master of Reality by Black Sabbath" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/theres-a-riot-goin-on/1501778712"><img src="https://ia800402.us.archive.org/26/items/mbid-d37ce715-5512-4b44-b345-762b66792677/mbid-d37ce715-5512-4b44-b345-762b66792677-18319803366_thumb500.jpg" alt="There's a Riot Goin' On by Sly & The Family Stone" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/whats-going-on/1538081586?uo=4"><img src="https://ia902307.us.archive.org/1/items/mbid-5b20083e-8b67-4a3f-82d4-6adbd0ab68c6/mbid-5b20083e-8b67-4a3f-82d4-6adbd0ab68c6-30444985223_thumb500.jpg" alt="What's Going On by Marvin Gaye" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/middle-spoon/1786576003"><img src="https://ia801500.us.archive.org/24/items/mbid-1f73140c-4a56-447f-ab60-e20fe5747d2d/mbid-1f73140c-4a56-447f-ab60-e20fe5747d2d-41293180040_thumb500.jpg" alt="Middle Spoon by Cheekface" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/seeing-sounds/1440770822?uo=4"><img src="https://ia801805.us.archive.org/6/items/mbid-68ac347e-0775-40a6-879f-7aba3400c356/mbid-68ac347e-0775-40a6-879f-7aba3400c356-6758769520_thumb500.jpg" alt="Seeing Sounds by N.E.R.D" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/odyssey/321076077"><img src="https://ia802803.us.archive.org/14/items/mbid-21bc372e-3b45-4d61-a012-7b53671ac5e4/mbid-21bc372e-3b45-4d61-a012-7b53671ac5e4-4411999068_thumb500.jpg" alt="Odyssey by James Blood Ulmer" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/journey-in-satchidananda/1440719294?uo=4"><img src="https://ia804505.us.archive.org/11/items/mbid-2efc9b51-ab8a-3b10-883d-5821a6da989e/mbid-2efc9b51-ab8a-3b10-883d-5821a6da989e-18788031122_thumb500.jpg" alt="Journey in Satchidananda by Alice Coltrane" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/doremi-fasol-latido/966244226?uo=4"><img src="https://ia600300.us.archive.org/10/items/mbid-40cbddbb-2d02-3d3a-b7a2-5bde72fa3331/mbid-40cbddbb-2d02-3d3a-b7a2-5bde72fa3331-4836110182_thumb500.jpg" alt="Doremi Fasol Latido by Hawkwind" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/horror/1767608790"><img src="https://ia800809.us.archive.org/10/items/mbid-51ccc554-97cc-4bf6-99a4-45340ad05a9c/mbid-51ccc554-97cc-4bf6-99a4-45340ad05a9c-41220791299_thumb500.jpg" alt="Horror by Bartees Strange" loading ="lazy"></a></div>
-<div class="ep album"><a href="https://music.apple.com/us/album/trouble-ep/1716328950"><img src="https://ia800206.us.archive.org/16/items/mbid-38009791-03d1-4efa-a0b7-056024d6139a/mbid-38009791-03d1-4efa-a0b7-056024d6139a-38305740997_thumb500.jpg" alt="TROUBLE - EP by Comeback Kid" loading ="lazy"></a></div>
-<div class="ep album"><a href="https://music.apple.com/us/album/seen-enough-ep/1733959303?uo=4"><img src="https://ia600108.us.archive.org/25/items/mbid-f0c7850c-8354-4b3a-9c2e-ebea83e28922/mbid-f0c7850c-8354-4b3a-9c2e-ebea83e28922-41054222819_thumb500.jpg" alt="Seen Enough - EP by Spy" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://ia904601.us.archive.org/33/items/mbid-ac3d6c98-e559-428f-b6fb-be6c78c7b339/mbid-ac3d6c98-e559-428f-b6fb-be6c78c7b339-33936389554_thumb500.jpg"><img src="https://ia904601.us.archive.org/33/items/mbid-ac3d6c98-e559-428f-b6fb-be6c78c7b339/mbid-ac3d6c98-e559-428f-b6fb-be6c78c7b339-33936389554_thumb500.jpg" alt="Enemy of the World (Re-Recorded) by Four Year Strong" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/big-ole-album-vol-1/1796436924?uo=4"><img src="https://ia800108.us.archive.org/9/items/mbid-f55862ea-3f04-41f9-abd9-973d12a886a6/mbid-f55862ea-3f04-41f9-abd9-973d12a886a6-41238112923_thumb500.jpg" alt="Big Ole Album Vol. 1 by A Day to Remember" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/troupeau-bleu/1154110761?uo=4"><img src="https://ia803405.us.archive.org/10/items/mbid-462e1cb7-9cef-4d1a-b2c3-65d89f0b4e26/mbid-462e1cb7-9cef-4d1a-b2c3-65d89f0b4e26-39368871859_thumb500.jpg" alt="Troupeau bleu by Cortex" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/antibloom/1769966619?uo=4"><img src="https://ia802208.us.archive.org/29/items/mbid-138d832e-66c3-4f8b-a6ac-ca8f06446beb/mbid-138d832e-66c3-4f8b-a6ac-ca8f06446beb-40948590188_thumb500.jpg" alt="Antibloom by Silverstein" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/land-of-sleeper/1648381336?uo=4"><img src="https://ia904504.us.archive.org/19/items/mbid-f196fc0a-93b3-4a29-9808-5a0fbf86d709/mbid-f196fc0a-93b3-4a29-9808-5a0fbf86d709-34891835426_thumb500.jpg" alt="Land of Sleeper by Pigs Pigs Pigs Pigs Pigs Pigs Pigs" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/honeysuckle/1091826371?uo=4"><img src="https://ia801704.us.archive.org/29/items/mbid-7ed961d1-8b1a-4e8e-9bde-464138492efd/mbid-7ed961d1-8b1a-4e8e-9bde-464138492efd-41272098264_thumb500.jpg" alt="Honeysuckle by The Reverend Peyton's Big Damn Band" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/i-against-i/1469831735"><img src="https://ia800106.us.archive.org/24/items/mbid-27174a0a-083c-4292-95da-1b04c5fc2751/mbid-27174a0a-083c-4292-95da-1b04c5fc2751-40516159762_thumb500.jpg" alt="I Against I by Bad Brains" loading ="lazy"></a></div>	    
-<div class="album"><a href="https://music.apple.com/us/album/times-up/158439495"><img src="https://ia804504.us.archive.org/23/items/mbid-c17b03c1-fbc1-43bf-baca-db481479f49d/mbid-c17b03c1-fbc1-43bf-baca-db481479f49d-8316419256_thumb500.jpg" alt="Time's Up by Living Colour" loading ="lazy"></a></div>	    
-<div class="favorite album"><a href="https://music.apple.com/us/album/agharta/207340921?uo=4"><img src="https://ia800909.us.archive.org/21/items/mbid-40572cf9-e308-41c6-ab93-5ffe09c90495/mbid-40572cf9-e308-41c6-ab93-5ffe09c90495-22558666802_thumb500.jpg" alt="Agharta by Miles Davis" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/blonde/1146195596"><img src="https://ia600507.us.archive.org/25/items/mbid-8294645a-f996-44b6-9060-7f189b9f59f3/mbid-8294645a-f996-44b6-9060-7f189b9f59f3-14420632959_thumb500.jpg" alt="Blonde by Frank Ocean" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/legend-the-best-of-bob-marley-the-wailers/1469575763"><img src="https://ia800701.us.archive.org/8/items/mbid-d49c931c-0218-4892-9e63-2436f5223221/mbid-d49c931c-0218-4892-9e63-2436f5223221-34376581666_thumb500.jpg" alt="Legend – The Best of Bob Marley & The Wailers (2002 Edition) by Bob Marley & The Wailers" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/mr-isaacs-deluxe-edition/1472527883?uo=4"><img src="https://ia801906.us.archive.org/16/items/mbid-5cf1e4ae-92dc-4a6b-ba2b-df9380529ec8/mbid-5cf1e4ae-92dc-4a6b-ba2b-df9380529ec8-27245599227_thumb500.jpg" alt="Mr. Isaacs by Gregory Isaacs" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/the-shape-of-punk-to-come-obliterated/1769704777?uo=4"><img src="https://ia800404.us.archive.org/21/items/mbid-c5bb1efa-34f4-4842-93f7-339ed6f0e933/mbid-c5bb1efa-34f4-4842-93f7-339ed6f0e933-40027502691_thumb500.jpg" alt="Refused's The Shape of Punk to Come Obliterated by Various Artists" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/lemonade/1460473526?uo=4"><img src="https://ia601601.us.archive.org/4/items/mbid-5b3de0e4-cf86-43c4-b025-80288d6f7466/mbid-5b3de0e4-cf86-43c4-b025-80288d6f7466-35751742692_thumb500.jpg" alt="Lemonade by Beyoncé" loading ="lazy"></a></div>	    
-<div class="favorite album"><a href="https://music.apple.com/us/album/bad-operation/1532927393?uo=4"><img src="https://ia801809.us.archive.org/17/items/mbid-1d65babe-f894-446b-a594-41fc5dd2a415/mbid-1d65babe-f894-446b-a594-41fc5dd2a415-28650251854_thumb500.jpg" alt="BAD OPERATION by BAD OPERATION" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/the-reality-of-my-surroundings/158506861"><img src="https://ia800201.us.archive.org/16/items/mbid-125513b6-27ef-4096-a823-91d1c908ed9e/mbid-125513b6-27ef-4096-a823-91d1c908ed9e-9561001116_thumb500.jpg" alt="The Reality of My Surroundings by Fishbone" loading ="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/are-you-experienced-deluxe-version/357225315"><img src="https://ia803402.us.archive.org/26/items/mbid-60a8a8eb-127b-4ae2-abeb-c850994f1dd6/mbid-60a8a8eb-127b-4ae2-abeb-c850994f1dd6-29223902854_thumb500.jpg" alt="Are You Experienced by The Jimi Hendrix Experience" loading ="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/maggot-brain/1595227414"><img src="https://ia801505.us.archive.org/22/items/mbid-2115d5fc-2ff0-469c-b3c4-bf0ab0c4b55d/mbid-2115d5fc-2ff0-469c-b3c4-bf0ab0c4b55d-36892348850_thumb500.jpg" alt="Maggot Brain by Funkadelic" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/rage-against-the-machine/191450810"><img src="https://ia601303.us.archive.org/14/items/mbid-389a60bf-e586-4dc3-b995-fe196c5cf0f7/mbid-389a60bf-e586-4dc3-b995-fe196c5cf0f7-33270800624_thumb500.jpg" alt="Rage Against the Machine by Rage Against the Machine" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743"><img src="https://ia800200.us.archive.org/30/items/mbid-791c4f1f-1024-365c-ba25-a24a1b17f56b/mbid-791c4f1f-1024-365c-ba25-a24a1b17f56b-5453908996_thumb500.jpg" alt="The Miseducation of Lauryn Hill by Lauryn Hill" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/my-apologies-to-the-chef/1773190646"><img src="https://ia803406.us.archive.org/13/items/mbid-2f52419f-fc37-4bb2-a745-bf83b8e8f6a0/mbid-2f52419f-fc37-4bb2-a745-bf83b8e8f6a0-41201654670_thumb500.jpg" alt="My Apologies to the Chef by Winona Fighter" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/mm-food/1516750770"><img src="https://ia802809.us.archive.org/22/items/mbid-263d7827-4c0e-4d7f-a8f1-5877194fe532/mbid-263d7827-4c0e-4d7f-a8f1-5877194fe532-25498831242_thumb500.jpg" alt="MM..FOOD by MF DOOM" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/the-unraveling-of-puptheband/1604581828"><img src="https://ia802204.us.archive.org/26/items/mbid-713195a2-105b-4dad-824a-57bbce6156c9/mbid-713195a2-105b-4dad-824a-57bbce6156c9-31507128250_thumb500.jpg" alt="The Unraveling of Puptheband by PUP" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/everyone-wants-something-beautiful/1736554796"><img src="https://ia801804.us.archive.org/31/items/mbid-296184eb-dafa-4c71-bc0c-ceedc72c4304/mbid-296184eb-dafa-4c71-bc0c-ceedc72c4304-39307331465_thumb500.jpg" alt="Everyone Wants Something Beautiful by Love Letter" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/kind-of-blue/268443092"><img src="https://ia801403.us.archive.org/6/items/mbid-4c5c46ae-cc25-4528-a4df-740e6b2990c5/mbid-4c5c46ae-cc25-4528-a4df-740e6b2990c5-32167097414_thumb500.jpg" alt="Kind of Blue by Miles Davis" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/damn/1440881047"><img src="https://ia804600.us.archive.org/30/items/mbid-2a74f401-f412-4fec-b059-c287d69801e2/mbid-2a74f401-f412-4fec-b059-c287d69801e2-41028294700_thumb500.jpg" alt="Damn by Kendrick Lamar" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/gnx/1781270319"><img src="https://ia600105.us.archive.org/0/items/mbid-dc1c0a48-7c6b-4602-8e57-6e8be9b8a118/mbid-dc1c0a48-7c6b-4602-8e57-6e8be9b8a118-40502302033_thumb500.jpg" alt="GNX by Kendrick Lamar" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/bad-brains-bonus-track-version/1291910244"><img src="https://ia902908.us.archive.org/13/items/mbid-08d7c8d3-c1d9-42fe-9df0-a0a34f055b02/mbid-08d7c8d3-c1d9-42fe-9df0-a0a34f055b02-3396950394_thumb500.jpg" alt="Bad Brains by Bad Brains" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/a-new-tomorrow/1725036831"><img src="https://ia601604.us.archive.org/17/items/mbid-e0bb32b4-5949-4e2c-a6d3-04303972808b/mbid-e0bb32b4-5949-4e2c-a6d3-04303972808b-35032238319_thumb500.jpg" alt="A New Tomorrow by Zulu" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/nightbirds/188249320"><img src="https://ia600506.us.archive.org/23/items/mbid-7e648979-ffb9-48d3-89e0-8a66d5e18488/mbid-7e648979-ffb9-48d3-89e0-8a66d5e18488-37207303346_thumb500.jpg" alt="Nightbirds by LaBelle" loading="lazy"></a></div>	
-<div class="favorite album"><a href="https://music.apple.com/us/album/bothered-unbothered/1615926216"><img src="https://ia601402.us.archive.org/16/items/mbid-7e00a31c-9601-47fe-91c0-61963d74ec21/mbid-7e00a31c-9601-47fe-91c0-61963d74ec21-32804246718_thumb500.jpg" alt="Bothered / Unbothered by JER" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/dinner-party/1518676061"><img src="https://ia600802.us.archive.org/34/items/mbid-def2d899-7f9b-479f-88c3-bbf04a96eae7/mbid-def2d899-7f9b-479f-88c3-bbf04a96eae7-34281156228_thumb500.jpg" alt="Dinner Party by Dinner Party" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/a-love-supreme/1440713018"><img src="https://ia800905.us.archive.org/30/items/mbid-77d06b99-117a-3ba3-8230-69361ad7be91/mbid-77d06b99-117a-3ba3-8230-69361ad7be91-5164611493_thumb500.jpg" alt="A Love Supreme by John Coltrane" loading="lazy"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/enter-the-wu-tang-36-chambers-expanded-edition/269842381"><img src="https://ia600504.us.archive.org/19/items/mbid-21028cc8-d57d-4a8a-ac99-36968231bc45/mbid-21028cc8-d57d-4a8a-ac99-36968231bc45-36278827045_thumb500.jpg" alt="Enter the Wu-Tang (36 Chambers) by Wu-Tang Clan" loading="lazy"></a></div>
-</div>
-	 <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">JANUARY '25</h3>
-	 <div class="monthly-notes">I began the month in an acoustic, folksy mood - while I remained in that place for the month, by the end I was looking more political, and did a deeper dive into Guthrie's work than I ever have. Timely.</div>
-    <div class="media-grid">
-    <div class="album"><a href="https://music.apple.com/us/album/spiral-in-a-straight-line/1756575884"> <img src="https://ia600801.us.archive.org/4/items/mbid-c3168fe5-6d3f-4ee8-a09f-ec8bcc58726e/mbid-c3168fe5-6d3f-4ee8-a09f-ec8bcc58726e-39868329465_thumb500.jpg" loading="lazy" alt="Spiral in a Straight Line by Touché Amore"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/starship-syncopation/1755304423"><img src="https://ia800101.us.archive.org/19/items/mbid-f4a87b2d-2f8b-4ff9-9002-0a44f48b32a2/mbid-f4a87b2d-2f8b-4ff9-9002-0a44f48b32a2-39520829413_thumb500.jpg" loading="lazy" alt="Starship Syncopation by Cory Wong"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/okemah-rising/1669401240"><img src="https://ia801601.us.archive.org/12/items/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17/mbid-495e16e2-4f75-4460-9567-f46fb6a1ff17-35711047376_thumb500.jpg" alt="Okemah Rising by Dropkick Murphys" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/this-machine-still-kills-fascists-expanded-edition/1663331530"><img src="https://ia801500.us.archive.org/25/items/mbid-065d63d0-ac17-4dc5-9e34-6cdfda9d9451/mbid-065d63d0-ac17-4dc5-9e34-6cdfda9d9451-34634419052_thumb500.jpg" loading="lazy" alt="This Machine Still Kills Fascists by Dropkick Murphys"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/tangk/1708015501"><img src="https://ia800506.us.archive.org/15/items/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1/mbid-794231d6-bfc2-4520-853b-8abb0c4204b1-37009318020_thumb500.jpg" alt="TANGK by IDLES" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/joy-as-an-act-of-resistance/1391070525"><img src="https://ia802809.us.archive.org/20/items/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e-31116969977_thumb500.jpg" loading="lazy" alt="Joy as an Act of Resistance by Idles"></a></div>
-<div class="favorite album"><a href="https://music.apple.com/us/album/just-devils/1710718857"><img src="https://ia600505.us.archive.org/30/items/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594/mbid-f9d6be33-b758-4f16-a893-10cc0f3c8594-37078695522_thumb500.jpg" loading="lazy" alt="Just Devils by PWRUP"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/the-bad-fire/1772756309"><img src="https://ia801905.us.archive.org/11/items/mbid-dc43061a-7ccf-4848-8996-cb6326768729/mbid-dc43061a-7ccf-4848-8996-cb6326768729-40393390761_thumb500.jpg" loading="lazy" alt="The Bad Fire by Mogwai"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/my-dusty-road/1440952316"><img src="https://ia601508.us.archive.org/23/items/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c/mbid-5568c8ad-b270-3f0e-aca5-cc356fd0d70c-33575623899_thumb500.jpg" alt="My Dusty Road by Woody Guthrie" loading="lazy"></a></div>
-<div class="album"><a href="https://music.apple.com/us/album/tennessee-songbird/1757730966"><img src="https://ia800405.us.archive.org/12/items/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3/mbid-c5535eb4-89b9-4c71-b719-7200e7f4aae3-40386042883_thumb500.jpg" loading="lazy" alt="Tennessee Songbird by Hannah Juanita"></a></div>
-    </div>
-  </div>
-    
-  
-  <div id="section2" style="display:none; ">
-    	  <h3 style="font-family:Oldenburg;margin:0.75em;">MAY '25</h3>
-	   <div id="movies-container">
-              <a href="" id="Sinners|2025" class="movie"></a>	
-              <a href="" id="Follow that Bird|1985" class="movie"></a>
-              <a href="" id="Street Gang: How We Got to Sesame Street|2021" class="movie"></a>	      
-              <a href="" id="I Am Big Bird: The Caroll Spinney Story|2015" class="movie"></a>	
-              <a href="" id="Mickey17|2025" class="movie"></a>	
-	      
+      <div class="title-container">
+            <div class="text-container">
+                  <h2 style="text-align:left;"><a href="index.html">JACK'S</a></h2>
+                  <h1 style="white-space:nowrap;">NOW PLAYING</h1>
+            </div>
       </div>
-	  <h3 style="font-family:Oldenburg;margin:0.75em;">APRIL '25</h3>
-	   <div id="movies-container">
+      <hr>
+      <div class="bio">
+            <div class="circle-mask">
+                  <img src="https://jackcummings.me/images/profilepic.jpg" alt="Profile picture of Jack Cummings">
+            </div>
+            <div>
+                  <h3 class="biousername">jackXalan</h3>
+                  <p style="font-size: 0.8em; line-height: 1.25em;text-align: left; margin: auto 0;">Here's some of what
+                        I've been
+                        listening to, watching, and reading.</p>
+                  <div class="linkbutton-container"><button class="linkbutton"><a
+                                    href="https://music.apple.com/profile/indianajack">Apple Music</a></button><button
+                              class="linkbutton"><a href="https://boxd.it/21YEL">Letterboxd</a></button></div>
+            </div>
+      </div>
+      <div class="button-container">
+            <button id="section1-button" onclick="showSection(1)" class="selectedbutton" accesskey="2">🎧</button>
+            <button id="section2-button" onclick="showSection(2)" class="buttonoff">🎞️</button>
+            <button id="section3-button" onclick="showSection(3)" class="buttonoff">📺</button>
+            <button id="section4-button" onclick="showSection(4)" class="buttonoff">📖</button>
+            <!--  <button id="section5-button" onclick="showSection(5)" class="buttonoff">🎙️</button>  
+            <button id="section6-button" onclick="showSection(6)" class="buttonoff">👾</button> -->
+      </div>
+      <hr style="margin: .5em 0;">
+      <div id="section1">
+            <div id="albums-container"></div>
+      </div>
 
-        <a href="" id="Wicked|2024" class="movie"></a>		      
-	   </div>
-	  <h3 style="font-family:Oldenburg;margin:0.75em;">MARCH '25</h3>
-	   <div id="movies-container">
 
-        <a href="" id="Snowpiercer|2013" class="movie"></a>		      
-		   <a href="" id="Barb &#38; Star Go to Vista Del Mar" class="movie"></a> 
-  	   <a href="" id="Black Narcissus" class="movie"></a> 
-		   <a href="" id="The Love Witch" class="movie"></a>  
-	   </div>
-	  <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">FEBRUARY '25</h3>
-	  <div class="monthly-notes">While I had meant to do a Black History Month-themed dive into my Letterboxd watchlist this month, Hundreds of Beavers sent me into a space I'd never been before "silent" comedy. Digging into Chaplin's work illuminated politics I had no idea were there, and were... timely.</div>
-	   <div id="movies-container">
-        
-        <a href="" id="Piece By Piece" class="movie"></a>		      
-        <a href="" id="Steamboat Bill, Jr." class="movie"></a>		   
-        <a href="" id="The Immigrant|1917" class="movie"></a>		   
-        <a href="" id="Fantastic Planet" class="movie"></a>		   
-        <a href="" id="Nosferatu" class="favorite movie"></a>
-        <a href="" id="Casablanca" class="movie"></a>
-        <a href="" id="PlayTime" class="movie"></a>
-        <a href="" id="Captain America: Brave New World" class="movie"></a>
-	      <a href="" id="Sherlock Jr." class="movie"></a>
-	      <a href="" id="Modern Times" class="favorite movie"></a>
-	      <a href="" id="Space is the Place" class="movie"></a>
-	      <a href="" id="The Wiz|1978" class="movie"></a>
-	      <a href="" id="The Great Dictator" class="movie"></a>
-	      <a href="" id="Hundreds of Beavers" class="favorite movie"></a>
-    	</div>
-	 <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">JANUARY '25</h3>
-	 <div class="monthly-notes">David Lynch, 1946 - 2025<br><br>I used the moment to catch up on my blind spots in his filmography, as I had really only ever dove into Twin Peaks and Mulholland Drive. Thankfully, I have the rest of my life to figure out what they mean.</div>
-	 <div id="movies-container">
-		<a href="" id="Porco Rosso" class="favorite movie"></a>
-      	<a href="" id="Kneecap" class="movie"></a>
-	   	<a href="" id="Eraserhead" class="movie"></a>
-		<a href="" id="Memento" class="movie"></a>
-		<a href="" id="The Straight Story" class="movie"></a>
-		<a href="" id="Blue Velvet" class="movie"></a>
-	    <a href="" id="Mulholland Drive" class="favorite movie"></a>
-	    <a href="" id="Lost Highway" class="movie"></a>
-	    <a href="" id="Inland Empire" class="movie"></a>
-    </div>
+      <div id="section2" style="display:none; ">
+            <h3 style="font-family:Oldenburg;margin:0.75em;">MAY '25</h3>
+            <div id="movies-container">
+                  <a href="" id="Mickey 17|2025" class="movie"></a>
+                  <a href="" id="I Am Big Bird: The Caroll Spinney Story|2015" class="movie"></a>
+                  <a href="" id="Street Gang: How We Got to Sesame Street|2021" class="movie"></a>
+                  <a href="" id="Follow that Bird|1985" class="movie"></a>
+                  <a href="" id="Sinners|2025" class="favorite movie"></a>
+            </div>
+            <h3 style="font-family:Oldenburg;margin:0.75em;">APRIL '25</h3>
+            <div id="movies-container">
 
-  </div>
-  
-  <div id="section3" style="display:none;">
-	  <h3 style="font-family:Oldenburg;margin:0.75em;">WATCHING</h3>
-	  <div id ="shows-container">
-		  <a href="" id="Poker Face|2023" class="show"></a>
-      <a href="" id="Taskmaster" class="show"></a>
-		  <a href="" id="Andor|2022" class="show"></a>	
-		  <a href="" id="Doctor Who|2024" class="show"></a>
-      <a href="" id="One Piece|1999" class="show"></a>
+                  <a href="" id="Wicked|2024" class="movie"></a>
+            </div>
+            <h3 style="font-family:Oldenburg;margin:0.75em;">MARCH '25</h3>
+            <div id="movies-container">
 
-	  </div>
-	  <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">FINISHED</h3>
-	  <div id ="shows-container">
-      <a href="" id="RuPaul's Drag Race" class="show"></a>
-      <a href="" id="Severance" class="show"></a>
-		  <a href="" id="Skeleton Crew|2024" class="show"></a>		
-		  <a href="" id="What If...?" class="show"></a>  
-		  <a href="" id="The Penguin" class="show"></a>
-		  <a href="" id="Dune: Prophecy" class="show"></a>
-		  <a href="" id="Agatha All Along" class="show"></a>
-		  <a href="" id="The Lord of the Rings: Rings of Power" class="show"></a>		  
-		  <a href="" id="X-Men '97" class="show"></a>
-		  <a href="" id="Cyberpunk: Edgerunners" class="show"></a>		  
-	  </div>
-	  
-  </div>
-  
-  <!-- Books Section (hidden by default) -->
-  <div id="section4" style="display:none;">
-	  
-	 <!-- URL for book covers
+                  <a href="" id="Snowpiercer|2013" class="movie"></a>
+                  <a href="" id="Barb &#38; Star Go to Vista Del Mar" class="movie"></a>
+                  <a href="" id="Black Narcissus" class="movie"></a>
+                  <a href="" id="The Love Witch" class="movie"></a>
+            </div>
+            <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">FEBRUARY '25</h3>
+            <div class="monthly-notes">While I had meant to do a Black History Month-themed dive into my Letterboxd
+                  watchlist
+                  this month, Hundreds of Beavers sent me into a space I'd never been before "silent" comedy. Digging
+                  into Chaplin's
+                  work illuminated politics I had no idea were there, and were... timely.</div>
+            <div id="movies-container">
+
+                  <a href="" id="Piece By Piece" class="movie"></a>
+                  <a href="" id="Steamboat Bill, Jr." class="movie"></a>
+                  <a href="" id="The Immigrant|1917" class="movie"></a>
+                  <a href="" id="Fantastic Planet" class="movie"></a>
+                  <a href="" id="Nosferatu" class="favorite movie"></a>
+                  <a href="" id="Casablanca" class="movie"></a>
+                  <a href="" id="PlayTime" class="movie"></a>
+                  <a href="" id="Captain America: Brave New World" class="movie"></a>
+                  <a href="" id="Sherlock Jr." class="movie"></a>
+                  <a href="" id="Modern Times" class="favorite movie"></a>
+                  <a href="" id="Space is the Place|1974" class="movie"></a>
+                  <a href="" id="The Wiz|1978" class="movie"></a>
+                  <a href="" id="The Great Dictator" class="movie"></a>
+                  <a href="" id="Hundreds of Beavers" class="favorite movie"></a>
+            </div>
+            <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">JANUARY '25</h3>
+            <div class="monthly-notes">David Lynch, 1946 - 2025<br><br>I used the moment to catch up on my blind spots
+                  in his
+                  filmography, as I had really only ever dove into Twin Peaks and Mulholland Drive. Thankfully, I have
+                  the rest of
+                  my life to figure out what they mean.</div>
+            <div id="movies-container">
+                  <a href="" id="Porco Rosso" class="favorite movie"></a>
+                  <a href="" id="Kneecap" class="movie"></a>
+                  <a href="" id="Eraserhead" class="movie"></a>
+                  <a href="" id="Memento" class="movie"></a>
+                  <a href="" id="The Straight Story" class="movie"></a>
+                  <a href="" id="Blue Velvet" class="movie"></a>
+                  <a href="" id="Mulholland Drive" class="favorite movie"></a>
+                  <a href="" id="Lost Highway" class="movie"></a>
+                  <a href="" id="Inland Empire" class="movie"></a>
+            </div>
+
+      </div>
+
+      <div id="section3" style="display:none;">
+            <h3 style="font-family:Oldenburg;margin:0.75em;">WATCHING</h3>
+            <div id="shows-container">
+                  <a href="" id="Poker Face|2023" class="show"></a>
+                  <a href="" id="Taskmaster" class="show"></a>
+                  <a href="" id="Doctor Who|2024" class="show"></a>
+
+
+            </div>
+            <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">FINISHED</h3>
+            <div id="shows-container">
+                  <a href="" id="One Piece|1999" class="show"></a>
+                  <a href="" id="Andor|2022" class="show"></a>
+                  <a href="" id="RuPaul's Drag Race" class="show"></a>
+                  <a href="" id="Severance" class="show"></a>
+                  <a href="" id="Skeleton Crew|2024" class="show"></a>
+                  <a href="" id="What If...?" class="show"></a>
+                  <a href="" id="The Penguin" class="show"></a>
+                  <a href="" id="Dune: Prophecy" class="show"></a>
+                  <a href="" id="Agatha All Along" class="show"></a>
+                  <a href="" id="The Lord of the Rings: Rings of Power" class="show"></a>
+                  <a href="" id="X-Men '97" class="show"></a>
+                  <a href="" id="Cyberpunk: Edgerunners" class="show"></a>
+            </div>
+
+      </div>
+
+      <!-- Books Section (hidden by default) -->
+      <div id="section4" style="display:none;">
+
+            <!-- URL for book covers
 	 https://covers.openlibrary.org/b/$key/$value-$size.jpg
 	 Key can be IBSN or OLID for Open Library
 
 	 -->
-	 <h3 style="font-family:Oldenburg;margin:0.75em;">READING</h3>
-	  <div class="book-grid">
-     
-		  <div><a href="https://mangaplus.shueisha.co.jp/titles/100020"><img alt="One Piece" src="https://covers.openlibrary.org/b/ISBN/4088843142-L.jpg" loading="lazy"></a></div>
- 		  <div><a href="https://share.libbyapp.com/title/202012"><img src="https://ia804503.us.archive.org/view_archive.php?archive=/0/items/olcovers18/olcovers18-L.zip&file=187756-L.jpg" alt="Happiness by Matthieu Ricard" loading="lazy"></a></div>
-		  <div><a href="https://bookshop.org/p/books/scoundrels-villains-knaves-disneyland-pirates-of-the-caribbean-and-popular-culture-foxx-nolte/21538678"><img src="https://m.media-amazon.com/images/I/71Ig4+6zeQL._SL1360_.jpg" alt="Scoundrels, Villains, and Knaves by Foxx Knolte" loading="lazy"></a></div>
-	  </div>
-	  <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">READ</h3>
-	  <div class="book-grid">
-      <div><a href="https://share.libbyapp.com/title/5387639"><img src="https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_01.zip&file=0013011435-L.jpg" alt="Piranesi by Susanna Clarke" loading="lazy"></a></div>
-      <div><a href="https://share.libbyapp.com/title/784834"><img src="https://ia801600.us.archive.org/view_archive.php?archive=/10/items/olcovers645/olcovers645-L.zip&file=6456720-L.jpg" alt="Siddhartha by Herman Hesse" loading="lazy"></a></div>
-		  <div><a href="https://share.libbyapp.com/title/2677901"><img src="https://ia801204.us.archive.org/view_archive.php?archive=/26/items/olcovers74/olcovers74-L.zip&file=749311-L.jpg" alt="Batman: Year One by Frank Miller and David Mazzucchelli" loading="lazy"></a></div>
-		  <div><a href="https://share.libbyapp.com/title/2798031"><img src="https://ia904609.us.archive.org/view_archive.php?archive=/6/items/olcovers79/olcovers79-L.zip&file=798732-L.jpg" alt="Batman: Dark Victory by Jeph Loeb and Tim Sale" loading="lazy"></a></div>
-		  <div><a href="https://share.libbyapp.com/title/2677900"><img src="https://covers.openlibrary.org/b/ISBN/1401232590-L.jpg" alt="Batman: The Long Halloween by Jeph Loeb and Tim Sale" loading="lazy"></a></div>
-		  <div><a href="https://share.libbyapp.com/title/648453"><img src="https://ia800404.us.archive.org/view_archive.php?archive=/33/items/l_covers_0010/l_covers_0010_22.zip&file=0010226364-L.jpg" alt="God Emperor of Dune by Frank Herbert" loading="lazy"></a></div>
-	  </div>
-  </div>
-  
-  <div id="section5" style="display:none; ">
-    <!--
+            <h3 style="font-family:Oldenburg;margin:0.75em;">READING</h3>
+            <div class="book-grid">
+
+                  <div><a href="https://mangaplus.shueisha.co.jp/titles/100020"><img alt="One Piece"
+                                    src="https://covers.openlibrary.org/b/ISBN/4088843142-L.jpg" loading="lazy"></a>
+                  </div>
+            </div>
+            <h3 style="font-family:Oldenburg;margin:1em 0.75em 0.75em 0.75em;">READ</h3>
+            <div class="book-grid">
+                  <div><a href="https://share.libbyapp.com/title/202012"><img
+                                    src="https://ia804503.us.archive.org/view_archive.php?archive=/0/items/olcovers18/olcovers18-L.zip&file=187756-L.jpg"
+                                    alt="Happiness by Matthieu Ricard" loading="lazy"></a></div>
+                  <div><a
+                              href="https://bookshop.org/p/books/scoundrels-villains-knaves-disneyland-pirates-of-the-caribbean-and-popular-culture-foxx-nolte/21538678"><img
+                                    src="https://m.media-amazon.com/images/I/71Ig4+6zeQL._SL1360_.jpg"
+                                    alt="Scoundrels, Villains, and Knaves by Foxx Knolte" loading="lazy"></a></div>
+                  <div><a href="https://share.libbyapp.com/title/5387639"><img
+                                    src="https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_01.zip&file=0013011435-L.jpg"
+                                    alt="Piranesi by Susanna Clarke" loading="lazy"></a></div>
+                  <div><a href="https://share.libbyapp.com/title/784834"><img
+                                    src="https://ia801600.us.archive.org/view_archive.php?archive=/10/items/olcovers645/olcovers645-L.zip&file=6456720-L.jpg"
+                                    alt="Siddhartha by Herman Hesse" loading="lazy"></a></div>
+                  <div><a href="https://share.libbyapp.com/title/2677901"><img
+                                    src="https://ia801204.us.archive.org/view_archive.php?archive=/26/items/olcovers74/olcovers74-L.zip&file=749311-L.jpg"
+                                    alt="Batman: Year One by Frank Miller and David Mazzucchelli" loading="lazy"></a>
+                  </div>
+                  <div><a href="https://share.libbyapp.com/title/2798031"><img
+                                    src="https://ia904609.us.archive.org/view_archive.php?archive=/6/items/olcovers79/olcovers79-L.zip&file=798732-L.jpg"
+                                    alt="Batman: Dark Victory by Jeph Loeb and Tim Sale" loading="lazy"></a></div>
+                  <div><a href="https://share.libbyapp.com/title/2677900"><img
+                                    src="https://covers.openlibrary.org/b/ISBN/1401232590-L.jpg"
+                                    alt="Batman: The Long Halloween by Jeph Loeb and Tim Sale" loading="lazy"></a></div>
+                  <div><a href="https://share.libbyapp.com/title/648453"><img
+                                    src="https://ia800404.us.archive.org/view_archive.php?archive=/33/items/l_covers_0010/l_covers_0010_22.zip&file=0010226364-L.jpg"
+                                    alt="God Emperor of Dune by Frank Herbert" loading="lazy"></a></div>
+            </div>
+      </div>
+
+      <div id="section5" style="display:none; ">
+            <!--
 <h3 style="font-family:Oldenburg;margin:0.75em;">SHOWS</h3>
 	<div class="media-grid" id="podcast-container">
 		<div id="Upgrade"></div>
@@ -350,9 +271,12 @@
 	    <div id="games-attribution" style="font-size:0.5em;text-align:center;margin-top:0.5em;">Game art from <a href="https://rawg.io">RAWG</a></div>
   </div>
 -->
-  <hr style="margin-top:0.5em;">
-  <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">last updated: 05.13.2025 - <a href="changelog.html">changelog</a></span></h5>
+            <hr style="margin-top:0.5em;">
+            <h5 class="endcredits">website by <a href="index.html">jackxalan</a><span style="float: right;">last
+                        updated:
+                        05.13.2025 - <a href="changelog.html">changelog</a></span></h5>
 
-   <script src="scripts/now-playing.js"></script>
+            <script src="scripts/now-playing.js"></script>
 </body>
+
 </html>
