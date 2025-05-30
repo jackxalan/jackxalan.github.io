@@ -1,45 +1,36 @@
- html, body {
+/* === BASE === */
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-	max-width:100%;
-    font-family: ui-rounded;
+    max-width: 100%;
+    font-family: ui-rounded, system-ui, sans-serif;
 }
 
-@media only screen and (min-width: 700px) {
-
-	#section1 {
-		min-width:540px;
-	max-width: 60vw;
-	margin:1em auto;
+/* === LAYOUT CONTAINERS === */
+.blog-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#section2 {
-	min-width:540px;
-	max-width: 60vw;
-	margin:1em auto;
-}
-	
-}
-
-
-small {
-  font-family: "Oldenburg", serif;
-  margin-left:0;
-  opacity: 0.7;
+.header-container,
+.username,
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.blog-thumbnail {
-	margin: 1em 0.5em;
-}
-
-ul {
-	margin: 0;
-}
-
+/* === HEADER IMAGE & PROFILE PIC === */
 .header-container {
     position: relative;
-    width: 100vw; /* Ensures it covers the full viewport width */
+    width: 100vw;
 }
 
 .header-image {
@@ -47,65 +38,95 @@ ul {
     width: 100%;
     object-fit: cover;
     object-position: 0 90%;
-    display: block; /* Prevents unwanted whitespace under image */
+    display: block;
 }
 
 .profile-pic {
+    max-width: 175px;
+    display: block;
+    /* Remove positioning unless you need overlap */
     position: relative;
-	max-width:175px;
     bottom: 75px;
-    left: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .circle-mask {
     border: 3px solid Canvas;
 }
 
+/* === TYPOGRAPHY === */
+small {
+    font-family: "Oldenburg", serif;
+    opacity: 0.7;
+    margin-left: 0;
+}
+
 .username {
-	position:absolute;
-	right:0px;
-            text-align: right;
-            margin: 0.5em 1em 0 1em;
-            width: fit-content; /* Key change: Makes .username only as wide as its content */
-            max-width: 100%; /* Still prevent it from becoming wider than its parent */
-            display: inline-block; /* Helps with alignment if needed */
-        }
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
 
-        .username h1 {
-            text-align: right;
-            margin-top: 0.25em;
-            font-size: 2em;
-        }
+}
 
-        .username h4 {
-            font-weight: lighter;
-            margin: 0;
-        }
+.username h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
 
+.username h4 {
+    display: block;
+    font-weight: lighter;
+    margin: 0;
+}
 
-        .username small {
-			margin:0;
-            display: block;
-            text-align: center;
-            font-weight: unset;
-			line-height:1.4em;
-			margin-top:0.5em;
-        }
+.username small {
+    margin: 0.5em 0 0 0;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.4em;
+}
 
+/* === BUTTONS === */
 .button-container {
-    display: flex; /* Ensures flexbox behavior */
-	flex-direction:column;
-    justify-content: center; /* Centers the buttons horizontally */
-    width: 100%; /* Ensures it stretches across the available space */
-	margin:0;
-
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons {
-	display:flex;
-	flex-direction:row;
-	    justify-content: center; /* Centers the buttons horizontally */
-		margin: 0 auto;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+/* === BLOG CONTENT === */
+.blog-thumbnail {
+    margin: 1em 0.5em;
+}
+
+ul {
+    margin: 0;
+}
+
+/* === RESPONSIVE SECTIONS === */
+@media only screen and (min-width: 700px) {
+
+    #section1,
+    #section2 {
+        min-width: 540px;
+        max-width: 60vw;
+        margin: 1em auto;
+    }
+}
