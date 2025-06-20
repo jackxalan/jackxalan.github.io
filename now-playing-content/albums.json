@@ -2,6 +2,12 @@
     "2025": {
         "June": [
             {
+                "title": "Stockholm Syndrome",
+                "artist": "Fishbone",
+                "url": "https://music.apple.com/us/album/stockholm-syndrome/1804749659",
+                "image": "https://fishbone.net/cdn/shop/files/Stockholm_fish.jpg?v=1745466361&width=500"
+            },
+            {
                 "title": "Mutiny!",
                 "artist": "Set Your Goals",
                 "url": "https://music.apple.com/us/album/mutiny-deluxe-edition/293087228",
@@ -21,8 +27,8 @@
             },
             {
                 "title": "GLOW ON",
-                 "artist": "Turnstile",
-                 "url": "https://music.apple.com/us/album/glow-on/1576430192",
+                "artist": "Turnstile",
+                "url": "https://music.apple.com/us/album/glow-on/1576430192",
                 "image": "https://ia802303.us.archive.org/17/items/mbid-8f914f2d-d449-4349-8463-f654867b0f35/mbid-8f914f2d-d449-4349-8463-f654867b0f35-30611955626_thumb500.jpg"
             }
         ],
