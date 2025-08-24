@@ -1,6 +1,72 @@
 {
     "2025": {
         "August": [
+                 {
+        "title": "Dreams of Being Dust",
+        "artist": "The World Is A Beautiful Place And I Am No Longer Afraid To Die",
+        "url": "https://music.apple.com/us/album/failed-entertainment/1492633078",
+        "image": "https://ia800908.us.archive.org/15/items/mbid-50a4f13a-da8c-4df2-a82a-8f873b8adb32/mbid-50a4f13a-da8c-4df2-a82a-8f873b8adb32-42317888757_thumb500.jpg"
+    },
+                 {
+        "title": "Songs to Scream at the Sun",
+        "artist": "Have Heart",
+        "url": "https://music.apple.com/us/album/songs-to-scream-at-the-sun/1432160799",
+        "image": "https://ia803107.us.archive.org/16/items/mbid-a69ac1e1-883c-40bb-a5dd-0d8704e9d4c9/mbid-a69ac1e1-883c-40bb-a5dd-0d8704e9d4c9-24230173254_thumb500.jpg"
+    },
+                {
+        "title": "Failed Entertainment",
+        "artist": "Fury",
+        "url": "https://music.apple.com/us/album/failed-entertainment/1492633078",
+        "image": "https://ia600708.us.archive.org/15/items/mbid-9098e568-3744-41a3-b585-9e3c27f272cf/mbid-9098e568-3744-41a3-b585-9e3c27f272cf-23420260786_thumb500.jpg"
+    }, 
+            {
+        "title": "This World is Going to Ruin You",
+        "artist": "Vein.fm",
+        "url": "https://music.apple.com/us/album/this-world-is-going-to-ruin-you/1598680786",
+        "image": "https://ia801007.us.archive.org/33/items/mbid-f040cc8a-a20d-4640-ae5e-016d6a29ef13/mbid-f040cc8a-a20d-4640-ae5e-016d6a29ef13-31816751040_thumb500.jpg"
+    },
+            {
+        "title": "Errorzone",
+        "artist": "Vein.fm",
+        "url": "https://music.apple.com/us/album/dreams-of-being-dust/1819074470",
+        "image": "https://ia803105.us.archive.org/13/items/mbid-0173a443-6f99-4c47-9c9c-b01d28829045/mbid-0173a443-6f99-4c47-9c9c-b01d28829045-20352690406_thumb500.jpg"
+    },
+            {
+        "title": "You Won't Go Before You're Supposed To",
+        "artist": "Knocked Loose",
+        "url": "https://music.apple.com/us/album/you-wont-go-before-youre-supposed-to/1732119298",
+        "image": "https://ia600700.us.archive.org/27/items/mbid-888eea68-bfd5-42c8-be50-1a3b52d64715/mbid-888eea68-bfd5-42c8-be50-1a3b52d64715-38673157766_thumb500.jpg"
+    },
+            {
+        "title": "HYPERYOUTH",
+        "artist": "Joe Valence & Brae",
+        "url": "https://music.apple.com/us/album/hyperyouth/1824543248",
+        "image": "https://ia601702.us.archive.org/11/items/mbid-31f028af-b396-4175-9343-f17126b152e9/mbid-31f028af-b396-4175-9343-f17126b152e9-42485852108_thumb500.jpg"
+    },
+             {
+        "title": "Death of the Heart",
+        "artist": "JER",
+        "url": "https://music.apple.com/us/album/death-of-the-heart/1819663466",
+        "image": "https://dn721604.ca.archive.org/0/items/mbid-008dec4b-1c6b-4baa-ba0e-7567baaa026a/mbid-008dec4b-1c6b-4baa-ba0e-7567baaa026a-42680621363_thumb500.jpg"
+    },
+             {
+        "title": "You Have No Idea What You're Getting Yourself Into",
+        "artist": "Does It Offend You, Yeah?",
+        "url": "https://music.apple.com/us/album/you-have-no-idea-what-youre-getting-yourself-into/276637505",
+        "image": "https://dn721806.ca.archive.org/0/items/mbid-1ed0e725-4173-3eda-8778-81a0cbbe885c/mbid-1ed0e725-4173-3eda-8778-81a0cbbe885c-42724603083_thumb500.jpg"
+    },
+             {
+        "title": "We Will Overcome",
+        "artist": "Close Your Eyes",
+        "url": "https://music.apple.com/us/album/we-will-overcome/1558581812",
+        "image": "https://ia800105.us.archive.org/26/items/mbid-f51256cb-f48f-40ec-bcdd-056a72672b34/mbid-f51256cb-f48f-40ec-bcdd-056a72672b34-17980206472_thumb500.jpg"
+    },
+            {
+        "title": "In My Head",
+        "artist": "Black Flag",
+        "url": "https://music.apple.com/us/album/in-my-head/115818891",
+        "image": "https://dn721900.ca.archive.org/0/items/mbid-24167608-99e7-4801-9819-edbf857d50fb/mbid-24167608-99e7-4801-9819-edbf857d50fb-30384315349_thumb500.jpg"
+    },
             {
         "title": "All We Love We Leave Behind",
         "artist": "Converge",
@@ -11,7 +77,7 @@
         "title": "SURFACE TENSION",
         "artist": "Dev Lemons",
         "url": "https://music.apple.com/us/album/surface-tension/1810545958",
-        "image": ""
+        "image": "https://ia800900.us.archive.org/17/items/mbid-29d227c2-a8cf-4fc1-a539-54928acf04c8/mbid-29d227c2-a8cf-4fc1-a539-54928acf04c8-42666329320_thumb500.jpg"
     },
             {
         "title": "Seventeen Songs",
