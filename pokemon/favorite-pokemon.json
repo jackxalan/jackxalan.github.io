@@ -51,7 +51,7 @@
     {
       "id": 376,
       "name": "Metagross",
-      "caught_date": "",
+      "caught_date": "11/01/2025",
       "notes": ""
     },
     {
@@ -77,6 +77,12 @@
       "name": "Samurott",
       "caught_date": "",
       "notes": "Alpha POKéMON; encountered in Hisui."
+    },
+    {
+      "id": 553,
+      "name": "Krookodile",
+      "caught_date": "10/17/2025",
+      "notes": "Alpha POKéMON; encountered in Lumiose City."
     },
     {
       "id": 658,
