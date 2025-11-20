@@ -86,3 +86,13 @@ max-width:400px;
 	position: relative;
 	align-items:center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.retro {
+    font-family: 'VT323', monospace;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1em auto;
+}
