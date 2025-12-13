@@ -31,7 +31,7 @@ async function fetchAllPokemon(id) {
     const pokemonCount = pokemonIds.length
 	
 	document.getElementById("pokemon-count").innerText = pokemonCount + " SHINY FORMS";
-  	document.getElementById("shiny-count").innerText = pokemonCount;
+  document.getElementById("shiny-count")?.textContent = pokemonCount;
 	
     async function fetchPokemon(id) {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
