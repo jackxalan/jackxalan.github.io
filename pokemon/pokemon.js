@@ -10,11 +10,8 @@ const pokemonIds = [
 const shinySet = new Set(pokemonIds);
 
 // Counts
-document.getElementById("all-pokemon-count").innerText =
-  allPokemonIds.length + " REGISTERED";
-
-document.getElementById("pokemon-count").innerText =
-  pokemonIds.length + " SHINY FORMS";
+document.getElementById("all-pokemon-count").innerHTML =
+  `${allPokemonIds.length} REGISTERED<br>${pokemonIds.length} SHINY FORMS`;
 
 async function fetchPokemon(id) {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
