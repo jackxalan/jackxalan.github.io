@@ -58,6 +58,6 @@ async function loadAllPokemon() {
   link.appendChild(img);
   allPokemonGrid.appendChild(link);
   });
-
+}
 loadAllPokemon();
 	
