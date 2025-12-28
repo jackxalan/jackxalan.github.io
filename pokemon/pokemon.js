@@ -54,17 +54,3 @@ async function loadAllPokemon() {
 
 loadAllPokemon();
 	
-	// Section Switching Functions
-function showSection1() {
-  document.getElementById("section2-button").className = "buttonoff";
-  document.getElementById("section1-button").className = "selectedbutton";
-  document.getElementById("section2").style.display = "none";
-  document.getElementById("section1").style.display = "block";
-};
-
-function showSection2() {
-  document.getElementById("section2-button").className = "selectedbutton";
-  document.getElementById("section1-button").className = "buttonoff";
-  document.getElementById("section1").style.display = "none";
-  document.getElementById("section2").style.display = "block";
-};
