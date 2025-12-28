@@ -42,7 +42,7 @@ async function loadAllPokemon() {
 
  pokemonData.forEach(pokemon => {
   const link = document.createElement("a");
-  link.href = `https://www.serebii.net/pokedex/${padDexNumber(pokemon.id)}.shtml`;
+  link.href = `https://www.serebii.net/pokemon/nationalpokedex.shtml#${pokemon.id}`;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
 
