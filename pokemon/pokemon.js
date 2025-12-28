@@ -31,24 +31,33 @@ async function fetchPokemon(id) {
   };
 }
 
+function padDexNumber(id) {
+  return String(id).padStart(3, "0");
+}
+
 async function loadAllPokemon() {
   const promises = allPokemonIds.map(fetchPokemon);
   const pokemonData = await Promise.all(promises);
+  
 
-  pokemonData.forEach(pokemon => {
-    const img = document.createElement("img");
-    img.src = pokemon.imgSrc;
-    img.alt = pokemon.name;
-    img.loading = "lazy";
+ pokemonData.forEach(pokemon => {
+  const link = document.createElement("a");
+  link.href = `https://www.serebii.net/pokedex/${padDexNumber(pokemon.id)}.shtml`;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
 
-    // Optional: add a class if shiny (nice for CSS styling)
-    if (shinySet.has(pokemon.id)) {
-      img.classList.add("shiny");
-    }
+  const img = document.createElement("img");
+  img.src = pokemon.imgSrc;
+  img.alt = pokemon.name;
+  img.loading = "lazy";
 
-    allPokemonGrid.appendChild(img);
+  if (shinySet.has(pokemon.id)) {
+    img.classList.add("shiny");
+  }
+
+  link.appendChild(img);
+  allPokemonGrid.appendChild(link);
   });
-}
 
 loadAllPokemon();
 	
