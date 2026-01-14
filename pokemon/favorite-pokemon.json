@@ -187,28 +187,34 @@
       "notes": "Met in Adventureland, Disneyland, U.S.A."
     },
 	{
-      "id": 250,
+      "id": 249,
       "name": "Lugia",
-      "caught_date": "Met in Johto as a young trainer.",
-      "notes": ""
+      "caught_date": "",
+      "notes": "Met in Johto as a young trainer."
+    },
+	{
+      "id": 250,
+      "name": "Ho-Oh",
+      "caught_date": "",
+      "notes": "Met in Johto as a young trainer."
     },
 	{
       "id": 251,
       "name": "Celebi",
       "caught_date": "",
-      "notes": "Encountered in Paldea."
+      "notes": "Encountered upon a return to Johto after decades away."
     },
 	{
       "id": 380,
       "name": "Latias",
       "caught_date": "",
-      "notes": ""
+      "notes": "Encountered in Hyperspace Lumiose."
     },
 	{
       "id": 381,
       "name": "Latios",
-      "caught_date": "",
-      "notes": ""
+      "caught_date": "01/13/2026",
+      "notes": "Encountered in Hyperspace Lumiose."
     },
 	{
       "id": 384,
@@ -232,19 +238,19 @@
       "id": 638,
       "name": "Cobalion",
       "caught_date": "",
-      "notes": ""
+      "notes": "Encountered in Hyperspace Lumiose."
     },
 	{
       "id": 639,
       "name": "Terrakion",
       "caught_date": "",
-      "notes": ""
+      "notes": "Encountered in Hyperspace Lumiose."
     },
 	{
       "id": 640,
       "name": "Virizion",
       "caught_date": "",
-      "notes": "After a long search, we met in a crystal cavern in Paldea."
+      "notes": "Encountered in Hyperspace Lumiose."
     },
 	{
       "id": 647,
