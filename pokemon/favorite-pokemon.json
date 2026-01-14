@@ -199,6 +199,18 @@
       "notes": "Encountered in Paldea."
     },
 	{
+      "id": 380,
+      "name": "Latias",
+      "caught_date": "",
+      "notes": ""
+    },
+	{
+      "id": 381,
+      "name": "Latios",
+      "caught_date": "",
+      "notes": ""
+    },
+	{
       "id": 384,
       "name": "Rayquaza",
       "caught_date": "",
@@ -215,6 +227,24 @@
       "name": "Arcus",
       "caught_date": "",
       "notes": "We met in the heavens after meeting every POKéMON."
+    },
+	{
+      "id": 638,
+      "name": "Cobalion",
+      "caught_date": "",
+      "notes": ""
+    },
+	{
+      "id": 639,
+      "name": "Terrakion",
+      "caught_date": "",
+      "notes": ""
+    },
+	{
+      "id": 640,
+      "name": "Virizion",
+      "caught_date": "",
+      "notes": "After a long search, we met in a crystal cavern in Paldea."
     },
 	{
       "id": 647,
